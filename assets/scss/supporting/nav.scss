@@ -1,0 +1,115 @@
+/* Navbar
+----------------------------------------------------------------------------- */
+.no-js .menu-item-has-children:hover .dropdown-menu,
+.no-js .menu-item-has-children:focus .dropdown-menu {
+    display: block;
+}
+
+/* Move navigation below wp-admin bar */
+.logged-in {
+    .navbar-fixed-top {
+        margin-top: 32px; // Move navigation below wp-admin bar
+    }
+}
+
+.navbar {
+    padding: {
+        left: 0;
+        right: 0;
+    }
+}
+
+/* Subnav  */
+#sub-nav-fp {
+
+    .container {
+
+        .navbar-toggler.subnav-toggler {
+            margin: 0 auto;
+        }
+
+        .subnav li a {
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        #menu-sub-nav {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+    }
+
+}
+
+/* Footer Nav */
+.site-footer .wrap {
+    display: flex;
+    align-items: baseline;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+    #sub-nav-fp {
+
+        .container {
+
+            .navbar-toggler.subnav-toggler {
+                margin: 0 auto;
+            }
+
+            .subnav li a {
+                font-size: 1rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            #menu-sub-nav {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+            }
+        }
+
+    }
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
