@@ -1,14 +1,14 @@
-# Wellington Studio Theme
+# 100 Black Men Bay Area Theme
 
 ## Introduction
 
-Wellington Studio Theme is a genesis child theme which integrates [Bootstrap](http://getbootstrap.com/). It uses Gulp to handle tasks, configuration and lint files.
+100 Black Men Bay Area Theme is a genesis child theme which integrates [Bootstrap](http://getbootstrap.com/). It uses Gulp to handle tasks, configuration and lint files.
 
 ## Installation Instructions
 
-1. Upload the Wellington Studio Theme theme folder via FTP to your wp-content/themes/ directory. (The Genesis parent theme needs to be in the wp-content/themes/ directory as well.)
+1. Upload the 100 Black Men Bay Area Theme folder via FTP to your wp-content/themes/ directory. (The Genesis parent theme needs to be in the wp-content/themes/ directory as well.)
 2. Go to your WordPress dashboard and select Appearance.
-3. Activate the Wellington Studio Theme.
+3. Activate the 100 Black Men Bay Area Theme.
 4. Inside your WordPress dashboard, go to Genesis > Theme Settings and configure them to your liking.
 
 ## Building from Source
@@ -42,7 +42,7 @@ Wellington Studio Theme is a genesis child theme which integrates [Bootstrap](ht
 - [ ] Integrate Genesis Theme Setup API
 - [ ] Integrate Genesis Configuration API
 - [ ] Integrate AMP Support
-- [ ] Gutenberg Support
+- [x] Gutenberg Support
 - [x] Remove SmartMenus support or move to separate plugin
 - [x] Remove TGM Plugin Activation Support
 - [x] Use Git Submodule for WP Bootstrap Navwalker
