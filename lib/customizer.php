@@ -12,7 +12,8 @@
  */
 
 add_action( 'customize_register', function( $wp_customize ) {
-
+ 
+ include 'customizer-sections/hero-video-options.php';
  include 'customizer-sections/portrait-slider-options.php';
  include 'customizer-sections/fp-hero-slider-options.php';
  include 'customizer-sections/sub-nav-options.php';
@@ -27,59 +28,11 @@ add_action( 'customize_register', function( $wp_customize ) {
 
  // Add Wellington Studio Panel
  $wp_customize->add_panel( 'wellington-studio-theme', array(
-	 'title' => __( 'Wellington Studio Theme', 'bootstrap-for-genesis' ),
+	 'title' => __( '100 Black Men Theme', 'bootstrap-for-genesis' ),
 	 'priority' => 100
  ) );
 
- // Add Front Page Section
- $wp_customize->add_section( 'frontpage', array(
-	 'title' => __( 'Front Page', 'bootstrap-for-genesis' ),
-	 'priority' => 10,
-	 'panel' => 'wellington-studio-theme',
- ));
-
- /// ====== Video ====== ///
-
- // Hero Section Overlay Text
- $wp_customize->add_setting( 'hero_h1', array(
- 	'default'	=>	'',
-	'type'	=> 'theme_mod',
-	'sanitize_callback'	=>	'sanitize_text_field'
- ));
- $wp_customize->add_control( 'hero_h1', array(
- 	'label'	=>	__('Add title to hero section', 'bootstrap-for-genesis' ),
-	'section'	=>	'frontpage',
-	'settings'	=>	'hero_h1',
-	'type'	=> 'text'
- ));
-
- // Hero section overlay description
- $wp_customize->add_setting( 'hero_desc', array(
-	 'default'	=>	'',
-	 'type'	=> 'theme_mod',
-	 'sanitize_callback'	=>	'sanitize_text_field'
- ));
- $wp_customize->add_control( 'hero_desc', array(
-	 'label'	=>	__('Add description to hero section', 'bootstrap-for-genesis' ),
-	 'section'	=>	'frontpage',
-	 'settings'	=>	'hero_desc',
-	 'type'	=> 'text'
- ));
-
- // Hero Video
- $wp_customize->add_setting ( 'hero_video_url', array(
-	 'default'	=> '',
-	 'type'		=> 'theme_mod',
-	 'sanitize_callback' => 'esc_url',
- ));
- $wp_customize->add_control ( 'hero_video_url' , array(
-	 'type'	=>	'url',
-	 'section'	=>	'frontpage',
-	 'label'	=>	__( 'Hero Video', 'bootstrap-for-genesis' ),
-	 'description'	=>	__('Add video url'),
- ));
-
- /// ====== End Video ====== ///
+ 
  
  // Add Navigation Section
  $wp_customize->add_section( 'navigation', array(
