@@ -96,7 +96,6 @@ function io_front_page_latest_posts() {
 
 	  echo '</div>';
 	}
-
 	echo '</div></div>';
 
 	/* Restore original Post Data */
