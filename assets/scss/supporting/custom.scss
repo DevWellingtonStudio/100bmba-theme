@@ -59,13 +59,13 @@
 /** Front Page News
 ================================ */
 #fp-news {
-    .news-excerpt {
-      h3 a {
-        color: #000;
-        text-decoration: none;
-      }
+  .news-excerpt {
+    h3 a {
+      color: #000;
+      text-decoration: none;
     }
   }
+}
 
 /** Front Page One
 ================================ */
@@ -76,7 +76,7 @@
   margin: 2.618rem auto;
 
   section {
-	margin: auto 2.618em;
+    margin: auto 2.618em;
   }
 }
 .frontpage-three {
@@ -99,6 +99,11 @@
           .row {
             .card-body-wrapper{
               .card-body {
+                padding: 4.618em;
+                max-height: 900px;
+                .card-text {
+                  font-size: 1.2rem;
+                }
                 h1 {
                   text-transform: uppercase;
                 }
@@ -112,6 +117,11 @@
           .row {
             .card-body-wrapper{
               .card-body {
+                padding: 4.618em;
+                max-height: 900px;
+                .card-text {
+                  font-size: 1.2rem;
+                }
                 h1 {
                   text-transform: uppercase;
                 }
@@ -125,6 +135,11 @@
           .row {
             .card-body-wrapper{
               .card-body {
+                padding: 4.618em;
+                max-height: 900px;
+                .card-text {
+                  font-size: 1.2rem;
+                }
                 h1 {
                   text-transform: uppercase;
                 }
@@ -153,8 +168,8 @@
   overflow: hidden;
 
   #hero-section {
-	width: $fullwidth-plus;
-	margin-left: -7.5%;
+    width: $fullwidth-plus;
+    margin-left: -7.5%;
   }
 
 }
@@ -164,26 +179,22 @@
 }
 #portrait-hero {
   .portrait-image {
-	img {
-	  object-fit: cover;
-	  max-height: 900px;
-	}
-	.card-img {
-	  border-radius: 0;
-	}
-  }
-  .card-body {
-	padding: 2.618em;
-	max-height: 900px;
+    img {
+      object-fit: cover;
+      max-height: 900px;
+    }
+    .card-img {
+      border-radius: 0;
+    }
   }
   .card-body-wrapper {
-	display: flex;
+    display: flex;
   }
   .card-body-wrapper .card-body {
-	margin: auto;
+    margin: auto;
   }
   button h5 {
-	margin: .5em auto;
+    margin: 0 auto;
   }
 }
 
@@ -202,7 +213,8 @@
 =============================== */
 #mid-slider-fp-1,
 #mid-slider-fp-2,
-#mid-slider-fp-3 {
+#mid-slider-fp-3,
+#mid-slider-fp-4 {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -225,9 +237,9 @@
 =============================== */
 .logged-in.admin-bar {
   .site-container {
-	header nav {
-	  margin-top: 32px;
-	}
+    header nav {
+      margin-top: 32px;
+    }
   }
 }
 
