@@ -11,7 +11,8 @@ function add_featured_image() {
  $thumbnail_id = get_post_thumbnail_id( $post->ID );
  $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
  
- if ( is_page() || is_single() && $featured_img_url !== '' ) {
+ if ( is_page() || is_single() ) {
+  if(has_post_thumbnail()) {
 	echo '
 			 <div id="featured-image-header">
 			 	<div class="container-fluid p-0">
@@ -19,5 +20,6 @@ function add_featured_image() {
 				</div>
 			 </div>
  			';
+ 	}
  }
 }
