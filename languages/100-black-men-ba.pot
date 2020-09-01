@@ -34,8 +34,8 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: lib/customizer.php:23
-msgid "Wellington Studio Theme"
+#: lib/customizer.php:31
+msgid "100 Black Men Theme"
 msgstr ""
 
 #: lib/customizer.php:29
