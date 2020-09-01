@@ -1,7 +1,7 @@
 /* Site Inner
 ----------------------------------------------------------------------------- */
 .site-inner {
-    padding: $spacer*4 0;
+    padding: $spacer*3 0;
     .content {
         margin-bottom: $spacer;
         @include media-breakpoint-up(sm) {

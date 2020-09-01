@@ -1,5 +1,6 @@
 /* Custom SCSS
 
+    - Default Template
 	- Front Page Widgets
 	- Front Page News
 	- Front Page One
@@ -28,6 +29,20 @@
 
 #sub-nav-fp {
   background-color: $gray;
+}
+
+/** Default Template
+================================ */
+.page-template-default {
+  .site-container {
+    .site-inner {
+      .wrap {
+        .content-sidebar-wrap {
+          margin: 2.618em 1.618em;
+        }
+      }
+    }
+  }
 }
 
 /** Front Page Widgets
