@@ -126,7 +126,6 @@ function child_grid_loop_helper() {
   } else {
 	genesis_standard_loop();
   }
-
 }
 
 genesis();
