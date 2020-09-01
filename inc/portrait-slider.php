@@ -25,7 +25,7 @@
 			</div>
 			<div class="col-md-6 portrait-image">
 			 <?php $port_slider1 = get_theme_mod('port_slider1'); ?>
-			 <img src="<?php if($port_slider1 !== ''){echo $port_slider1;} ?>" class="card-img" alt="...">
+			 <img src="<?php if($port_slider1 !== ''){echo $port_slider1;} ?>" class="card-img" alt="">
 			</div>
 		 </div>
 		</div>
@@ -35,7 +35,7 @@
 		 <div class="row no-gutters">
 			<div class="col-md-6 portrait-image">
 			  <?php $port_slider2 = get_theme_mod('port_slider2'); ?>
-			 <img src="<?php if($port_slider2 !== ''){echo $port_slider2;} ?>" class="card-img" alt="...">
+			 <img src="<?php if($port_slider2 !== ''){echo $port_slider2;} ?>" class="card-img" alt="">
 			</div>
 			<div class="col-md-6 card-body-wrapper">
 			 <div class="card-body">
@@ -65,7 +65,7 @@
 			</div>
 			<div class="col-md-6 portrait-image">
 			  <?php $port_slider3 = get_theme_mod('port_slider3'); ?>
-			 <img src="<?php if($port_slider3 !== ''){echo $port_slider3;} ?>" class="card-img" alt="...">
+			 <img src="<?php if($port_slider3 !== ''){echo $port_slider3;} ?>" class="card-img" alt="">
 			</div>
 		 </div>
 		</div>

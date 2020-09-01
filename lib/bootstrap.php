@@ -89,7 +89,7 @@ function bfg_merge_genesis_attr_classes() {
 
     switch ( $container ) {
         case 'fluid':
-            $classes['structural-wrap'] = 'container-fluid';
+            $classes['structural-wrap'] = 'container-fluid p-0';
             break;
         case 'boxed':
         default:

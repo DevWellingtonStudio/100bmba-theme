@@ -12,7 +12,8 @@ $midsldr3text		= get_theme_mod('midsldr3text', $default);
 
 
 ?>
-<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+<div class="container-fluid">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
 	  <ol class="carousel-indicators">
 	    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
 	    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -20,21 +21,21 @@ $midsldr3text		= get_theme_mod('midsldr3text', $default);
 	  </ol>
 	  <div class="carousel-inner">
 	    <div id="mid-slider-fp-1" class="carousel-item active align-items-center">
-	      <img src="<?php if($wst_mid_slider1 !== $default){echo $wst_mid_slider1;} ?>" class="d-block w-100" alt="...">
+	      <img src="<?php if($wst_mid_slider1 !== $default){echo $wst_mid_slider1;} ?>" class="d-block w-100" alt="">
 	      <div class="carousel-caption">
 	        <h3><?php if($midslider1title !== $default){echo $midslider1title;} ?></h3>
 	        <p><?php if($midsldr1text !== $default){echo $midsldr1text;} ?></p>
 	      </div>
 	    </div>
 	    <div id="mid-slider-fp-2" class="carousel-item align-items-center">
-	      <img src="<?php if($wst_mid_slider2 !== $default){echo $wst_mid_slider2;} ?>" class="d-block w-100" alt="...">
+	      <img src="<?php if($wst_mid_slider2 !== $default){echo $wst_mid_slider2;} ?>" class="d-block w-100" alt="">
 	      <div class="carousel-caption">
 	        <h3><?php if($midslider2title !== $default){echo $midslider2title;} ?></h3>
 	        <p><?php if($midsldr2text !== $default){echo $midsldr2text;} ?></p>
 	      </div>
 	    </div>
 	    <div id="mid-slider-fp-3" class="carousel-item align-items-center">
-	      <img src="<?php if($wst_mid_slider3 !== $default){echo $wst_mid_slider3;} ?>" class="d-block w-100" alt="...">
+	      <img src="<?php if($wst_mid_slider3 !== $default){echo $wst_mid_slider3;} ?>" class="d-block w-100" alt="">
 	      <div class="carousel-caption">
 	        <h3><?php if($midslider3title !== $default){echo $midslider3title;} ?></h3>
 	        <p><?php if($midsldr3text !== $default){echo $midsldr3text;} ?></p>
@@ -50,3 +51,4 @@ $midsldr3text		= get_theme_mod('midsldr3text', $default);
 	    <span class="sr-only">Next</span>
 	  </a>
 	</div>
+</div>
