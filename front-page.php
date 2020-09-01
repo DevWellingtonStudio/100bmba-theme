@@ -71,13 +71,13 @@ function io_front_page_latest_posts() {
 	  'order'          => 'DESC',
 	  'orderby'       => 'date',
 	  'no_found_rows'  => true,
-	  'posts_per_page' => 4
+	  'posts_per_page' => 3
   ) );
 
   // The Loop
   if ( $the_query->have_posts() ) {
 	echo '<div class="h1 mt_med text-center"><h2 class="display-2">NEWS</h2></div>';
-	echo '<div id="fp-news" class="news-fp mt row">';
+	echo '<div id="news-wrapper" class="container-fluid"><div id="fp-news" class="news-fp mt row">';
 
 	while ( $the_query->have_posts() ) {
 	  $the_query->the_post();
@@ -97,7 +97,7 @@ function io_front_page_latest_posts() {
 	  echo '</div>';
 	}
 
-	echo '</div>';
+	echo '</div></div>';
 
 	/* Restore original Post Data */
 	wp_reset_postdata();
