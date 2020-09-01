@@ -9,15 +9,27 @@ $midsldr2text		= get_theme_mod('midsldr2text', $default);
 $wst_mid_slider3	= get_theme_mod('wst_mid_slider3', $default);
 $midslider3title	= get_theme_mod('midslider3title', $default);
 $midsldr3text		= get_theme_mod('midsldr3text', $default);
+$wst_mid_slider4	= get_theme_mod('wst_mid_slider4', $default);
+$midslider4title	= get_theme_mod('midslider4title', $default);
+$midsldr4text		= get_theme_mod('midsldr4text', $default);
 
 
 ?>
 <div class="container-fluid">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
 	  <ol class="carousel-indicators">
+        <?php if($wst_mid_slider1 !== $default) : ?>
 	    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <?php endif;
+        if($wst_mid_slider2 !== $default) : ?>
 	    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <?php endif;
+        if($wst_mid_slider3 !== $default) : ?>
 	    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        <?php endif;
+        if($wst_mid_slider4 !== $default) : ?>
+        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+        <?php endif; ?>
 	  </ol>
 	  <div class="carousel-inner">
 	    <div id="mid-slider-fp-1" class="carousel-item active align-items-center">
@@ -41,6 +53,13 @@ $midsldr3text		= get_theme_mod('midsldr3text', $default);
 	        <p><?php if($midsldr3text !== $default){echo $midsldr3text;} ?></p>
 	      </div>
 	    </div>
+        <div id="mid-slider-fp-4" class="carousel-item align-items-center">
+          <img src="<?php if($wst_mid_slider4 !== $default){echo $wst_mid_slider4;} ?>" class="d-block w-100" alt="">
+          <div class="carousel-caption">
+            <h3><?php if($midslider4title !== $default){echo $midslider4title;} ?></h3>
+            <p><?php if($midsldr4text !== $default){echo $midsldr4text;} ?></p>
+          </div>
+        </div>
 	  </div>
 	  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
 	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>

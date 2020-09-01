@@ -83,7 +83,7 @@ $wp_customize->add_control( 'midslider2title', array(
 	'settings'	=>	'midslider2title',
 	'type'	=> 'text'
 ));
-// Slider #1 Text Area
+// Slider #2 Text Area
 $wp_customize->add_setting( 'midsldr2text', array(
 	'default'	=>	'',
 	'type'	=> 'theme_mod',
@@ -136,6 +136,49 @@ $wp_customize->add_control( 'midsldr3text', array(
 	'label'	=>	__('Slider 3 Text Area', 'bootstrap-for-genesis' ),
 	'section'	=>	'fp-mid-slider',
 	'settings'	=>	'midsldr3text',
+	'type'	=> 'textarea'
+));
+// Front Page Mid Slider Image #4
+$wp_customize -> add_setting ( 'wst_mid_slider4', array(
+	'default'           => '',
+	'type'              => 'theme_mod',
+	'transport'         => 'postMessage'
+));
+$wp_customize -> add_control (
+	new WP_Customize_Image_Control (
+		$wp_customize,
+		'wst_mid_slider4',
+		array (
+			'label'             => __('Slider Image, Four'),
+			'section'           => 'fp-mid-slider',
+			'settings'          => 'wst_mid_slider4',
+		 //'priority'          => 10,
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	)
+);
+// Slider #4 Title
+$wp_customize->add_setting( 'midslider4title', array(
+	'default'	=>	'',
+	'type'	=> 'theme_mod',
+	'sanitize_callback'	=>	'sanitize_text_field'
+));
+$wp_customize->add_control( 'midslider4title', array(
+	'label'	=>	__('Slider 4 Title', 'bootstrap-for-genesis' ),
+	'section'	=>	'fp-mid-slider',
+	'settings'	=>	'midslider4title',
+	'type'	=> 'text'
+));
+// Slider #4 Text Area
+$wp_customize->add_setting( 'midsldr4text', array(
+	'default'	=>	'',
+	'type'	=> 'theme_mod',
+	'sanitize_callback'	=>	'sanitize_text_field'
+));
+$wp_customize->add_control( 'midsldr4text', array(
+	'label'	=>	__('Slider 4 Text Area', 'bootstrap-for-genesis' ),
+	'section'	=>	'fp-mid-slider',
+	'settings'	=>	'midsldr4text',
 	'type'	=> 'textarea'
 ));
 
