@@ -6,6 +6,7 @@
  */
 add_action('genesis_before_content_sidebar_wrap', 'add_featured_image', 10);
 function add_featured_image() {
+ global $post;
  $featured_img_url = get_the_post_thumbnail_url( $post->ID, 'full' );
  
  $thumbnail_id = get_post_thumbnail_id( $post->ID );
