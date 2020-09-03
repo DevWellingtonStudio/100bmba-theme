@@ -6,3 +6,11 @@
   align-items: baseline;
 
 }
+
+.gform_footer.top_label #gform_submit_button_1 {
+  padding: 1em !important;
+  background-color: $brown !important;
+  color: $white !important;
+  font-size: 1.2rem;
+  border: none !important;
+}

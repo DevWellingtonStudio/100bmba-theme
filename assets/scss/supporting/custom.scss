@@ -38,7 +38,7 @@
     .site-inner {
       .wrap {
         .content-sidebar-wrap {
-          margin: 2.618em 1.618em;
+          margin: 4.618em 5.5em;
         }
       }
     }
@@ -165,7 +165,7 @@
 /* For full-width customizer setting */
 .wrap.container-fluid {
 
-  overflow: hidden;
+ /* overflow: hidden; */
 
   #hero-section {
     width: $fullwidth-plus;
