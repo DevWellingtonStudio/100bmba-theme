@@ -109,3 +109,20 @@ function wst_childtheme_setup() {
 add_action( 'after_setup_theme', function() {
  require_once( CHILD_DIR . '/lib/modules/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php' );
 } );
+
+// Order custom post types alphabetically
+function owd_post_order( $query ) {
+ if ( $query->is_post_type_archive('member_cpt') && $query->is_main_query() ) {
+	$query->set( 'orderby', 'title' );
+	$query->set( 'order', 'desc' );
+ }
+}
+add_action( 'pre_get_posts', 'owd_post_order' );
+
+add_action( 'pre_get_posts', 'my_orderby_filter2' );
+function my_orderby_filter2( $query ) {
+ if ( 'member_cpt' === $query->get( 'post_type' ) ) {
+	$query->set( 'orderby', 'title' );
+	$query->set( 'order', 'ASC' );
+ }
+}
