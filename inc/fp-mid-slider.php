@@ -32,6 +32,7 @@ $midsldr4text		= get_theme_mod('midsldr4text', $default);
         <?php endif; ?>
 	  </ol>
 	  <div class="carousel-inner">
+        <?php if($wst_mid_slider1 !== $default) : ?>
 	    <div id="mid-slider-fp-1" class="carousel-item active align-items-center">
 	      <img src="<?php if($wst_mid_slider1 !== $default){echo $wst_mid_slider1;} ?>" class="d-block w-100" alt="">
 	      <div class="carousel-caption">
@@ -39,6 +40,8 @@ $midsldr4text		= get_theme_mod('midsldr4text', $default);
 	        <p><?php if($midsldr1text !== $default){echo $midsldr1text;} ?></p>
 	      </div>
 	    </div>
+        <?php endif;
+        if($wst_mid_slider2 !== $default) : ?>
 	    <div id="mid-slider-fp-2" class="carousel-item align-items-center">
 	      <img src="<?php if($wst_mid_slider2 !== $default){echo $wst_mid_slider2;} ?>" class="d-block w-100" alt="">
 	      <div class="carousel-caption">
@@ -46,6 +49,8 @@ $midsldr4text		= get_theme_mod('midsldr4text', $default);
 	        <p><?php if($midsldr2text !== $default){echo $midsldr2text;} ?></p>
 	      </div>
 	    </div>
+        <?php endif;
+        if($wst_mid_slider3 !== $default) : ?>
 	    <div id="mid-slider-fp-3" class="carousel-item align-items-center">
 	      <img src="<?php if($wst_mid_slider3 !== $default){echo $wst_mid_slider3;} ?>" class="d-block w-100" alt="">
 	      <div class="carousel-caption">
@@ -53,6 +58,8 @@ $midsldr4text		= get_theme_mod('midsldr4text', $default);
 	        <p><?php if($midsldr3text !== $default){echo $midsldr3text;} ?></p>
 	      </div>
 	    </div>
+        <?php endif;
+        if($wst_mid_slider4 !== $default) : ?>
         <div id="mid-slider-fp-4" class="carousel-item align-items-center">
           <img src="<?php if($wst_mid_slider4 !== $default){echo $wst_mid_slider4;} ?>" class="d-block w-100" alt="">
           <div class="carousel-caption">
@@ -60,6 +67,7 @@ $midsldr4text		= get_theme_mod('midsldr4text', $default);
             <p><?php if($midsldr4text !== $default){echo $midsldr4text;} ?></p>
           </div>
         </div>
+        <?php endif; ?>
 	  </div>
 	  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
 	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
