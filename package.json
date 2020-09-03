@@ -1,10 +1,10 @@
 {
-  "name": "bootstrap-for-genesis",
+  "name": "100-blackmen-ba",
   "version": "2.0.2",
   "description": "An awesome Genesis Framework child theme using Bootstrap 4",
   "main": "gulpfile.js",
   "repository": "https://github.com/DevWellingtonStudio/100bmba-theme",
-  "author": "Rotsen Mark Acob <acob.rotsen@hotmail.com>",
+  "author": "Chris Parsons <chris@steelbridge.io>",
   "license": "GPL-2.0",
   "private": true,
   "devDependencies": {
