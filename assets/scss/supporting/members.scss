@@ -1,0 +1,267 @@
+/* Members Archive */
+
+
+
+#member-archive {
+
+  .row {
+    .member-column {
+      .card {
+        border: none;
+      }
+    }
+  }
+
+}
+
+.tax-member-category {
+  .site-container {
+    .site-inner {
+      .wrap {
+        .content-sidebar-wrap {
+          .content {
+            .archive-description {
+              h1.archive-title {
+                text-align: center;
+                margin: 1.618em auto;
+                font-size: 5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.member_cpt-template-default {
+  .entry-header {
+    margin-top: 2.618em;
+    text-align: center;
+    .entry-meta {
+      display: none;
+    }
+  }
+}
+
+/* Do not show images for members archive from content */
+.no-show-content-image img {
+  display: none;
+}
+
+
+
+
+/*** MAKES TAG CLOUD GO AWAY!!! SO SAD TAG CLOUD ****/
+.members-tag-cloud-cont {
+  DISPLAY: NONE;
+}
+
+.member-cpt-header-archive.thb-page-header h1 {
+  font-size: 35px;
+}
+
+
+.style1-class .member_cpt.type-member_cpt .post-content h4.no-display-archive {
+  display: none;
+}
+
+.members-cpt {
+  padding-top: 160px !important;
+}
+.members-cpt > .row > .columns > .member-category-100-blackmen-member.member-tag-100-black-men-of-the-bay-area-members > .post-title h4 {
+  text-align: center;
+}
+.members-cpt > .row > .columns > .member-category-100-blackmen-member.member-tag-100-black-men-of-the-bay-area-members > .post-content h4 {
+  font-size: 1.3rem;
+}
+.member_cpt.type-member_cpt .post-title h4.entry-title {
+  text-align: center;
+}
+.member_cpt {
+  padding-bottom: 60px;
+}
+.members-tag-cloud-cont {
+  padding-top: 1em;
+
+}
+.members-tag-cloud {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #D1D2D4;
+  padding: 4px;
+  font-size: 8px !important;
+  text-align: left;
+
+  /* -moz-box-shadow:    inset 0 3px 14px -7px #000000;
+   -webkit-box-shadow: inset 0 3px 14px -7px #000000;
+   box-shadow:         inset 0 3px 14px -7px #000000; */
+}
+.members-tag-cloud a {
+  font-size: 13px !important;
+}
+.members-tag-cloud .tag-cloud-link {
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.members-tag-cloud .tag-cloud-link:hover,
+.members-tag-cloud .tag-cloud-link:active {
+  background-color: #777777;
+}
+
+
+/* Member Page */
+
+
+.member-linkedin {
+  margin: 1em auto;
+  text-align: center;
+}
+p.member-desc{
+  margin: 1em auto;
+  text-align: center;
+}
+.member-figure.post-gallery.parallax {
+  min-height: 0.5vh;
+  padding: 30px 0 !important;
+}
+.member-figure > header > .row > .columns > h1.entry-title {
+  margin-bottom: 0 !important;
+}
+.member-figure > header > .row > .columns > .post-category {
+  display: none;
+}
+.post-detail.style1-detail .post-content img.aligncenter {
+  width: calc(50% + 0vw) !important;
+  margin: 0 auto !important;
+}
+
+.member_cpt.type-member_cpt .row .columns .post-content h4 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #505050;
+}
+.member_cpt.type-member_cpt .row .columns .post-content p,
+.member_cpt.type-member_cpt .row .columns .post-content h4 {
+  margin-bottom: .5rem;
+}
+.member_cpt.type-member_cpt .row .columns .post-content img {
+  padding-bottom: 1.618em;
+}
+
+
+/* Member Search */
+
+
+#members-search-field input[type="submit"] {
+  padding: 0 !important;
+  display: initial !important;
+}
+#mem-cat-search-cont.mem-search-cat h2,
+#mem-cat-search-cont-two.mem-search-cat-two h2,
+#mem-cat-search-cont-three.mem-search-cat-three h2 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 2.418em;
+  font-size: 1.7em;
+}
+.member-category.searchform,
+.member-search-cpt.searchform,
+.member-tag.searchform {
+  margin-top: 2px !important;
+}
+.cont-members-search .inlineSearch {
+  width: 30%;
+}
+input.members-cpt-search {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 0.8em;
+}
+.searchform fieldset input.members-cpt-search[type="text"] {
+  width: 72%;
+  padding: 9px;
+  vertical-align: bottom;
+  margin-bottom: 0px;
+  background-color: #D1D2D4;
+  font-size: 22px;
+  border: none;
+}
+.searchform fieldset input.members-cpt-search[type="text"]:focus {
+  border: none;
+}
+.searchform fieldset input.members-cpt-search[type="text"]::placeholder {
+  -webkit-text-stroke: 2px #D1D2D4;
+  font-size: 24px;
+}
+.searchform fieldset input.members-cpt-search[type="text"]:focus::-webkit-input-placeholder{
+  opacity: 0;
+}
+.searchform fieldset input.members-cpt-search[type="text"]:focus::-moz-input-placeholder{
+  opacity: 0;
+}
+.searchform fieldset input.members-cpt-search[type="text"]::-webkit-input-placeholder {
+  text-align: right;
+  padding-right: 0.3em;
+}
+#members-search-field input.btn.accent {
+  width: 28%;
+  /* text-indent: -6px; */
+  font-weight: bold;
+  font-size: 18px;
+}
+#searchpopup .searchform fieldset#members-search-field .s {
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 300;
+  display: block;
+  float:left;
+}
+#searchpopup .mem-search-cat h2,
+#searchpopup .mem-search-cat-two h2 {
+  margin-top: 4em;
+}
+#searchpopup .mem-search-cat .member-category,
+#searchpopup .mem-search-cat-two .member-tag {
+  height: 80px;
+}
+#searchpopup .searchform #members-search-field .s {
+  font-size: 20.8px;
+  padding: 9px;
+}
+#searchpopup .searchform #members-search-field .s[type="text"]::placeholder {
+  padding-top: 0px;
+  padding-bottom: 4px;
+}
+#searchpopup #mem-cat-search-cont .searchform fieldset#members-search-field,
+#searchpopup #mem-cat-search-cont-two .member-tag.searchform fieldset#members-search-field {
+  margin: 0 auto;
+  width: 87%;
+}
+#searchpopup .searchform fieldset input.members-cpt-search[type="text"]:focus::-webkit-input-placeholder{
+  opacity: unset;
+}
+#searchpopup #mem-cat-search-cont.mem-search-cat,
+#searchpopup #mem-cat-search-cont-two.mem-search-cat-two {
+  text-align: center;
+}
+#searchpopup .searchform fieldset input.members-cpt-search[type="text"]::placeholder {
+  -webkit-text-stroke: 2px #D1D2D4;
+}
+#searchpopup #members-search-field input.btn.accent {
+  width: 24%;
+  float: left;
+}
+#searchpopup .searchform fieldset input.members-cpt-search[type="text"] {
+  width: 74%;
+}
+
