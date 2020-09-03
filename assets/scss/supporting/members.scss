@@ -14,6 +14,43 @@
 
 }
 
+.tax-member-category {
+  .site-container {
+    .site-inner {
+      .wrap {
+        .content-sidebar-wrap {
+          .content {
+            .archive-description {
+              h1.archive-title {
+                text-align: center;
+                margin: 1.618em auto;
+                font-size: 5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.member_cpt-template-default {
+  .entry-header {
+    margin-top: 2.618em;
+    text-align: center;
+    .entry-meta {
+      display: none;
+    }
+  }
+}
+
+/* Do not show images for members archive from content */
+.no-show-content-image img {
+  display: none;
+}
+
+
 
 
 /*** MAKES TAG CLOUD GO AWAY!!! SO SAD TAG CLOUD ****/

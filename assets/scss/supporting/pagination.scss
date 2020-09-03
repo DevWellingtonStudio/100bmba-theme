@@ -6,6 +6,10 @@
  * In Bootstrap a span inside the li would be preferred
  * but this solution via CSS is simplier than modifying the markup
  *---------------------------------------------------------- */
+.archive-pagination.pagination {
+    justify-content: center;
+    margin: 2.618em auto;
+}
 .archive-pagination {
     a {
         position: relative;
@@ -13,17 +17,18 @@
         padding: $pagination-padding-y $pagination-padding-x;
         margin-left: -$pagination-border-width;
         line-height: $pagination-line-height;
-        color: $pagination-color;
+        color: $black;
         background-color: $pagination-bg;
         border: $pagination-border-width solid $pagination-border-color;
         @include hover-focus {
-            color: $pagination-hover-color;
+            color: $black;
             text-decoration: none;
             background-color: $pagination-hover-bg;
             border-color: $pagination-hover-border-color;
         }
     }
     ul {
+        font-size: 2rem;
         display: flex;
         @include list-unstyled;
         @include border-radius;
@@ -44,8 +49,8 @@
                 a {
                     z-index: 2;
                     color: $pagination-active-color;
-                    background-color: $pagination-active-bg;
-                    border-color: $pagination-active-border-color;
+                    background-color: $black;
+                    border-color: $black;
                 }
             }
             &.pagination-omission {
@@ -54,7 +59,7 @@
                 padding: $pagination-padding-y $pagination-padding-x;
                 margin-left: -$pagination-border-width;
                 line-height: $pagination-line-height;
-                color: $pagination-color;
+                color: $black;
                 background-color: $pagination-bg;
                 border: $pagination-border-width solid $pagination-border-color;
             }

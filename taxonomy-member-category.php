@@ -4,24 +4,30 @@
  add_action( 'genesis_loop', 'members_grid_loop' ); // Add custom loop
  
  function members_grid_loop() {
-	
+	global $post;
 	$args = array(
 		'post_type' => 'member_cpt', // enter your custom post type
 		'orderby' => 'title',
 		'post_status'    => 'publish',
 		'order' => 'ASC',
 		'cat' => 'members',
-		'posts_per_page'=> '12',  // overrides posts per page in theme settings
+		'posts_per_page'=> '20',  // overrides posts per page in theme settings
 		'paged'          => get_query_var( 'paged' )
 	);
+	$members_img_url = get_the_post_thumbnail_url( $post->ID, 'full' );
+	$members_thumbnail_id = get_post_thumbnail_id( $post->ID );
+	$members_alt = get_post_meta($members_thumbnail_id, '_wp_attachment_image_alt', true);
+	
 	$loop = new WP_Query( $args );
 	if( $loop->have_posts() ):
 	 echo '<div id="member-archive" class="container-fluid"><div class="row">';
 	 while( $loop->have_posts() ): $loop->the_post(); global $post;
+		
 	 
-		echo '<div class="member-column col-md-4">' .
+		echo '<div class="member-column col-md-3">' .
 				 '<div class="card">' .
-				 '<div class="card-text">' .
+				 '<a href="'. get_permalink( $post->ID ) .'" title=""><img class="image-fluid" src="' . $members_img_url .'" alt="' . $members_alt . '"></a>' .
+				 '<div class="no-show-content-image card-text">' .
 				 		get_the_content() .
 				 '</div>' .
 				 '</div>' .
