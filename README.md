@@ -52,3 +52,24 @@
 ## Notes
 
 Use [SmartMenus for Bootstrap](https://github.com/webdevsuperfast/ra-smartmenus-bootstrap) for multi-level dropdown support.
+
+## HTML for front page form
+
+```
+<div class="container">
+  <div class="row">
+   <div class="joinus col-md-2 offset-md-3">
+    <h3>Join Us</h3>
+   </div>
+  </div>
+</div>
+<form id="subscribe-form" class="form-inline">
+  <div class="form-group mb-2">
+    <input type="text" class="form-control" id="nameSubscriber" aria-describedby="emailHelp" placeholder="Your name">
+  </div>
+  <div class="form-group mx-sm-3 mb-2">
+    <input type="email" class="form-control" id="subscriberEmail" placeholder="name@example.com">
+  </div>
+  <button type="submit" class="btn btn-dark">Submit</button>
+</form>
+```
