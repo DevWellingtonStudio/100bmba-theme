@@ -1,4 +1,3 @@
-process.env.DISABLE_NOTIFIER = true;
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
