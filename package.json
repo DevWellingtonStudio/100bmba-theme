@@ -3,7 +3,7 @@
   "version": "2.0.2",
   "description": "An awesome Genesis Framework child theme using Bootstrap 4",
   "main": "gulpfile.js",
-  "repository": "git@github.com:webdevsuperfast/bootstrap-for-genesis.git",
+  "repository": "https://github.com/DevWellingtonStudio/100bmba-theme",
   "author": "Rotsen Mark Acob <acob.rotsen@hotmail.com>",
   "license": "GPL-2.0",
   "private": true,
