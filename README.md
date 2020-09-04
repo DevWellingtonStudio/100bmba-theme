@@ -58,7 +58,7 @@ Use [SmartMenus for Bootstrap](https://github.com/webdevsuperfast/ra-smartmenus-
 ```
 <div class="container">
   <div class="row">
-   <div class="joinus col-md-2 offset-md-3">
+   <div class="joinus col-md-3 offset-md-3">
     <h3>Join Us</h3>
    </div>
   </div>
