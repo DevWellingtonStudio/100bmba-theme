@@ -30,6 +30,12 @@
 #sub-nav-fp {
   background-color: $gray;
 }
+.pl {
+  padding-left: 15px;
+}
+.pr {
+  padding-right: 15px;
+}
 
 /** Default Template
 ================================ */
@@ -47,6 +53,19 @@
 
 /** Front Page News
 ================================ */
+#news-title {
+  margin-top: 1.618em;
+
+  .left-col {
+	background-color: $brown;
+	color: $white;
+	padding: 1.618em;
+  }
+  .right-col {
+	background-color: $yellow;
+	padding: 1.618em;
+  }
+}
 #fp-news {
   .news-excerpt {
     h3 a {
@@ -55,21 +74,17 @@
     }
   }
 }
-
-/** Front Page One
-================================ */
-.frontpage-one .container,
-.frontpage-two .container {
+#news-widget-area {
+  margin: 1em auto;
+  text-align: center;
+  height: 69%;
   display: flex;
   align-items: center;
-  margin: 2.618rem auto;
+  justify-content: center;
 
-  section {
-    margin: auto 2.618em;
+  p {
+	margin: 0;
   }
-}
-.frontpage-three {
-  background-color: #F8BD26;
 }
 
 /** Genesis Front Page Loop

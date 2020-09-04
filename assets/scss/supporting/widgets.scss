@@ -140,12 +140,42 @@
 	}
 }
 
+/** Widget #1
+================================ */
+.frontpage-one .container,
+.frontpage-two .container {
+  display: flex;
+  align-items: center;
+  margin: 2.618rem auto;
+
+  section {
+	margin: auto 2.618em;
+  }
+}
+.frontpage-three {
+  background-color: $yellow;
+}
+
 /** Widget #3
 ----------------------------------------------------------------------------- */
-.frontpage-three {
-  margin: 4.618em auto;
-  width: $fullwidth;
-  padding: $paddingx1;
+
+  .frontpage-three {
+	margin: 4.618em auto;
+	width: $fullwidth;
+	padding: $paddingx1;
+  }
+
+
+
+/** News Title
+----------------------------------------------------------------------------- */
+
+#news-title {
+
+  h2.display-2 {
+	margin: 0;
+  }
+
 }
 
 /** Front Page Widgets

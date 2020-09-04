@@ -34,6 +34,12 @@ function bfg_register_sidebars() {
 	));
 
 	genesis_register_sidebar( array(
+		'id' => 'frontpage-news',
+		'name' => __( 'Front Page News', 'bootstrap-for-genesis' ),
+		'description' => __( 'Adds content next to the NEWS title.', 'bootstrap-for-genesis' )
+	));
+
+	genesis_register_sidebar( array(
 		'id' => 'frontpage-three',
 		'name' => __( 'Front Page Three', 'bootstrap-for-genesis' ),
 		'description' => __( 'Adds content to the 3rd widgetized area.', 'bootstrap-for-genesis' )
