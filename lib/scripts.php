@@ -29,6 +29,10 @@ function bfg_theme_scripts() {
 		wp_register_script( 'jquery', BFG_THEME_JS . 'jquery.slim.min.js', array(), $version, true );
 		wp_enqueue_script( 'jquery' );
 
+		// Register Custom JS
+		wp_register_script( 'custom-js', BFG_THEME_JS . 'custom.js', array(), $version, true );
+		wp_enqueue_script('custom-js');
+
 		// Register Popper JS and enqueue it
 		wp_register_script( 'app-popper-js', BFG_THEME_JS . 'popper.min.js', array( 'jquery' ), $version, true );
 		wp_enqueue_script( 'app-popper-js' );
