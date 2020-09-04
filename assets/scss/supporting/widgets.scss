@@ -139,3 +139,22 @@
 		}
 	}
 }
+
+/** Widget #3
+----------------------------------------------------------------------------- */
+.frontpage-three {
+  margin: 4.618em auto;
+  width: $fullwidth;
+  padding: $paddingx1;
+}
+
+/** Front Page Widgets
+================================ */
+
+.frontpage-one,
+.frontpage-two,
+.frontpage-four {
+  width: $fullwidth;
+  margin: $marginTopx1 0 $marginBottomx1 0;
+  padding: $paddingx1;
+}
