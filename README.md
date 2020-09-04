@@ -53,6 +53,13 @@
 
 Use [SmartMenus for Bootstrap](https://github.com/webdevsuperfast/ra-smartmenus-bootstrap) for multi-level dropdown support.
 
+## Short Code For Side Bar Nav
+
+Use the plugin [Short Code In Menus](https://wordpress.org/plugins/shortcode-in-menus/) and add the following short code to include the Side Bar Navigation.
+```
+[side-bar-nav]
+```
+
 ## HTML for front page form
 
 ```
