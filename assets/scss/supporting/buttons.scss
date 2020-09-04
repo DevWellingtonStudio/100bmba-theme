@@ -41,12 +41,12 @@
     border-radius: 0;
   }
 }
-.joinus.col-md-2 {
-  max-width: 13.67%;
+.joinus.col-md-3 {
+  max-width: 23.8%;
 }
 .joinus.offset-md-3 {
   margin-left: 22.6%;
-  margin-top: -41px;
+  margin-top: -50px;
 }
 .joinus {
 
@@ -55,5 +55,6 @@
     color: $white;
     text-align: center;
     padding: .3em .2em;
+	font-size: 3rem;
   }
 }
