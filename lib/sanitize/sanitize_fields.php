@@ -14,6 +14,18 @@ function bmba_about_us_sanitize($post_id) {
 
 	// Checks for input and sanitizes/saves if needed
 	if (isset($_POST['about-us-container-one'])) {
-		update_post_meta($post_id, 'about-us-container-one', wp_kses_post($_POST['about-us-container-one']));
+		update_post_meta($post_id, 'about-us-container-one', ($_POST['about-us-container-one']));
+	}
+
+	if (isset($_POST['about-us-container-two'])) {
+		update_post_meta($post_id, 'about-us-container-two', ($_POST['about-us-container-two']));
+	}
+
+	if (isset($_POST['about-us-container-three'])) {
+		update_post_meta($post_id, 'about-us-container-three', ($_POST['about-us-container-three']));
+	}
+
+	if (isset($_POST['about-us-container-four'])) {
+		update_post_meta($post_id, 'about-us-container-four', ($_POST['about-us-container-four']));
 	}
 }

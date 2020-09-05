@@ -2,7 +2,7 @@
 ----------------------------------------------------------------------------- */
 .footer-widgets {
     border-bottom: 1px solid $hr-border-color;
-    padding: $spacer*4 0;
+    padding: $spacer*4 $spacer*2;
     ul, ol {
         @include list-unstyled;
         li {

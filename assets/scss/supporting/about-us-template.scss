@@ -1,0 +1,36 @@
+/** About Us Template scss
+-------------------------------------------------------------- */
+
+.page-template-about-us {
+ #genesis-content {
+   padding: 4.618em 2.618em;
+ }
+}
+
+#about-us-grid {
+  .card {
+	background-color: transparent;
+	border: none;
+  }
+  .card-body {
+	padding: 0;
+
+	p, h1, h2, h3, h4, strong, em, b, span {
+	  padding: 1.25em;
+	}
+  }
+  .col.about-grid-one {
+	padding: 0;
+  }
+  .col.about-grid-two {
+	background-color: #E2E2E2;
+	padding: 0;
+  }
+  .col.about-grid-three {
+	background-color: #E2E2E2;
+	padding: 0;
+  }
+  .col.about-grid-four {
+	padding: 0;
+  }
+}
