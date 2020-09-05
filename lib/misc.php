@@ -56,14 +56,14 @@ function bfg_do_home_featured() {
 		'context' => 'home-featured'
 	) );
 
-	genesis_structural_wrap( 'home-featured' );
+	genesis_get_structural_wrap( 'home-featured' );
 
 	genesis_widget_area( 'home-featured', array(
 		'before' => '',
 		'after' => ''
 	) );
 
-	genesis_structural_wrap( 'home-featured', 'close' );
+	genesis_get_structural_wrap( 'home-featured', 'close' );
 
 	genesis_markup( array(
 		'close' => '</div>',
@@ -78,14 +78,14 @@ function wst_do_frontpage_one() {
 		'context' => 'frontpage-one'
 	) );
 
-	genesis_structural_wrap( 'frontpage-one' );
+	genesis_get_structural_wrap( 'frontpage-one' );
 
 	genesis_widget_area( 'frontpage-one', array(
 		'before' => '<div class="container">',
 		'after' => '</div>'
 	) );
 
-	genesis_structural_wrap( 'frontpage-one', 'close' );
+	genesis_get_structural_wrap( 'frontpage-one', 'close' );
 
 	genesis_markup( array(
 		'close' => '</div>',
@@ -100,14 +100,14 @@ function wst_do_frontpage_two() {
 		'context' => 'frontpage-two'
 	) );
 
-	genesis_structural_wrap( 'frontpage-two' );
+	genesis_get_structural_wrap( 'frontpage-two' );
 
 	genesis_widget_area( 'frontpage-two', array(
 		'before' => '<div class="container">',
 		'after' => '</div>'
 	) );
 
-	genesis_structural_wrap( 'frontpage-two', 'close' );
+	genesis_get_structural_wrap( 'frontpage-two', 'close' );
 
 	genesis_markup( array(
 		'close' => '</div>',
@@ -122,14 +122,14 @@ function wst_do_frontpage_three() {
 		'context' => 'frontpage-three'
 	) );
 
-	genesis_structural_wrap( 'frontpage-three' );
+	genesis_get_structural_wrap( 'frontpage-three' );
 
 	genesis_widget_area( 'frontpage-three', array(
 		'before' => '<div class="container-fluid">',
 		'after' => '</div>'
 	) );
 
-	genesis_structural_wrap( 'frontpage-three', 'close' );
+	genesis_get_structural_wrap( 'frontpage-three', 'close' );
 
 	genesis_markup( array(
 		'close' => '</div>',
@@ -144,14 +144,14 @@ function wst_do_frontpage_four() {
 		'context' => 'frontpage-four'
 	) );
 
-	genesis_structural_wrap( 'frontpage-four' );
+	genesis_get_structural_wrap( 'frontpage-four' );
 
 	genesis_widget_area( 'frontpage-four', array(
 		'before' => '<div class="container-fluid">',
 		'after' => '</div>'
 	) );
 
-	genesis_structural_wrap( 'frontpage-four', 'close' );
+	genesis_get_structural_wrap( 'frontpage-four', 'close' );
 
 	genesis_markup( array(
 		'close' => '</div>',
