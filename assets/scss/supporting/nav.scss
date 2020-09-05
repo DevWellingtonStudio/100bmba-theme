@@ -2,6 +2,9 @@
 ----------------------------------------------------------------------------- */
 #menu-primary {
   align-items: center;
+  li {
+	margin: 0 .5em 0 0;
+  }
 }
 .no-js .menu-item-has-children:hover .dropdown-menu,
 .no-js .menu-item-has-children:focus .dropdown-menu {
