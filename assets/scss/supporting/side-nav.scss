@@ -19,7 +19,7 @@
 	li a:hover,
 	li a:focus {
 	  background-color: transparent;
-	  outline: 0 !important;
+	  outline: 0 !important;outline-color: unset !important;
 	}
   }
   li {
@@ -92,5 +92,5 @@
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: $body;}
 }
