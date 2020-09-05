@@ -1,5 +1,8 @@
 /** Sidebar Nav
 ------------------------------------------------------------- */
+.nav-link:focus {
+  outline: 0 !important;
+}
 #menu-side-nav {
   .dropdown-menu {
 	border: none;
@@ -12,8 +15,12 @@
 	li a {
 	  padding: 0;
 	}
-	li a:hover {
+
+	li a:hover,
+	li a:focus {
 	  background-color: transparent;
+	  outline: 0 !important;
+	  outline-color: none !important;
 	}
   }
   li {
@@ -32,8 +39,12 @@
 	li a {
 	  padding: 0;
 	}
-	li a:hover {
+	.nav-link:focus,
+	li a:hover,
+	li a:focus {
 	  background-color: transparent;
+	  outline: 0 !important;
+	  outline-color: none !important;
 	}
   }
   li {
