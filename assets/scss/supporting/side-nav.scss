@@ -1,5 +1,54 @@
 /** Sidebar Nav
 ------------------------------------------------------------- */
+.nav-link:focus {
+  outline: 0 !important;
+}
+#menu-side-nav {
+  .dropdown-menu {
+	border: none;
+  }
+  ul.dropdown-menu.show {
+	background-color: transparent;
+	li {
+	  border: none;
+	}
+	li a {
+	  padding: 0;
+	}
+
+	li a:hover,
+	li a:focus {
+	  background-color: transparent;
+	  outline: 0 !important;outline-color: unset !important;
+	}
+  }
+  li {
+	list-style-type: none;
+  }
+}
+#menu-slide-in {
+  .dropdown-menu {
+	border: none;
+  }
+  ul.dropdown-menu.show {
+	background-color: transparent;
+	li {
+	  border: none;
+	}
+	li a {
+	  padding: 0;
+	}
+	.nav-link:focus,
+	li a:hover,
+	li a:focus {
+	  background-color: transparent;
+	  outline: 0 !important;
+	}
+  }
+  li {
+	list-style-type: none;
+  }
+}
 
 .sidebar-icon {
   font-size:30px;
@@ -23,7 +72,7 @@
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: $body;
   color: hsla(0,0%,100%,.5);
   display: block;
   transition: 0.3s;
@@ -43,5 +92,5 @@
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: $body;}
 }
