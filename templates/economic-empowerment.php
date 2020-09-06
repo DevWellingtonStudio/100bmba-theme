@@ -25,12 +25,6 @@ function add_economic_header() {
 		</div>';
 }
 
-
-
-
-
-//add_action('genesis_before_content_sidebar_wrap', 'genesis_do_post_title' );
-
 add_action( 'genesis_after_content', 'add_ed_meta', 5 );
 function add_ed_meta() {
 	$upper_container	        = get_post_meta(get_the_ID(), 'upper-container', true);
