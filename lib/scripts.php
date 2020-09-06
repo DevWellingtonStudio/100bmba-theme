@@ -47,6 +47,23 @@ function bfg_theme_scripts() {
 	}
 }
 
+add_action( 'admin_enqueue_scripts', 'load_metafield_js' );
+function load_metafield_js() {
+	//$version = wp_get_theme()->Version;
+	//wp_enqueue_script( 'meta-field-js', BFG_THEME_JS . 'meta-field.js', array('jquery'), $version, true );
+
+
+	// Registers and enqueues the required javascript for image management within wp dashboard.
+	wp_register_script( 'meta-box-image', BFG_THEME_JS . 'meta-field.js', array( 'jquery' ) );
+	wp_localize_script( 'meta-box-image', 'meta_image',
+		array(
+			'title' => __( 'Choose or Upload an Image', '100-black-men-ba' ),
+			'button' => __( 'Use this image', '100-black-men-ba' ),
+		)
+	);
+	wp_enqueue_script( 'meta-box-image' );
+}
+
 // Editor Styles
 add_action( 'init', 'bfg_custom_editor_css' );
 function bfg_custom_editor_css() {
