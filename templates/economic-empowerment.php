@@ -17,7 +17,7 @@ function add_ed_meta() {
 	$lower_container	    = get_post_meta(get_the_ID(), 'lower-container', true);
 	echo '<div id="upperlower" class="container">
 			<div class="row">
-			<div class="col-md-6 upper">
+			<div class="col-md-6 upper offset-md-1">
 			<div class="card">
 			  <div class="card-body">
 				'. $upper_container .'
@@ -26,7 +26,7 @@ function add_ed_meta() {
 			</div>
 			</div>
 			<div class="row">
-			<div class="col-md-6 lower offset-md-3">
+			<div class="col-md-6 lower offset-md-4">
 			<div class="card">
 			  <div class="card-body">
 				'. $lower_container .'
