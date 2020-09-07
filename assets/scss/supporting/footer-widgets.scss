@@ -1,7 +1,12 @@
 /* Footer Widgets
 ----------------------------------------------------------------------------- */
+#genesis-footer-widgets {
+   .wrap {
+	color: $white;
+  }
+}
 .footer-widgets {
-    border-bottom: 1px solid $hr-border-color;
+    border-bottom: none;
     padding: $spacer*4 $spacer*2;
     ul, ol {
         @include list-unstyled;

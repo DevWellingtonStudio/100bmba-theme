@@ -1,6 +1,9 @@
 /* Site Footer
 ----------------------------------------------------------------------------- */
 .site-footer {
+  .wrap p {
+	color: $white;
+  }
     padding: $spacer 1.618em;
     p {
         margin-bottom: 0;
@@ -9,7 +12,7 @@
         @include list-unstyled;
     }
     a {
-        color: inherit;
+        color: $white;
     }
     &.text-muted {
         a {
