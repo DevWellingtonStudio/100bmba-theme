@@ -12,13 +12,13 @@
  */
 
 add_action( 'customize_register', function( $wp_customize ) {
- 
+
  include 'customizer-sections/hero-video-options.php';
  include 'customizer-sections/portrait-slider-options.php';
  include 'customizer-sections/fp-hero-slider-options.php';
  include 'customizer-sections/sub-nav-options.php';
  include 'customizer-sections/fp-mid-slider-options.php';
- 
+
 
  // Add Default Settings
  $wp_customize->add_setting( 'bootstrap-for-genesis', array(
@@ -32,8 +32,8 @@ add_action( 'customize_register', function( $wp_customize ) {
 	 'priority' => 100
  ) );
 
- 
- 
+
+
  // Add Navigation Section
  $wp_customize->add_section( 'navigation', array(
 	 'title' => __( 'Top Navigation Settings', 'bootstrap-for-genesis' ),
@@ -90,7 +90,8 @@ add_action( 'customize_register', function( $wp_customize ) {
 	 'choices' => array(
 		 'light' => __( 'Light', 'bootstrap-for-genesis' ),
 		 'dark' => __( 'Dark', 'bootstrap-for-genesis' ),
-		 'primary' => __( 'Primary', 'bootstrap-for-genesis' )
+		 'primary' => __( 'Primary', 'bootstrap-for-genesis' ),
+		 'transparent' => __('Transparent', 'bootstrap-for-genesis')
 	 )
  ) );
 

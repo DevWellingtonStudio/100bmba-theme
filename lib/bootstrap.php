@@ -124,6 +124,9 @@ function bfg_merge_genesis_attr_classes() {
             $navclasses[] = 'navbar-dark';
             $navclasses[] = 'bg-primary';
             break;
+	    case 'transparent':
+            $navclasses[] = 'navbar-transparent';
+            $navclasses[] = 'bg-transparent';
     }
 
     $classes['nav-primary'] = esc_attr( implode( ' ', $navclasses ) );

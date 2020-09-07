@@ -65,7 +65,7 @@ Use the plugin [Short Code In Menus](https://wordpress.org/plugins/shortcode-in-
 ```
 <div class="container">
   <div class="row">
-   <div class="joinus col-md-3 offset-md-3">
+   <div class="joinus col-sm-6 col-md-3 offset-lg-3">
     <h3>Join Us</h3>
    </div>
   </div>

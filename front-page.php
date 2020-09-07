@@ -79,10 +79,10 @@ function io_front_page_latest_posts() {
 	echo '	<div id="news-title" class="container-fluid">
 			<div class="row pl pr">
 
-			<div class="col-5 text-center left-col">
+			<div class="col-md-5 text-center left-col">
 			<h2 class="display-2">NEWS</h2>
 			</div>
-			<div class="col-7 right-col">';
+			<div class="col-md-7 right-col">';
 
 			if ( is_active_sidebar( 'frontpage-news' ) ) : ?>
     		<div id="news-widget-area" class="chw-widget-area widget-area col-9" role="complementary">

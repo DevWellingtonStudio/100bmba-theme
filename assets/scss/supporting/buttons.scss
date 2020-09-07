@@ -31,30 +31,3 @@
   background-color: $brown;
   border-color: $brown;
 }
-
-#subscribe-form {
-  .form-control {
-    border: 1px solid $white;
-    border-radius: 0;
-  }
-  .btn {
-    border-radius: 0;
-  }
-}
-.joinus.col-md-3 {
-  max-width: 23.8%;
-}
-.joinus.offset-md-3 {
-  margin-left: 22.6%;
-  margin-top: -50px;
-}
-.joinus {
-
-  h3 {
-    background-color: $brown;
-    color: $white;
-    text-align: center;
-    padding: .3em .2em;
-	font-size: 3rem;
-  }
-}

@@ -6,6 +6,7 @@
 	- Front Page One
 	- Genesis Front Page Loop
 	- Hero Section
+	- Join Us
 	- Images
 	- Mid Front Page Slider
 	- Nav
@@ -210,6 +211,36 @@
   margin: 0 auto;
 }
 
+/** Join Us
+=============================== */
+#subscribe-form {
+  .form-control {
+	border: 1px solid $white;
+	border-radius: 0;
+  }
+  .btn {
+	border-radius: 0;
+  }
+}
+.joinus.col-md-3 {
+  max-width: 23.8%;
+}
+
+.joinus.offset-lg-3 {
+  margin-left: 22.6%;
+  margin-top: -50px;
+}
+
+.joinus {
+
+  h3 {
+	background-color: $brown;
+	color: $white;
+	text-align: center;
+	padding: .3em .2em;
+	font-size: 3rem;
+  }
+}
 
 /** Mid Front Page Slider
 =============================== */
@@ -250,3 +281,25 @@
   margin-left: -7.5%;
   margin-top: -1px;
 }
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .joinus.col-md-3 {
+	max-width: none;
+  }
+  .joinus.offset-lg-3 {
+	margin-left: unset;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}

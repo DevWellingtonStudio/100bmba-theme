@@ -1,0 +1,33 @@
+/** Adjustments for all templates. Common scss for all templates
+------------------------------------------------------------------------- */
+.image-fluid {
+  width: 100%;
+  display: block;
+}
+
+/* Add .narrow-content to post class to render a narrow archive */
+.narrow-content {
+  header {
+	width: 50%;
+	margin: 0 auto;
+  }
+  .entry-content {
+	width: 50%;
+	margin: 0 auto;
+  }
+
+}
+/* Add .empowerment-content to the empowerement template */
+.empowerment-content {
+  header {
+	width: 60%;
+	margin: 0 auto;
+  }
+  .entry-content {
+	width: 60%;
+	margin: 0 auto;
+  }
+
+}
+
+

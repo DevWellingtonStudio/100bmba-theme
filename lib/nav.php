@@ -80,10 +80,23 @@ function bfg_navbar_brand_markup() {
  if ( get_theme_mod( 'custom_logo' ) ) {
 	$output = get_custom_logo();
  } else {
-	$output = '<a class="navbar-brand" title="'.esc_attr( get_bloginfo( 'name' ) ).'" href="'.esc_url( get_home_url( '/' ) ).'">'.get_bloginfo( 'name' ).'</a>';
+	//$output = '<a class="navbar-brand" title="'.esc_attr( get_bloginfo( 'name' ) ).'" href="'.esc_url( get_home_url( '/' ) ).'">'.get_bloginfo( 'name' ).'</a>';
+   $output = '<div id="logo-svg-bmba"><object class="logo-svg" type="image/svg+xml" data="'. get_stylesheet_directory_uri() . '/images/100-black-men-vector-logo.svg' .'"></object></div>';
  }
  return $output;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 //* Navigation Extras
 function bfg_navbar_content_markup() {
