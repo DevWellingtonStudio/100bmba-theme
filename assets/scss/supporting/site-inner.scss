@@ -2,8 +2,7 @@
 ----------------------------------------------------------------------------- */
 .site-inner {
   overflow: hidden;
-    /*padding: $spacer*3 0;*/
-  	padding: 0 0 3em 0;
+    padding: $spacer*3 0;
     .content {
         margin-bottom: $spacer;
         @include media-breakpoint-up(sm) {
@@ -13,5 +12,5 @@
 }
 
 .front-page .site-inner {
-  padding: $spacer*0 0 0 0;
+  padding: $spacer*3 0;
 }
