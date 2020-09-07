@@ -1,5 +1,13 @@
 /* Navbar
 ----------------------------------------------------------------------------- */
+#logo-svg-bmba {
+  margin: 1em 0 0 3.2em;
+}
+#genesis-nav-primary {
+  object{
+	width: 150px;
+  }
+}
 #menu-primary {
   align-items: center;
   li {
@@ -27,6 +35,10 @@
 .nav-primary.navbar {
     padding-left: 1.618em;
     padding-right: 1.618em;
+}
+
+.navbar-transparent .navbar-nav .nav-link {
+  color: $white;
 }
 
 /* Subnav  */
