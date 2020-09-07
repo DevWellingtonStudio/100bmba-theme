@@ -4,10 +4,21 @@
   color: $white;
 }
 
-
-#logo-svg-bmba {
- // margin: 1em 0 0 3.2em;
+.navbar-brand {
+  position: relative;
+  z-index: 3;
+  padding: .1em;
 }
+.navbar-brand
+#logo-svg-bmba {
+ position: relative;
+  z-index: -1;
+}
+#logo-svg-bmba object {
+  position: relative;
+  z-index: -1;
+}
+
 #genesis-nav-primary {
   object{
 	width: 50px;
