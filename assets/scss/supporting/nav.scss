@@ -3,7 +3,9 @@
 .navbar-dark .navbar-nav .nav-link {
   color: $white;
 }
-
+.blue-nav-link {
+  background-color: $blue;
+}
 .navbar-brand {
   position: relative;
   z-index: 3;
