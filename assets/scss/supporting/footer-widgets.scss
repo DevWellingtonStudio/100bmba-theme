@@ -44,6 +44,11 @@
   .footer-widgets-3 {
 	border-left: 1px solid $white;
   }
+  .footer-widgets-1,
+  .footer-widgets-2,
+  .footer-widgets-3 {
+	padding: 0 3rem;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
