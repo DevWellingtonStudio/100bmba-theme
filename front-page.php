@@ -77,7 +77,7 @@ function io_front_page_latest_posts() {
   // The Loop
   if ( $the_query->have_posts() ) {
 	echo '	<div id="news-title" class="container-fluid">
-			<div class="row pl pr align-items-center">
+			<div class="row pl pr">
 
 			<div class="col-md-5 text-center left-col">
 			<h2 class="display-5">NEWS</h2>
