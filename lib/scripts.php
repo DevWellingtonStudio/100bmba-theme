@@ -56,7 +56,6 @@ function load_metafield_js() {
 	//$version = wp_get_theme()->Version;
 	//wp_enqueue_script( 'meta-field-js', BFG_THEME_JS . 'meta-field.js', array('jquery'), $version, true );
 
-
 	// Registers and enqueues the required javascript for image management within wp dashboard.
 	wp_register_script( 'meta-box-image', BFG_THEME_JS . 'meta-field.js', array( 'jquery' ) );
 	wp_localize_script( 'meta-box-image', 'meta_image',
