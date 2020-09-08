@@ -44,6 +44,10 @@ function bfg_theme_scripts() {
 		// Register theme JS and enqueue it
 		wp_register_script( 'app-js', BFG_THEME_JS . 'app.min.js', array( 'jquery' ), $version, true );
 		wp_enqueue_script( 'app-js' );
+
+		// Register Font Awesome
+		wp_register_script('font-awesome', 'https://kit.fontawesome.com/76342ff491.js', array(), '', true );
+		wp_enqueue_script('font-awesome');
 	}
 }
 
