@@ -63,20 +63,28 @@ Use the plugin [Short Code In Menus](https://wordpress.org/plugins/shortcode-in-
 ## HTML for front page form
 
 ```
-<div class="container">
+<div id="join-us-section" class="container-fluid">
   <div class="row">
-   <div class="joinus col-sm-6 col-md-3 offset-lg-3">
-    <h3>Join Us</h3>
-   </div>
+    <div class="join-us col-md-6">
+      <h3 class="text-center">STAY IN TOUCH!</h3>
+      <form id="subscribe-form" class="">
+        <div class="form-group">
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="FIRST NAME">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="LAST NAME">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="formGroupExampleInput3" placeholder="EMAIL ADDRESS">
+        </div>
+        <button type="submit" class="btn btn-gray">SIGN ME UP!</button>
+      </form>
+
+    </div>
+    <div class="col-md-6">
+      <img src="/wp-content/uploads/2018/07/Photo-Collegiate-100-Pinning-Ceremony-2010-Cropped-BW-1.jpg" alt="100 blackmen bay area">
+    </div>
   </div>
 </div>
-<form id="subscribe-form" class="form-inline">
-  <div class="form-group mb-2">
-    <input type="text" class="form-control" id="nameSubscriber" aria-describedby="emailHelp" placeholder="Your name">
-  </div>
-  <div class="form-group mx-sm-3 mb-2">
-    <input type="email" class="form-control" id="subscriberEmail" placeholder="name@example.com">
-  </div>
-  <button type="submit" class="btn btn-dark">Submit</button>
-</form>
+
 ```
