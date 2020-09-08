@@ -54,6 +54,9 @@
 
 /** Front Page News
 ================================ */
+#news-wrapper {
+  margin: 1.618em auto;
+}
 #news-title {
   margin-top: 1.618em;
 
@@ -338,12 +341,12 @@
 	  transform: translateY(-50%);
 	  bottom: initial;
 	  h3 {
-		font-size: 4rem;
+		font-size: 2.5rem;
 		background-color: $blue;
 		padding: .2em 0;
 	  }
 	  p {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		background-color: rgba(5,5,5,0.5);
 		padding: 0.618em;
 	  }

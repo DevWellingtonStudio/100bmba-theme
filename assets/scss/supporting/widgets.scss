@@ -142,12 +142,20 @@
 
 /** Widget #1
 ================================ */
+.front-page-one-button h5,
+.front-page-two-button h5 {
+  font-size: 1.5rem;
+  margin: 0;
+}
 .frontpage-one .container,
 .frontpage-two .container {
   display: flex;
   align-items: center;
   margin: 2.618rem auto;
 
+  h4.widget-title {
+	font-size: 2.5rem;
+  }
   section {
 	margin: auto 2.618em;
   }
@@ -174,7 +182,7 @@
 ----------------------------------------------------------------------------- */
 
   .frontpage-three {
-	margin: 4.618em auto;
+	margin: 1.618em auto;
 	width: $fullwidth;
 	padding: $paddingx1;
   }

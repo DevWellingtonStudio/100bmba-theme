@@ -23,13 +23,14 @@
 
 #genesis-nav-primary {
   object{
-	width: 50px;
+	width: 70px;
   }
 }
 #menu-primary {
   align-items: center;
   li {
 	margin: 0 .5em 0 0;
+	font-size: 1rem;
   }
 }
 .no-js .menu-item-has-children:hover .dropdown-menu,
