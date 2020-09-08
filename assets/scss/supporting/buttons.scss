@@ -31,3 +31,28 @@
   background-color: $brown;
   border-color: $brown;
 }
+
+.btn-gray {
+  color: #fff;
+  background-color: $gray;
+  border-color: $gray;
+}
+
+.btn-gray:hover {
+  color: #fff;
+  background-color: $black;
+  border-color: $black;
+}
+
+.btn-gray:focus, .btn-gray.focus {
+  color: #fff;
+  background-color: $black;
+  border-color: $black;
+  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+}
+
+.btn-gray.disabled, .btn-gray:disabled {
+  color: #fff;
+  background-color: $gray;
+  border-color: $gray;
+}

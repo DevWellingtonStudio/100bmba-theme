@@ -152,8 +152,22 @@
 	margin: auto 2.618em;
   }
 }
-.frontpage-three {
+.join-us {
+  display: grid;
+  letter-spacing: 1.5px;
   background-color: $yellow;
+  h3 {
+	font-size: 2rem;
+	background-color: $gray;
+	width: 40%;
+	margin: 2em auto 1em;
+	padding: .5em 0;
+	color: $white;
+	height: 72px;
+  }
+  .btn {
+	width: 40%;
+  }
 }
 
 /** Widget #3
