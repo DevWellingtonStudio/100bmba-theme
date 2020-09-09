@@ -147,6 +147,9 @@
   font-size: 2rem;
   margin: 0;
 }
+.frontpage-two .container {
+  max-width: 1540px !important;
+}
 .frontpage-one .container,
 .frontpage-two .container {
   display: flex;

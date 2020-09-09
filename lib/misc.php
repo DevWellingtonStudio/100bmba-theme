@@ -11,6 +11,9 @@
  *
 */
 
+remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+
+
 // Custom Image Function
 function bfg_post_image() {
 	global $post;
