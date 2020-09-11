@@ -4,7 +4,7 @@
 add_action( 'genesis_before_footer', 'bmba_after_entry_widget', 1 );
 function bmba_after_entry_widget() {
 	//if ( ! is_singular( 'post' ) || ! is_front_page() || ! is_home() )
-	if (  is_singular('post') || is_page(20691)) {
+	if (  is_singular('post') || is_page(20691) || is_page(890)) {
 		genesis_widget_area( 'after-entry', array(
 			'before' => '<div class="after-entry widget-area"><div class="wrap">',
 			'after'  => '</div></div>',
