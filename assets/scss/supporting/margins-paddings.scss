@@ -1,0 +1,21 @@
+/* Margins and Padding used in the editor when styling blocks
+------------------------------------------------------------------- */
+.mt.row {
+  margin-top: $marginTopx1 !important;
+}
+
+.mt {
+  margin-top: $marginTopx1
+}
+
+.mb {
+  margin-bottom: $marginBottomx1;
+}
+
+.mt_med {
+  margin-top: $marginTopx2;
+}
+
+.mb_med {
+  margin-bottom: $marginBottomx2;
+}

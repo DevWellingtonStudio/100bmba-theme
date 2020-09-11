@@ -5,24 +5,92 @@
   display: block;
 }
 
-/* Add .narrow-content to post class to render a narrow archive */
+.members-officers-board {
+  .site-container {
+	.site-inner {
+	  .wrap {
+		.content-sidebar-wrap {
+		  margin-top: 4em;
+		  .content {
+			.narrow-content {
+			  .entry-content {
+				.wp-block-columns {
+				  .wp-block-column {
+					ul li a {
+					  color: $black;
+					}
+					ul li a strong {
+					  font-weight: normal;
+					}
+					ul li strong {
+					  font-weight: normal;
+					}
+				  }
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
+
+/* Add .narrow-content added to post class to render a narrower page content */
 @media (min-width: 768px) {
 
+  /* Targets only the /members page */
   .members-officers-board {
+
 	.site-container {
+
 	  .site-inner {
+
 		.wrap {
+
 		  .content-sidebar-wrap {
+
 			margin-top: 4em;
+
 			.content {
+
 			  .narrow-content {
+
 				.entry-content {
+
 				  h2 {
-					width: 70%
+					width: 50%
 				  }
+
 				  .wp-block-columns {
-					width: 80%;
+
+					width: 70%;
 					margin: 2em auto;
+
+					.wp-block-column {
+
+					  ul {
+						width: 100%;
+					  }
+
+					  ul li a {
+						color: $black;
+					  }
+
+					  ul li a strong {
+						font-weight: normal;
+					  }
+
+					  ul li strong {
+						font-weight: normal;
+					  }
+
+					}
+
+					.wp-block-image {
+					  width: 100%;
+					}
+
 				  }
 				}
 			  }
@@ -33,18 +101,17 @@
 	}
   }
 
-
-
-
+  /* scss for .narrow-content used in many pages to accomplish a narrower rendering of article content */
   .narrow-content {
 
 	.entry-content {
+
 	  .wp-block-table {
 		width: 50%;
 		margin: 0 auto;
 	  }
 
-	  p, h2, h3 {
+	  p, h2, h3, ul {
 		width: 50%;
 		margin: 0 auto;
 	  }
@@ -60,12 +127,15 @@
 	  }
 
 	  .wp-block-columns {
+
 		width: 50%;
 		margin: 0 auto;
+
 		.wp-block-column {
 		  p {
 			width: 100%;
 		  }
+
 		}
 	  }
 
@@ -73,11 +143,11 @@
 		width: 50%;
 		margin: 0 auto;
 	  }
-	}
 
+	}
   }
 
-  /* Add .empowerment-content to the empowerment template */
+  /* Adds .empowerment-content to the empowerment templat. This is a specific class just for that template */
   .empowerment-content {
 	.wp-block-table {
 	  width: 60%;
@@ -100,12 +170,16 @@
 	}
 
 	.wp-block-columns {
+
 	  width: 60%;
 	  margin: 0 auto;
+
 	  .wp-block-column {
+
 		p {
 		  width: 100%;
 		}
+
 	  }
 	}
 
@@ -116,5 +190,30 @@
 
   }
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
 
 
