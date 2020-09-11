@@ -126,3 +126,17 @@ function my_orderby_filter2( $query ) {
 	$query->set( 'order', 'ASC' );
  }
 }
+
+add_action('wp_footer', 'load_modal_js', 5);
+function load_modal_js() {
+	//$modal_checkbox = get_theme_mod('modal-checkbox');
+	if(get_theme_mod('modal-checkbox') == 'yes') {
+		echo '<script type="text/javascript">
+						// Loads Modal On Page Load
+						$(document).ready(function(){
+						  $("#100bmba-modal").modal("show");
+						});
+					</script>';
+	}
+}
+
