@@ -44,6 +44,10 @@ function bfg_theme_scripts() {
 		// Register theme JS and enqueue it
 		wp_register_script( 'app-js', BFG_THEME_JS . 'app.min.js', array( 'jquery' ), $version, true );
 		wp_enqueue_script( 'app-js' );
+
+		// Register Font Awesome
+		wp_register_script('font-awesome', 'https://kit.fontawesome.com/76342ff491.js', array(), '', true );
+		wp_enqueue_script('font-awesome');
 	}
 }
 
@@ -51,7 +55,6 @@ add_action( 'admin_enqueue_scripts', 'load_metafield_js' );
 function load_metafield_js() {
 	//$version = wp_get_theme()->Version;
 	//wp_enqueue_script( 'meta-field-js', BFG_THEME_JS . 'meta-field.js', array('jquery'), $version, true );
-
 
 	// Registers and enqueues the required javascript for image management within wp dashboard.
 	wp_register_script( 'meta-box-image', BFG_THEME_JS . 'meta-field.js', array( 'jquery' ) );

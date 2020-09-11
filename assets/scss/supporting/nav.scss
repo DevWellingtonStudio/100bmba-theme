@@ -1,17 +1,36 @@
 /* Navbar
 ----------------------------------------------------------------------------- */
-#logo-svg-bmba {
-  margin: 1em 0 0 3.2em;
+.navbar-dark .navbar-nav .nav-link {
+  color: $white;
 }
+.blue-nav-link {
+  background-color: $blue;
+}
+.navbar-brand {
+  position: relative;
+  z-index: 3;
+  padding: .1em;
+}
+.navbar-brand
+#logo-svg-bmba {
+ position: relative;
+  z-index: -1;
+}
+#logo-svg-bmba object {
+  position: relative;
+  z-index: -1;
+}
+
 #genesis-nav-primary {
   object{
-	width: 150px;
+	width: 70px;
   }
 }
 #menu-primary {
   align-items: center;
   li {
 	margin: 0 .5em 0 0;
+	font-size: 1rem;
   }
 }
 .no-js .menu-item-has-children:hover .dropdown-menu,

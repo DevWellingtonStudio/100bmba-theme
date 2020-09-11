@@ -80,7 +80,7 @@ function io_front_page_latest_posts() {
 			<div class="row pl pr">
 
 			<div class="col-md-5 text-center left-col">
-			<h2 class="display-2">NEWS</h2>
+			<h2 class="display-5">NEWS</h2>
 			</div>
 			<div class="col-md-7 right-col">';
 

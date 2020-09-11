@@ -22,6 +22,12 @@ function bfg_register_sidebars() {
 	) );*/
 
 	genesis_register_sidebar( array(
+		'id' => 'after-entry',
+		'name' => __( 'After Entry', 'theme-prefix' ),
+		'description' => __( 'This is the after entry section.', 'theme-prefix' ),
+	) );
+
+	genesis_register_sidebar( array(
 		'id' => 'frontpage-one',
 		'name' => __( 'Front Page One', 'bootstrap-for-genesis' ),
 		'description' => __( 'Adds content to the 1st widgetized area.', 'bootstrap-for-genesis' )

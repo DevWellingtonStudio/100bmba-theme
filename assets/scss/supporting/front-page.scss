@@ -45,7 +45,7 @@
     .site-inner {
       .wrap {
         .content-sidebar-wrap {
-          margin: 4.618em 5.5em;
+          margin: 0 0 5.5em 0;
         }
       }
     }
@@ -54,17 +54,26 @@
 
 /** Front Page News
 ================================ */
+#news-wrapper {
+  margin: 1.618em auto;
+}
 #news-title {
   margin-top: 1.618em;
 
   .left-col {
 	background-color: $brown;
 	color: $white;
-	padding: 1.618em;
+	padding: .5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	h2 {
+	  margin: 0;
+	}
   }
   .right-col {
 	background-color: $yellow;
-	padding: 1.618em;
+	padding: .5em;
   }
 }
 #fp-news {
@@ -97,6 +106,9 @@
 /** Hero Section
 ================================ */
 #portrait-section {
+  h1 {
+	font-size: 3rem;
+  }
   #wstPortraitSlider {
     .carousel-inner {
       #portrait-item-one {
@@ -244,7 +256,7 @@
 
 /** Mid Front Page Slider
 =============================== */
-#mid-slider-fp-1,
+/*#mid-slider-fp-1,
 #mid-slider-fp-2,
 #mid-slider-fp-3,
 #mid-slider-fp-4 {
@@ -252,19 +264,21 @@
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
   .carousel-caption {
-
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
-
     h3 {
       font-size: 4rem;
+	  background-color: $blue;
+	  padding: .2em 0;
     }
     p {
       font-size: 1.5rem;
+	  background-color: rgba(5,5,5,0.5);
+	  padding: 0.618em;
     }
   }
-}
+}*/
 
 /** Nav
 =============================== */
@@ -284,10 +298,23 @@
 
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+
+}
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+  .carousel-caption {
+	position: absolute;
+	right: 0%;
+	bottom: 20px;
+	left: 0%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	text-align: center;
+  }
 
 }
 
@@ -303,3 +330,45 @@
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  #mid-slider-fp-1,
+  #mid-slider-fp-2,
+  #mid-slider-fp-3,
+  #mid-slider-fp-4 {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	.carousel-caption {
+	  top: 65%;
+	  transform: translateY(-50%);
+	  bottom: initial;
+	  h3 {
+		font-size: 2.5rem;
+		background-color: $blue;
+		padding: .2em 0;
+	  }
+	  p {
+		font-size: 1.2rem;
+		background-color: rgba(5,5,5,0.5);
+		padding: 0.618em;
+	  }
+	}
+  }
+
+
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+

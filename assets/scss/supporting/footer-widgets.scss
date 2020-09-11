@@ -1,7 +1,12 @@
 /* Footer Widgets
 ----------------------------------------------------------------------------- */
+#genesis-footer-widgets {
+   .wrap {
+	color: $white;
+  }
+}
 .footer-widgets {
-    border-bottom: 1px solid $hr-border-color;
+    border-bottom: none;
     padding: $spacer*4 $spacer*2;
     ul, ol {
         @include list-unstyled;
@@ -30,3 +35,30 @@
         }
     }
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .footer-widgets-1 {
+	border-right: 1px solid $white;
+  }
+  .footer-widgets-3 {
+	border-left: 1px solid $white;
+  }
+  .footer-widgets-1,
+  .footer-widgets-2,
+  .footer-widgets-3 {
+	padding: 0 3rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
