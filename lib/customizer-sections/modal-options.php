@@ -37,7 +37,7 @@ $wp_customize -> add_control (
 		$wp_customize,
 		'modal-image',
 		array (
-			'label'             => __('Logo, Two'),
+			'label'             => __('Logo'),
 			'section'           => 'modal-front-page',
 			'settings'          => 'modal-image',
 			'sanitize_callback' => 'esc_url_raw',
