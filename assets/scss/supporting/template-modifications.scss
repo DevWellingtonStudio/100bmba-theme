@@ -6,28 +6,87 @@
 }
 
 /* Add .narrow-content to post class to render a narrow archive */
-.narrow-content {
-  header {
-	width: 50%;
-	margin: 0 auto;
-  }
-  .entry-content {
-	width: 50%;
-	margin: 0 auto;
+@media (min-width: 768px) {
+
+  .narrow-content {
+
+	.entry-content {
+	  .wp-block-table {
+		width: 50%;
+		margin: 0 auto;
+	  }
+
+	  p, h2, h3 {
+		width: 50%;
+		margin: 0 auto;
+	  }
+
+	  .wp-block-embed-youtube {
+		width: 50%;
+		margin: 0 auto;
+	  }
+
+	  .wp-block-image {
+		width: 50%;
+		margin: 0 auto;
+	  }
+
+	  .wp-block-columns {
+		width: 50%;
+		margin: 0 auto;
+		.wp-block-column {
+		  p {
+			width: 100%;
+		  }
+		}
+	  }
+
+	  .gform_wrapper {
+		width: 50%;
+		margin: 0 auto;
+	  }
+	}
+
   }
 
-}
-/* Add .empowerment-content to the empowerement template */
-.empowerment-content {
-  header {
-	width: 60%;
-	margin: 0 auto;
-  }
-  .entry-content {
-	width: 60%;
-	margin: 0 auto;
-  }
+  /* Add .empowerment-content to the empowerment template */
+  .empowerment-content {
+	.wp-block-table {
+	  width: 60%;
+	  margin: 0 auto;
+	}
 
+	p, h2, h3 {
+	  width: 60%;
+	  margin: 0 auto;
+	}
+
+	.wp-block-embed-youtube {
+	  width: 60%;
+	  margin: 0 auto;
+	}
+
+	.wp-block-image {
+	  width: 60%;
+	  margin: 0 auto;
+	}
+
+	.wp-block-columns {
+	  width: 60%;
+	  margin: 0 auto;
+	  .wp-block-column {
+		p {
+		  width: 100%;
+		}
+	  }
+	}
+
+	.gform_wrapper {
+	  width: 60%;
+	  margin: 0 auto;
+	}
+
+  }
 }
 
 
