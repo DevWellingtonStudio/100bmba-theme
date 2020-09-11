@@ -77,11 +77,6 @@ function io_front_page_latest_posts() {
   // The Loop
   if ( $the_query->have_posts() ) {
 	echo '	<div id="news-title" class="container-fluid">
-
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
-
 			<div class="row pl pr">
 
 			<div class="col-md-5 text-center left-col">
