@@ -1,5 +1,29 @@
 /* Search Results
 ------------------------------------------------ */
+input.members-cpt-search::placeholder {
+  text-align: left !important;
+  margin-left: 1.618em;
+  font-size: 10px;
+}
+
+input.members-cpt-search {
+  font-family: "Arial", sans-serif !important;
+  font-size: 10px;
+}
+
+.member-category.searchform fieldset input.members-cpt-search[type=text] {
+  width: 72%;
+  padding: 9px;
+  vertical-align: bottom;
+  margin-bottom: 0;
+  font-size: 22px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $blue;
+}
+.member-category.searchform fieldset input.members-cpt-search[type=text]:focus {
+  outline: none !important;
+}
 
 .entry {
   .container {
