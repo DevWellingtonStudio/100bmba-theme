@@ -72,6 +72,11 @@
   }
 }
 
+#members-search-field {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* Do not show images for members archive from content */
 .no-show-content-image img {
   display: none;
@@ -184,9 +189,14 @@ p.member-desc{
 
 /* Member Search */
 
+.member-search-container {
+  .member-search-col {
+	margin: 0 auto;
+  }
+}
+
 
 #members-search-field input[type="submit"] {
-  padding: 0 !important;
   display: initial !important;
 }
 #mem-cat-search-cont.mem-search-cat h2,
@@ -223,8 +233,8 @@ input.members-cpt-search {
   border: none;
 }
 .searchform fieldset input.members-cpt-search[type="text"]::placeholder {
-  -webkit-text-stroke: 2px #D1D2D4;
   font-size: 24px;
+  font-family: "Arial", sans-serif;
 }
 .searchform fieldset input.members-cpt-search[type="text"]:focus::-webkit-input-placeholder{
   opacity: 0;
