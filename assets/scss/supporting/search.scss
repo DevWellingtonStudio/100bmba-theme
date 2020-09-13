@@ -1,12 +1,18 @@
 /* Search Results
 ------------------------------------------------ */
 .search {
+  .site-inner {
+	margin-top: 5em;
+  }
   .member_cpt {
 	p img {
 	  display: none;
 	}
 	.entry-content {
 	  margin-top: -30px;
+	  img {
+		display: none;
+	  }
 	}
   }
 }
@@ -67,7 +73,6 @@ body.search .entry {
 .post-type-heading {
   font-size: 40px;
   font-size: 4rem;
-  text-transform: uppercase;
   margin-bottom: 40px;
   text-align: center;
 }

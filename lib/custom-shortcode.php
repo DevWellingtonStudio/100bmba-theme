@@ -15,7 +15,12 @@ function custom_search() {
 		<div class="col-6 member-search-col">
 		<div id="mem-cat-search-cont" class="mem-search-cat">
 			<!-- Start SearchForm For Member Categories -->
-			<form method="get" class="member-category searchform" role="search" action="'. home_url('/') .'"><fieldset id="members-search-field"><input name="s" type="text" class="members-cpt-search s small-12" placeholder="Search Members | Industry" style="font-family:Arial, FontAwesome"><input type="hidden" name="post_type" value="member_cpt"/><input type="submit" class="btn btn-dark" style="text-transform:uppercase;" align="center" value="Submit" /></fieldset></form>
+			<form method="get" class="member-category searchform" role="search" action="'. home_url('/') .'">
+			<fieldset id="members-search-field">
+			<input name="s" type="text" class="members-cpt-search s small-12" placeholder="Search Members | Industry" style="font-family:Arial, FontAwesome">
+			<input type="hidden" name="post_type" value="member_cpt"/><input type="submit" class="btn btn-dark" style="text-transform:uppercase;" align="center" value="Submit" />
+			</fieldset>
+			</form>
 			<!-- End SearchForm -->
 		</div>
 		</div>

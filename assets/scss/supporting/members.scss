@@ -73,8 +73,9 @@
 }
 
 #members-search-field {
-  display: flex;
-  justify-content: space-around;
+  input {
+	margin: 0 1em;
+  }
 }
 
 /* Do not show images for members archive from content */
