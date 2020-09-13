@@ -1,7 +1,17 @@
 /* Search Results
 ------------------------------------------------ */
+.search {
+  .member_cpt {
+	p img {
+	  display: none;
+	}
+	.entry-content {
+	  margin-top: -30px;
+	}
+  }
+}
 input.members-cpt-search::placeholder {
-  text-align: left !important;
+  text-align: center !important;
   margin-left: 1.618em;
   font-size: 10px;
 }

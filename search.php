@@ -33,17 +33,17 @@ function sk_do_search_loop() {
 			'orderby' => 'title'
 		));
 
-		echo '<div class="post-type '. $post_type .'"><div class="post-type-heading"><h1>Members Search Results</h1></div>';
+		echo '<div class="post-type '. $post_type .'"><div class="post-type-heading"><h1>MEMBERS SEARCH RESULTS</h1></div><div class="row justify-content-center">';
 		// remove post info
 		remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 
-		add_action( 'genesis_entry_header', 'sk_featured_image', 7 );
+		//add_action( 'genesis_entry_header', 'sk_featured_image', 7 );
 
 		// remove post image (from theme settings)
-		remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
+		//remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
 
 		// remove entry content
-		remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
+		//remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
 
 		// remove post content nav
 		remove_action( 'genesis_entry_content', 'genesis_do_post_content_nav', 12 );
@@ -58,12 +58,12 @@ function sk_do_search_loop() {
 		remove_action( 'genesis_after_endwhile', 'genesis_posts_nav' );
 
 		// custom genesis loop with the above query parameters and hooks
-	//genesis_custom_loop( $args );
+		//genesis_custom_loop( $args );
 		sk_custom_loop( $args );
 		echo '</div>';
 	}
 
-	echo '</div>'; // .search-content
+	echo '</div></div>'; // .search-content
 
 }
 
@@ -88,7 +88,6 @@ function sk_featured_image() {
 
 	// display the featured image
 	printf( '<div class="search-image"><a href="%s"><img src="%s" alt="%s" /></a></div>', get_the_permalink(), esc_url( $image ), $alt );
-	printf('<div class="container"><h3>'. get_the_title() .'</h3></div>');
 
 }
 
