@@ -33,7 +33,7 @@ function sk_do_search_loop() {
 			'orderby' => 'title'
 		));
 
-		echo '<div class="post-type '. $post_type .'"><div class="post-type-heading"><h1>MEMBERS SEARCH RESULTS</h1></div><div class="row justify-content-center">';
+		echo '<div class="post-type '. $post_type .'"><div class="post-type-heading"><h2>Members Search Results</h2></div><div class="row justify-content-center">';
 		// remove post info
 		remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 
@@ -62,6 +62,8 @@ function sk_do_search_loop() {
 		sk_custom_loop( $args );
 		echo '</div>';
 	}
+
+	echo '<button type="buttong class="btn btn-dark"><a href="https://dev.100blackmenba.org/members/" title="Back to memebers page">Return to Members Page</a></button>';
 
 	echo '</div></div>'; // .search-content
 
