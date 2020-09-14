@@ -71,7 +71,7 @@ function io_front_page_latest_posts() {
 	  'order'          => 'DESC',
 	  'orderby'       => 'date',
 	  'no_found_rows'  => true,
-	  'posts_per_page' => 3
+	  'posts_per_page' => 6
   ) );
 
   // The Loop
@@ -95,7 +95,7 @@ function io_front_page_latest_posts() {
 			</div>';
 
 
-	echo '<div id="news-wrapper" class="container-fluid"><div id="fp-news" class="news-fp mt row">';
+	echo '<div id="news-wrapper" class="container-fluid"><div id="fp-news" class="news-fp mt row justify-content-center">';
 
 	while ( $the_query->have_posts() ) {
 	  $the_query->the_post();

@@ -182,5 +182,93 @@ $wp_customize->add_control( 'midsldr4text', array(
 	'type'	=> 'textarea'
 ));
 
+// Front Page Mid Slider Image #5
+$wp_customize -> add_setting ( 'wst_mid_slider5', array(
+	'default'           => '',
+	'type'              => 'theme_mod',
+	'transport'         => 'postMessage'
+));
+$wp_customize -> add_control (
+	new WP_Customize_Image_Control (
+		$wp_customize,
+		'wst_mid_slider5',
+		array (
+			'label'             => __('Slider Image, Five'),
+			'section'           => 'fp-mid-slider',
+			'settings'          => 'wst_mid_slider5',
+			//'priority'          => 10,
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	)
+);
+// Slider #5 Title
+$wp_customize->add_setting( 'midslider5title', array(
+	'default'	=>	'',
+	'type'	=> 'theme_mod',
+	'sanitize_callback'	=>	'sanitize_text_field'
+));
+$wp_customize->add_control( 'midslider5title', array(
+	'label'	=>	__('Slider 5 Title', 'bootstrap-for-genesis' ),
+	'section'	=>	'fp-mid-slider',
+	'settings'	=>	'midslider5title',
+	'type'	=> 'text'
+));
+// Slider #5 Text Area
+$wp_customize->add_setting( 'midsldr5text', array(
+	'default'	=>	'',
+	'type'	=> 'theme_mod',
+	'sanitize_callback'	=>	'sanitize_text_field'
+));
+$wp_customize->add_control( 'midsldr5text', array(
+	'label'	=>	__('Slider 5 Text Area', 'bootstrap-for-genesis' ),
+	'section'	=>	'fp-mid-slider',
+	'settings'	=>	'midsldr5text',
+	'type'	=> 'textarea'
+));
+
+// Front Page Mid Slider Image #6
+$wp_customize -> add_setting ( 'wst_mid_slider6', array(
+	'default'           => '',
+	'type'              => 'theme_mod',
+	'transport'         => 'postMessage'
+));
+$wp_customize -> add_control (
+	new WP_Customize_Image_Control (
+		$wp_customize,
+		'wst_mid_slider6',
+		array (
+			'label'             => __('Slider Image, Six'),
+			'section'           => 'fp-mid-slider',
+			'settings'          => 'wst_mid_slider6',
+			//'priority'          => 10,
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	)
+);
+// Slider #6 Title
+$wp_customize->add_setting( 'midslider6title', array(
+	'default'	=>	'',
+	'type'	=> 'theme_mod',
+	'sanitize_callback'	=>	'sanitize_text_field'
+));
+$wp_customize->add_control( 'midslider6title', array(
+	'label'	=>	__('Slider 6 Title', 'bootstrap-for-genesis' ),
+	'section'	=>	'fp-mid-slider',
+	'settings'	=>	'midslider6title',
+	'type'	=> 'text'
+));
+// Slider #6 Text Area
+$wp_customize->add_setting( 'midsldr6text', array(
+	'default'	=>	'',
+	'type'	=> 'theme_mod',
+	'sanitize_callback'	=>	'sanitize_text_field'
+));
+$wp_customize->add_control( 'midsldr6text', array(
+	'label'	=>	__('Slider 6 Text Area', 'bootstrap-for-genesis' ),
+	'section'	=>	'fp-mid-slider',
+	'settings'	=>	'midsldr6text',
+	'type'	=> 'textarea'
+));
+
 /// ====== End Slider ====== ///
 
