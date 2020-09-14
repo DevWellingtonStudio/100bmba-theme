@@ -68,9 +68,11 @@
 	padding: .5em;
   }
 }
-#fp-news .news-excerpt:nth-child(4) {
+
+#fp-news .news-excerpt:nth-child(n + 4) {
   margin-top: 2.92em;
 }
+
 #fp-news {
   .news-excerpt {
     h3 a {
