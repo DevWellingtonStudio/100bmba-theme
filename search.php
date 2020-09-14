@@ -33,7 +33,15 @@ function sk_do_search_loop() {
 			'orderby' => 'title'
 		));
 
-		echo '<div class="post-type '. $post_type .'"><div class="post-type-heading"><h2>Members Search Results</h2></div><div class="row justify-content-center">';
+		echo '<div class="post-type '. $post_type .'"><div class="post-type-heading"><h2>Members Search Results</h2></div><div class="row justify-content-center">
+
+					<div class="container mb-5">
+
+					'. do_shortcode('[search_field]') .'
+
+					</div>';
+
+
 		// remove post info
 		remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 
@@ -63,7 +71,16 @@ function sk_do_search_loop() {
 		echo '</div>';
 	}
 
-	echo '<button type="buttong class="btn btn-dark"><a href="https://dev.100blackmenba.org/members/" title="Back to memebers page">Return to Members Page</a></button>';
+	echo '<div class="container">
+					<div class="row justify-content-center members-search-results">
+					<div class="col-md-3 d-flex justify-content-center">
+					<button type="button" class="btn btn-dark"><a href="/members/" title="Back to memebers page">Members Page</a></button>
+					</div>
+					<div class="col-md-3 d-flex justify-content-center">
+						<button type="button" class="btn btn-dark"><a href="/members-100blackmen/members/" title="Back to memebers page">Members Archive</a></button>
+					</div>
+			 		</div>
+			 </div>';
 
 	echo '</div></div>'; // .search-content
 
