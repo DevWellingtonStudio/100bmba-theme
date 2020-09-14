@@ -41,11 +41,11 @@ input.members-cpt-search {
   font-size: 22px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid $blue;
+  border-bottom: 1px solid $black;
 }
 .member-category.searchform fieldset input.members-cpt-search[type=text]:focus {
   outline: none !important;
-  border-bottom: 1px solid $blue;
+  border-bottom: 1px solid $black;
 }
 
 .entry {
@@ -67,10 +67,7 @@ body.search .entry {
 }
 
 .post-type {
-  /*border-bottom: 1px solid #ededed;*/
-  margin-bottom: 40px;
   overflow: hidden;
-  padding-bottom: 40px;
 }
 .post-type:last-child {
   border-bottom: none;
