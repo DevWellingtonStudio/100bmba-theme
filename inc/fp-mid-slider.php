@@ -12,12 +12,9 @@ $midsldr3text		= get_theme_mod('midsldr3text', $default);
 $wst_mid_slider4	= get_theme_mod('wst_mid_slider4', $default);
 $midslider4title	= get_theme_mod('midslider4title', $default);
 $midsldr4text		= get_theme_mod('midsldr4text', $default);
-
-
 $wst_mid_slider5	= get_theme_mod('wst_mid_slider5', $default);
 $midslider5title	= get_theme_mod('midslider5title', $default);
 $midsldr5text		= get_theme_mod('midsldr5text', $default);
-
 $wst_mid_slider6	= get_theme_mod('wst_mid_slider6', $default);
 $midslider6title	= get_theme_mod('midslider6title', $default);
 $midsldr6text		= get_theme_mod('midsldr6text', $default);
@@ -44,8 +41,6 @@ $midsldr6text		= get_theme_mod('midsldr6text', $default);
 		if($wst_mid_slider6 !== $default) : ?>
 		<li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
 		<?php endif; ?>
-
-
 
 	  </ol>
 	  <div class="carousel-inner">
