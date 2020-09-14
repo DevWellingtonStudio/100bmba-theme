@@ -459,3 +459,464 @@ $wp_customize->add_control(
 		)
 	)
 );
+
+// Portrait Slider #4 Background Color
+$wp_customize->add_setting( 'slider4_bg', array(
+	'default'           => '#000',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #4 Background Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider4_bg', array(
+			'label'    => __( 'Slider #4 Background Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider4_bg'
+		)
+	)
+);
+// Portrait Slider #4 Title Color
+$wp_customize->add_setting( 'slider4_title_color', array(
+	'default'           => '#fff',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #4 Title Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider4_title_color', array(
+			'label'    => __( 'Slider #4 Title Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider4_title_color'
+		)
+	)
+);
+// Portrait Slider #4 Text Color
+$wp_customize->add_setting( 'slider4_text_color', array(
+	'default'           => '#fff',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #4 Text Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider4_text_color', array(
+			'label'    => __( 'Slider #4 Text Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider4_text_color'
+		)
+	)
+);
+// Portrait Slider #4 Button Text Color
+$wp_customize->add_setting( 'slider4_btn_text_color', array(
+	'default'           => '#fff',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #4 Button Text Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider4_btn_text_color', array(
+			'label'    => __( 'Slider #4 Button Text Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider4_btn_text_color'
+		)
+	)
+);
+// Portrait Slider #4 Button Color
+$wp_customize->add_setting( 'slider4_btn_color', array(
+	'default'           => '#000',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #4 Button Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider4_btn_color', array(
+			'label'    => __( 'Slider #4 Button Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider4_btn_color'
+		)
+	)
+);
+// Portrait Slider #4 Title
+$wp_customize->add_setting( 'p-slider-title4', array(
+	'default'           => '',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_text_field'
+) );
+$wp_customize->add_control( 'p-slider-title4', array(
+	'label'    => __( 'Portrait Slider #4 Title', 'bootstrap-for-genesis' ),
+	'section'  => 'portrait-slider',
+	'settings' => 'p-slider-title4',
+	'type'     => 'text'
+) );
+// Portrait Slider #4 Text Area
+$wp_customize->add_setting( 'p-slider-text4', array(
+	'default'           => '',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_text_field'
+) );
+$wp_customize->add_control( 'p-slider-text4', array(
+	'label'    => __( 'Portrait Slider #4 Text Area ', 'bootstrap-for-genesis' ),
+	'section'  => 'portrait-slider',
+	'settings' => 'p-slider-text4',
+	'type'     => 'textarea'
+) );
+// Portrait #4 Button Link
+$wp_customize->add_setting( 'port4_btn_url', array(
+	'default'           => '',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'esc_url',
+) );
+$wp_customize->add_control( 'port4_btn_url', array(
+	'type'        => 'url',
+	'section'     => 'portrait-slider',
+	'label'       => __( 'Portrait #4 Button Link', 'bootstrap-for-genesis' ),
+	'settings'    => 'port4_btn_url',
+	'description' => __( 'Add Button Link' ),
+) );
+// Portrait Slider #4 Image
+$wp_customize->add_setting( 'port_slider4', array(
+	'default'   => '',
+	'type'      => 'theme_mod',
+	'transport' => 'postMessage'
+) );
+$wp_customize->add_control(
+	new WP_Customize_Image_Control (
+		$wp_customize,
+		'port_slider4',
+		array(
+			'label'             => __( 'Portrait #4 Slider Image' ),
+			'section'           => 'portrait-slider',
+			'settings'          => 'port_slider4',
+			//'priority'          => 10,
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	)
+);
+
+
+
+
+
+
+// Portrait Slider #5 Background Color
+$wp_customize->add_setting( 'slider5_bg', array(
+	'default'           => '#000',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #5 Background Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider5_bg', array(
+			'label'    => __( 'Slider #5 Background Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider5_bg'
+		)
+	)
+);
+// Portrait Slider #5 Title Color
+$wp_customize->add_setting( 'slider5_title_color', array(
+	'default'           => '#fff',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #5 Title Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider5_title_color', array(
+			'label'    => __( 'Slider #5 Title Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider5_title_color'
+		)
+	)
+);
+// Portrait Slider #5 Text Color
+$wp_customize->add_setting( 'slider5_text_color', array(
+	'default'           => '#fff',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #5 Text Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider5_text_color', array(
+			'label'    => __( 'Slider #5 Text Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider5_text_color'
+		)
+	)
+);
+// Portrait Slider #5 Button Text Color
+$wp_customize->add_setting( 'slider5_btn_text_color', array(
+	'default'           => '#fff',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #5 Button Text Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider5_btn_text_color', array(
+			'label'    => __( 'Slider #5 Button Text Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider5_btn_text_color'
+		)
+	)
+);
+// Portrait Slider #5 Button Color
+$wp_customize->add_setting( 'slider5_btn_color', array(
+	'default'           => '#000',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #5 Button Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider5_btn_color', array(
+			'label'    => __( 'Slider #5 Button Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider5_btn_color'
+		)
+	)
+);
+// Portrait Slider #5 Title
+$wp_customize->add_setting( 'p-slider-title5', array(
+	'default'           => '',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_text_field'
+) );
+$wp_customize->add_control( 'p-slider-title5', array(
+	'label'    => __( 'Portrait Slider #5 Title', 'bootstrap-for-genesis' ),
+	'section'  => 'portrait-slider',
+	'settings' => 'p-slider-title5',
+	'type'     => 'text'
+) );
+// Portrait Slider #5 Text Area
+$wp_customize->add_setting( 'p-slider-text5', array(
+	'default'           => '',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_text_field'
+) );
+$wp_customize->add_control( 'p-slider-text5', array(
+	'label'    => __( 'Portrait Slider #5 Text Area ', 'bootstrap-for-genesis' ),
+	'section'  => 'portrait-slider',
+	'settings' => 'p-slider-text5',
+	'type'     => 'textarea'
+) );
+// Portrait #5 Button Link
+$wp_customize->add_setting( 'port5_btn_url', array(
+	'default'           => '',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'esc_url',
+) );
+$wp_customize->add_control( 'port5_btn_url', array(
+	'type'        => 'url',
+	'section'     => 'portrait-slider',
+	'label'       => __( 'Portrait #5 Button Link', 'bootstrap-for-genesis' ),
+	'settings'    => 'port5_btn_url',
+	'description' => __( 'Add Button Link' ),
+) );
+// Portrait Slider #5 Image
+$wp_customize->add_setting( 'port_slider5', array(
+	'default'   => '',
+	'type'      => 'theme_mod',
+	'transport' => 'postMessage'
+) );
+$wp_customize->add_control(
+	new WP_Customize_Image_Control (
+		$wp_customize,
+		'port_slider5',
+		array(
+			'label'             => __( 'Portrait #5 Slider Image' ),
+			'section'           => 'portrait-slider',
+			'settings'          => 'port_slider5',
+			//'priority'          => 10,
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	)
+);
+
+// Portrait Slider #6 Background Color
+$wp_customize->add_setting( 'slider6_bg', array(
+	'default'           => '#000',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #6 Background Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider6_bg', array(
+			'label'    => __( 'Slider #6 Background Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider6_bg'
+		)
+	)
+);
+// Portrait Slider #6 Title Color
+$wp_customize->add_setting( 'slider6_title_color', array(
+	'default'           => '#fff',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #6 Title Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider6_title_color', array(
+			'label'    => __( 'Slider #6 Title Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider6_title_color'
+		)
+	)
+);
+// Portrait Slider #6 Text Color
+$wp_customize->add_setting( 'slider6_text_color', array(
+	'default'           => '#fff',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #6 Text Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider6_text_color', array(
+			'label'    => __( 'Slider #6 Text Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider6_text_color'
+		)
+	)
+);
+// Portrait Slider #6 Button Text Color
+$wp_customize->add_setting( 'slider6_btn_text_color', array(
+	'default'           => '#fff',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #6 Button Text Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider6_btn_text_color', array(
+			'label'    => __( 'Slider #6 Button Text Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider6_btn_text_color'
+		)
+	)
+);
+// Portrait Slider #6 Button Color
+$wp_customize->add_setting( 'slider6_btn_color', array(
+	'default'           => '#000',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_hex_color',
+
+) );
+// Portrait Slider #6 Button Color
+$wp_customize->add_control(
+	new WP_Customize_Color_Control (
+		$wp_customize,
+		'slider6_btn_color', array(
+			'label'    => __( 'Slider #6 Button Color', 'bootstrap-for-genesis' ),
+			'priority' => 10,
+			'section'  => 'portrait-slider',
+			'settings' => 'slider6_btn_color'
+		)
+	)
+);
+// Portrait Slider #6 Title
+$wp_customize->add_setting( 'p-slider-title6', array(
+	'default'           => '',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_text_field'
+) );
+$wp_customize->add_control( 'p-slider-title6', array(
+	'label'    => __( 'Portrait Slider #6 Title', 'bootstrap-for-genesis' ),
+	'section'  => 'portrait-slider',
+	'settings' => 'p-slider-title6',
+	'type'     => 'text'
+) );
+// Portrait Slider #6 Text Area
+$wp_customize->add_setting( 'p-slider-text6', array(
+	'default'           => '',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'sanitize_text_field'
+) );
+$wp_customize->add_control( 'p-slider-text6', array(
+	'label'    => __( 'Portrait Slider #6 Text Area ', 'bootstrap-for-genesis' ),
+	'section'  => 'portrait-slider',
+	'settings' => 'p-slider-text6',
+	'type'     => 'textarea'
+) );
+// Portrait #6 Button Link
+$wp_customize->add_setting( 'port6_btn_url', array(
+	'default'           => '',
+	'type'              => 'theme_mod',
+	'sanitize_callback' => 'esc_url',
+) );
+$wp_customize->add_control( 'port6_btn_url', array(
+	'type'        => 'url',
+	'section'     => 'portrait-slider',
+	'label'       => __( 'Portrait #6 Button Link', 'bootstrap-for-genesis' ),
+	'settings'    => 'port6_btn_url',
+	'description' => __( 'Add Button Link' ),
+) );
+// Portrait Slider #6 Image
+$wp_customize->add_setting( 'port_slider6', array(
+	'default'   => '',
+	'type'      => 'theme_mod',
+	'transport' => 'postMessage'
+) );
+$wp_customize->add_control(
+	new WP_Customize_Image_Control (
+		$wp_customize,
+		'port_slider6',
+		array(
+			'label'             => __( 'Portrait #6 Slider Image' ),
+			'section'           => 'portrait-slider',
+			'settings'          => 'port_slider6',
+			//'priority'          => 10,
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	)
+);
