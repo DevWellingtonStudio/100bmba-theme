@@ -187,7 +187,7 @@
   .frontpage-three {
 	margin: 1.618em auto;
 	width: $fullwidth;
-	padding: $paddingx1;
+	padding: 0 1.618em;
   }
 
 
@@ -207,9 +207,14 @@
 ================================ */
 
 .frontpage-one,
-.frontpage-two,
-.frontpage-four {
+.frontpage-two {
   width: $fullwidth;
   margin: $marginTopx1 0 $marginBottomx1 0;
-  padding: $paddingx1;
+  padding: 0 1.618em;
+}
+
+.frontpage-four {
+  width: 99.3%;
+  margin: 0 0 0em 0;
+  padding: 0 1.618em;
 }
