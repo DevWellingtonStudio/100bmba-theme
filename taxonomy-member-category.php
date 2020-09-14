@@ -33,7 +33,13 @@ function add_description_content() {
 
 	$loop = new WP_Query( $args );
 	if( $loop->have_posts() ):
-	 echo '<div id="member-archive" class="container-fluid"><div class="row">';
+	 echo '<div id="member-archive" class="container-fluid"><div class="row">
+					<div class="container mb-5">
+
+					'. do_shortcode('[search_field]') .'
+
+					</div>';
+
 	 while( $loop->have_posts() ): $loop->the_post(); global $post;
 
 
