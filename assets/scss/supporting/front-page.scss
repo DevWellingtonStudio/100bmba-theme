@@ -1,15 +1,4 @@
 /* Custom SCSS
-
-    - Default Template
-	- Front Page Widgets
-	- Front Page News
-	- Front Page One
-	- Genesis Front Page Loop
-	- Hero Section
-	- Join Us
-	- Images
-	- Mid Front Page Slider
-	- Nav
 ----------------------------------------------------------------------------- */
 
 #sub-nav-fp {
@@ -29,7 +18,7 @@
     .site-inner {
       .wrap {
         .content-sidebar-wrap {
-          margin: 0 0 5.5em 0;
+          margin: 0em 0 5.5em 0;
         }
       }
     }
@@ -68,9 +57,11 @@
 	padding: .5em;
   }
 }
-#fp-news .news-excerpt:nth-child(4) {
+
+#fp-news .news-excerpt:nth-child(n + 4) {
   margin-top: 2.92em;
 }
+
 #fp-news {
   .news-excerpt {
     h3 a {
@@ -95,12 +86,6 @@
 	margin: 0;
   }
 }
-
-/** Genesis Front Page Loop
-================================ */
-
-
-
 
 /** Hero Section
 ================================ */
@@ -222,9 +207,23 @@
   margin: 0 auto;
 }
 
+/** Instagram Feed
+=============================== */
+#text-3 {
+  .textwidget h4 {
+	color: $white;
+	padding: 1.618em 1.618em;
+	background-color: $black;
+	margin-bottom: 1em;
+  }
+}
+
 /** Join Us
 =============================== */
 #subscribe-form {
+  padding-left: 2.618em ;
+  padding-right: 2.618em;
+  padding-bottom: 1.618em;
   .form-control {
 	border: 1px solid $white;
 	border-radius: 0;
@@ -252,32 +251,6 @@
 	font-size: 3rem;
   }
 }
-
-/** Mid Front Page Slider
-=============================== */
-/*#mid-slider-fp-1,
-#mid-slider-fp-2,
-#mid-slider-fp-3,
-#mid-slider-fp-4 {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  .carousel-caption {
-    top: 50%;
-    transform: translateY(-50%);
-    bottom: initial;
-    h3 {
-      font-size: 4rem;
-	  background-color: $blue;
-	  padding: .2em 0;
-    }
-    p {
-      font-size: 1.5rem;
-	  background-color: rgba(5,5,5,0.5);
-	  padding: 0.618em;
-    }
-  }
-}*/
 
 /** Nav
 =============================== */
@@ -328,11 +301,15 @@
 }
 
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-
+  .join-us h3 {
+	width: 76%;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -360,9 +337,6 @@
 	  }
 	}
   }
-
-
-
 }
 
 // Large devices (desktops, 992px and up)
@@ -371,3 +345,15 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  #fp-news .news-excerpt:nth-child(n + 2) {
+	margin-top: 2.92em;
+  }
+  .join-us h3 {
+	width: 76%;
+  }
+}

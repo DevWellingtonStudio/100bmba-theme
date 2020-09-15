@@ -104,7 +104,16 @@
   /* scss for .narrow-content used in many pages to accomplish a narrower rendering of article content */
   .narrow-content {
 
+
 	.entry-content {
+
+	  .gform_wrapper {
+		form {
+		  .gform_body ul {
+			width: 100%;
+		  }
+		}
+	  }
 
 	  .wp-block-table {
 		width: 50%;

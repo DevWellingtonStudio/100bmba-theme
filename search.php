@@ -39,7 +39,11 @@ function sk_do_search_loop() {
 
 					'. do_shortcode('[search_field]') .'
 
+					</div>
 					</div>';
+
+		echo '<div class="container-fluid">
+						<div class="row justify-content-center">';
 
 
 		// remove post info
@@ -68,7 +72,9 @@ function sk_do_search_loop() {
 		// custom genesis loop with the above query parameters and hooks
 		//genesis_custom_loop( $args );
 		sk_custom_loop( $args );
-		echo '</div>';
+		echo '</div>
+				</div>
+			</div>';
 	}
 
 	echo '<div class="container">
