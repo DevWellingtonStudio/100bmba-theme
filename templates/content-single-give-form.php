@@ -11,7 +11,7 @@ if ( has_post_thumbnail() ) {
 
 ?>
 
-<h1 itemprop="name" class="give-form-title entry-title" style="background: <?php echo $headerbkgrnd; ?>"><?php the_title(); ?></h1>
+<h1 itemprop="name" class="give-form-title entry-title" style="background: <?php // echo $headerbkgrnd; ?>"><?php // the_title(); ?></h1>
 
 <div id="give-form-<?php the_ID(); ?>-content" <?php post_class(); ?>>
 	<div class="<?php echo apply_filters( 'give_forms_single_summary_classes', 'summary entry-summary' ); ?>">
