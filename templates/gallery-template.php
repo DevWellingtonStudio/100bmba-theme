@@ -49,7 +49,7 @@ function add_gallery() {
 					$wp_query = new WP_Query( $args );
 
 					if ( have_posts() ) : while ( have_posts() ) : the_post();
-						$featured_img_url = get_the_post_thumbnail_url();
+						$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 						$alt = get_the_title();
 
 
