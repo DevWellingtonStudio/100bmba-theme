@@ -53,8 +53,8 @@ function add_gallery() {
 						$alt = get_the_title();
 
 
-	echo '<a href="' . $featured_img_url . '" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4 mb-4">' .
-	     '<img src="' . $featured_img_url . '" class="img-fluid" alt="'. $alt .'">' .
+	echo '<a href="' . $featured_img_url . '" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4 mb-4 thumbnail">' .
+	     '<img src="' . $featured_img_url . '" class="w-100 height-fit" alt="'. $alt .'">' .
 	     '</a>';
 
 	endwhile;
