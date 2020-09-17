@@ -42,6 +42,10 @@
   outline: 0;
 }
 
+.modal-content.gallery {
+  background-color: $black;
+}
+
 .close {
   float: right;
   text-align: right;
