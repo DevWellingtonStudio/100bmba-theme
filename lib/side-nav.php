@@ -23,7 +23,13 @@ function add_bmba_sidebar_nav() {
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<div class="row side-nav-row">
 		  <div class="col-6 slide-nav-left-side">
-			<img class="w-100 side-slider-nav-logo" src="https://100.local/wp-content/uploads/2020/09/Logo-100BMBA-white.png" alt="100 Black Men Of The Bay Area Logo">
+			<?php $side_nav_logo = get_theme_mod('side-nav-logo');
+			if($side_nav_logo !== '') {
+
+
+			echo '<img class="w-100 side-slider-nav-logo" src="'. $side_nav_logo .'" alt="100 Black Men Of The Bay Area Logo">';
+
+			   } ?>
 
 			<div class="social-media-side-slider">
 			  <i class="fab fa-2x fa-facebook-square"></i><i class="fab fa-2x fa-instagram-square"></i><i class="fab fa-2x fa-twitter-square"></i><i class="fab fa-2x fa-pinterest-square"></i>
