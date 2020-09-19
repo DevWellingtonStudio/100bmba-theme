@@ -3,7 +3,7 @@
 
 /* Animation for SideBar navigation */
 function openNav() {
-  document.getElementById("bmbaSidenav").style.width = "250px";
+  document.getElementById("bmbaSidenav").style.width = "550px";
 }
 
 function closeNav() {

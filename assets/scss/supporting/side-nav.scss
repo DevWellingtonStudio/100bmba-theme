@@ -1,5 +1,29 @@
 /** Sidebar Nav
 ------------------------------------------------------------- */
+.side-slider-nav-logo {
+  padding: 2.618em;
+}
+.social-media-side-slider {
+  color: $white;
+  margin: $margin2618 auto;
+  display: flex;
+  i {
+	margin: 0 auto;
+	padding: 0 0.2em;
+  }
+}
+.side-nav-row.row {
+  height: 100%;
+}
+.slide-nav-left-side {
+  background-color: $black;
+  height: 100%;
+  padding: $paddingx1;
+}
+.slide-nav-right-side {
+  background-color: #3857A1;
+  height: 100%;
+}
 .nav-link:focus {
   outline: 0 !important;
 }
