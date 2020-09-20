@@ -9,7 +9,6 @@ $wp_customize->add_section( 'side-nav-logo-social', array(
 	'priority' => 10
 ));
 
-
 $wp_customize -> add_setting ( 'side-nav-logo', array(
 	'default'           => '',
 	'type'              => 'theme_mod',
@@ -28,7 +27,7 @@ $wp_customize -> add_control (
 	)
 );
 
-// Modal Title
+// Social media
 $wp_customize->add_setting( 'social-media-1', array(
 	'default'	=>	'',
 	'type'	=> 'theme_mod',
@@ -36,23 +35,105 @@ $wp_customize->add_setting( 'social-media-1', array(
 ));
 $wp_customize->add_control( 'social-media-1', array(
 	'label'	=>	__('Social Media Icon #1', '100-black-men-ba' ),
+	'description' => __('Add FontAwesome code ex: fa-facebook-square'),
 	'section'	=>	'side-nav-logo-social',
 	'settings'	=>	'social-media-1',
 	'type'	=> 'text'
 ));
 
-// Modal Text Area
-/*$wp_customize->add_setting( 'modalfp-textarea', array(
+// Social media Link
+$wp_customize->add_setting( 'social-media-1-link', array(
 	'default'	=>	'',
 	'type'	=> 'theme_mod',
 	'sanitize_callback'	=>	'wp_kses_post'
 ));
-$wp_customize->add_control( 'modalfp-textarea', array(
-	'label'	=>	__('Add content to modal', '100-black-men-ba' ),
-	'section'	=>	'modal-front-page',
-	'settings'	=>	'modalfp-textarea',
-	'type'	=> 'textarea'
-));*/
+$wp_customize->add_control( 'social-media-1-link', array(
+	'label'	=>	__('Social Media Icon #1 Link', '100-black-men-ba' ),
+	'section'	=>	'side-nav-logo-social',
+	'settings'	=>	'social-media-1-link',
+	'type'	=> 'url'
+));
+
+// Social media
+$wp_customize->add_setting( 'social-media-2', array(
+	'default'	=>	'',
+	'type'	=> 'theme_mod',
+	'sanitize_callback'	=>	'wp_kses_post'
+));
+$wp_customize->add_control( 'social-media-2', array(
+	'label'	=>	__('Social Media Icon #2', '100-black-men-ba' ),
+	'description' => __('Add FontAwesome code ex: fa-facebook-square'),
+	'section'	=>	'side-nav-logo-social',
+	'settings'	=>	'social-media-2',
+	'type'	=> 'text'
+));
+
+// Social media Link
+$wp_customize->add_setting( 'social-media-2-link', array(
+	'default'	=>	'',
+	'type'	=> 'theme_mod',
+	'sanitize_callback'	=>	'wp_kses_post'
+));
+$wp_customize->add_control( 'social-media-2-link', array(
+	'label'	=>	__('Social Media Icon #2 Link', '100-black-men-ba' ),
+	'section'	=>	'side-nav-logo-social',
+	'settings'	=>	'social-media-2-link',
+	'type'	=> 'url'
+));
+
+// Social media
+$wp_customize->add_setting( 'social-media-3', array(
+	'default'	=>	'',
+	'type'	=> 'theme_mod',
+	'sanitize_callback'	=>	'wp_kses_post'
+));
+$wp_customize->add_control( 'social-media-3', array(
+	'label'	=>	__('Social Media Icon #3', '100-black-men-ba' ),
+	'description' => __('Add FontAwesome code ex: fa-facebook-square'),
+	'section'	=>	'side-nav-logo-social',
+	'settings'	=>	'social-media-3',
+	'type'	=> 'text'
+));
+
+// Social Media Link
+$wp_customize->add_setting( 'social-media-3-link', array(
+	'default'	=>	'',
+	'type'	=> 'theme_mod',
+	'sanitize_callback'	=>	'wp_kses_post'
+));
+$wp_customize->add_control( 'social-media-3-link', array(
+	'label'	=>	__('Social Media Icon #3 Link', '100-black-men-ba' ),
+	'section'	=>	'side-nav-logo-social',
+	'settings'	=>	'social-media-3-link',
+	'type'	=> 'url'
+));
+
+// Social media
+$wp_customize->add_setting( 'social-media-4', array(
+	'default'	=>	'',
+	'type'	=> 'theme_mod',
+	'sanitize_callback'	=>	'wp_kses_post'
+));
+$wp_customize->add_control( 'social-media-4', array(
+	'label'	=>	__('Social Media Icon #4', '100-black-men-ba' ),
+	'description' => __('Add FontAwesome code ex: fa-facebook-square'),
+	'section'	=>	'side-nav-logo-social',
+	'settings'	=>	'social-media-4',
+	'type'	=> 'text'
+));
+
+// Social Media Link
+$wp_customize->add_setting( 'social-media-4-link', array(
+	'default'	=>	'',
+	'type'	=> 'theme_mod',
+	'sanitize_callback'	=>	'wp_kses_post'
+));
+$wp_customize->add_control( 'social-media-4-link', array(
+	'label'	=>	__('Social Media Icon #4 Link', '100-black-men-ba' ),
+	'section'	=>	'side-nav-logo-social',
+	'settings'	=>	'social-media-4-link',
+	'type'	=> 'url'
+));
 
 
 
