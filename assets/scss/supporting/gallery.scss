@@ -66,6 +66,34 @@
     }
 }
 
+.page-template-gallery-template {
+  .site-container {
+	.site-inner {
+	  margin-top: 2em;
+	}
+  }
+}
+
+#gallery {
+  margin-top: 3.618em;
+  img.gallery-image::before {
+	background-color: $black;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+  }
+  img.gallery-image {
+	height: 300px;
+	object-fit: cover;
+	&:hover {
+	  opacity: 0.6;
+	  transition: .6s;
+	}
+  }
+  .bkground-gal {
+	background-color: #0F02A2;
+  }
+}
 .height-fit {
   height: 100%;
   object-fit: cover;

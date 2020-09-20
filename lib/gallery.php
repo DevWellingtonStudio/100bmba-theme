@@ -94,13 +94,13 @@ function bmba_gallery_callback( $post ) {
 
 	<!-- Gallery Name -->
 	<div class="mt-1618 mb-1618">
-	  <strong><label for="gallery-name" class="basic-row-title"><?php _e('Gallery Name','100-black-men-ba')?></label></strong>
+	  <strong><label for="gallery-name" class="basic-row-title"><?php _e('Gallery CTA','100-black-men-ba')?></label></strong>
 	  <input style="width: 100%;" type="text" name="gallery-name" id="gallery-name" value="<?php if (isset($bmba_gallery_meta['gallery-name'])) echo $bmba_gallery_meta['gallery-name'][0]; ?>" />
 	</div>
 
 	<!-- Gallery Title -->
 	<div class="mt-1618 mb-1618">
-	  <strong><label for="gallery-title" class="basic-row-title"><?php _e('Gallery Name','100-black-men-ba')?></label></strong>
+	  <strong><label for="gallery-title" class="basic-row-title"><?php _e('Gallery Title','100-black-men-ba')?></label></strong>
 	  <input style="width: 100%;" type="text" name="gallery-title" id="gallery-title" value="<?php if (isset($bmba_gallery_meta['gallery-title'])) echo $bmba_gallery_meta['gallery-title'][0]; ?>" />
 	</div>
 
