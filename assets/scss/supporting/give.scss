@@ -1,9 +1,26 @@
 /* Give SCSS
 ----------------------------------------------------- */
+#give-recurring-form .form-row-two-thirds, form.give-form .form-row-two-thirds, form[id*=give-form] .form-row-two-thirds {
+  div {
+	width: 100%;
+  }
+}
+
+#give_purchase_form_wrap {
+  .give-fl-wrap.give-fl-wrap-input,
+  .give-fl-wrap.give-fl-wrap-textarea {
+	width: 100%;
+  }
+}
 [id*=give-form] div.summary {
   width: 100% !important;
   float: none !important;
 }
+
+.give-featured-image {
+  margin: 1.618em auto;
+}
+
 .give-btn {
   background: $black !important;
   border: 1px solid $black !important;

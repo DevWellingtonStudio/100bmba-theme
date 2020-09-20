@@ -18,7 +18,7 @@ if ( has_post_thumbnail() ) {
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-12">
-			<img class="w-100" src="<?php echo $featured_img_url; ?>" alt="Donation featured image">
+			<img class="w-100 give-featured-image" src="<?php echo $featured_img_url; ?>" alt="Donation featured image">
 			<div id="give-form-<?php the_ID(); ?>-content" <?php post_class(); ?>>
 				<div class="<?php echo apply_filters( 'give_forms_single_summary_classes', 'summary entry-summary' ); ?>">
 
