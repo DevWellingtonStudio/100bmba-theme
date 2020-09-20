@@ -1,28 +1,81 @@
 <?php
-do_action( 'give_before_single_form' );
+/**
+ * The template for displaying form content in the single-give-form.php template
+ *
+ * Override this template by copying it to yourtheme/give/single-give-form/content-single-give-form.php
+ *
+ * @package       Give/Templates
+ * @version       1.0
+ */
 
-if ( has_post_thumbnail() ) {
-
-	$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'donate-header' );
-	$headerbkgrnd = "url('" . $image[0] . "');";
-} else {
-	$headerbkgrnd = '#777;';
+if ( ! defined( 'ABSPATH' ) ) {
+  exit; // Exit if accessed directly.
 }
 
+/**
+ * Fires in single form template, before the form.
+ *
+ * Allows you to add elements before the form.
+ *
+ * @since 1.0
+ */
+do_action( 'give_before_single_form' );
+
+if ( post_password_required() ) {
+  echo get_the_password_form();
+  return;
+}
 ?>
 
-<h1 itemprop="name" class="give-form-title entry-title" style="background: <?php // echo $headerbkgrnd; ?>"><?php // the_title(); ?></h1>
-
 <div id="give-form-<?php the_ID(); ?>-content" <?php post_class(); ?>>
-	<div class="<?php echo apply_filters( 'give_forms_single_summary_classes', 'summary entry-summary' ); ?>">
 
-		<?php give_get_donation_form( $args = array() ); ?>
+  <?php
+  /**
+   * Fires in single form template, before the form summary.
+   *
+   * Allows you to add elements before the form summary.
+   *
+   * @since 1.0
+   */
+  do_action( 'give_before_single_form_summary' );
+  ?>
 
-	</div>
-	<!-- .summary -->
+  <div class="<?php echo apply_filters( 'give_forms_single_summary_classes', 'summary entry-summary' ); ?>">
 
-	<?php	do_action( 'give_after_single_form_summary' );	?>
+	<?php
+	/**
+	 * Fires in single form template, to the form summary.
+	 *
+	 * Allows you to add elements to the form summary.
+	 *
+	 * @since 1.0
+	 */
+	do_action( 'give_single_form_summary' );
+	?>
+
+  </div>
+  <!-- .summary -->
+
+  <?php
+  /**
+   * Fires in single form template, after the form summary.
+   *
+   * Allows you to add elements after the form summary.
+   *
+   * @since 1.0
+   */
+  do_action( 'give_after_single_form_summary' );
+  ?>
 
 </div><!-- #give-form-<?php the_ID(); ?> -->
 
-<?php do_action( 'give_after_single_form' ); ?>
+<?php
+/**
+ * Fires in single form template, after the form.
+ *
+ * Allows you to add elements after the form.
+ *
+ * @since 1.0
+ */
+do_action( 'give_after_single_form' );
+?>
