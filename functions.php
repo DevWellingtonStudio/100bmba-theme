@@ -49,7 +49,7 @@ function wst_childtheme_setup() {
  add_theme_support( 'genesis-responsive-viewport' );
 
  // Add support for 3-column footer widgets
- add_theme_support( 'genesis-footer-widgets', 3 );
+ add_theme_support( 'genesis-footer-widgets', 4 );
 
  // Custom Logo
  add_theme_support( 'custom-logo', array(
