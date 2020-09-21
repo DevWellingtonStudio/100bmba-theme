@@ -1,5 +1,62 @@
 /* Give SCSS
 ----------------------------------------------------- */
+#give-recurring-form .form-row-two-thirds, form.give-form .form-row-two-thirds, form[id*=give-form] .form-row-two-thirds {
+  div {
+	width: 100%;
+  }
+}
+
+#give_purchase_form_wrap {
+  .give-fl-wrap.give-fl-wrap-input,
+  .give-fl-wrap.give-fl-wrap-textarea {
+	width: 100%;
+  }
+}
+[id*=give-form] div.summary {
+  width: 100% !important;
+  float: none !important;
+}
+
+.give-featured-image {
+  margin: 1.618em auto;
+}
+
+.give-btn {
+  background: $black !important;
+  border: 1px solid $black !important;
+  color: $white !important;
+  padding: 8px 10px !important;
+  cursor: pointer !important;
+  line-height: 1.2em !important;
+  font-size: 1em !important;
+}
+
+.give-btn:hover {
+  background: $gray !important;
+  border: 1px solid $gray !important;
+}
+
+form[id*=give-form] .give-donation-amount .give-currency-symbol {
+  background-color: $black !important;
+  border-top: 1px solid $black !important;
+  border-bottom: 1px solid $black !important;
+  color: $white !important;
+  margin: 0;
+  padding: 0 12px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+
+#primary {
+  .give-main.site-main.site-inner {
+	margin-top: $marginTopx3 ;
+  }
+}
 
 .give {
   .give-wrap {

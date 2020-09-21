@@ -6,26 +6,24 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area give-content-area">
+  <main id="main" class="give-main site-main site-inner" role="main">
 
-			<?php
-			do_action( 'give_before_main_content' );
+	<?php
+	do_action( 'give_before_main_content' );
 
-			// Start the loop.
-			while ( have_posts() ) : the_post();
+	// Start the loop.
+	while ( have_posts() ) : the_post();
 
-				get_template_part( 'templates/content', 'single-give-form' );
+	  give_get_template_part( 'single-give-form/content', 'single-give-form' );
 
-				// End the loop.
-			endwhile;
+	  // End the loop.
+	endwhile;
 
-			do_action( 'give_after_main_content' );
-			?>
+	do_action( 'give_after_main_content' );
+	?>
 
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+  </main><!-- .site-main -->
+</div><!-- .content-area -->
 
-<?php
-//genesis();
-get_footer(); ?>
+<?php get_footer(); ?>

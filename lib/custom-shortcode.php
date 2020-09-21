@@ -2,7 +2,12 @@
 
 add_shortcode('side-bar-nav', 'bmba_sidebar_nav');
 function bmba_sidebar_nav() {
-	return '<span class="sidebar-icon" onclick="openNav()">&#9776;</span>';
+	//return '<span class="sidebar-icon" onclick="openNav()">&#9776;</span>';
+	return '<div class="sidebar-icon" onclick="openNav()">
+					<div class="hamburger-icon"></div>
+					<div class="hamburger-icon icon-2"></div>
+					<div class="hamburger-icon"></div>
+					</div>';
 }
 
 add_shortcode('search_field', 'custom_search');
