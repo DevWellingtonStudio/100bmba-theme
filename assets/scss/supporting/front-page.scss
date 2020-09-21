@@ -322,8 +322,9 @@
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	.carousel-caption {
-	  top: 29%;
-	  transform: translateY(-50%);
+	  top: 3%;
+	  /*transform: translateY(-50%);*/
+	  transform: translateX(-41%);
 	  bottom: initial;
 	  h3 {
 		font-size: 2.5rem;
