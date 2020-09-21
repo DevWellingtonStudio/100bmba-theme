@@ -42,6 +42,7 @@ function add_gallery() {
 					// arguments, adjust as needed
 					$args = array(
 						'post_type'      => 'bmba_gallery',
+						'posts_per_page' => -1,
 						'post_status'    => 'publish',
 						'tax_query' => array(
 							array (
