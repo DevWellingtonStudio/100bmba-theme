@@ -43,7 +43,7 @@ $wp_customize->add_control( 'midslider1title', array(
 $wp_customize->add_setting( 'midsldr1text', array(
 	'default'	=>	'',
 	'type'	=> 'theme_mod',
-	'sanitize_callback'	=>	'sanitize_text_field'
+	'sanitize_callback'	=>	'wp_kses_post'
 ));
 $wp_customize->add_control( 'midsldr1text', array(
 	'label'	=>	__('Slider 1 Text Area', 'bootstrap-for-genesis' ),
@@ -87,7 +87,7 @@ $wp_customize->add_control( 'midslider2title', array(
 $wp_customize->add_setting( 'midsldr2text', array(
 	'default'	=>	'',
 	'type'	=> 'theme_mod',
-	'sanitize_callback'	=>	'sanitize_text_field'
+	'sanitize_callback'	=>	'wp_kses_post'
 ));
 $wp_customize->add_control( 'midsldr2text', array(
 	'label'	=>	__('Slider 2 Text Area', 'bootstrap-for-genesis' ),
@@ -130,7 +130,7 @@ $wp_customize->add_control( 'midslider3title', array(
 $wp_customize->add_setting( 'midsldr3text', array(
 	'default'	=>	'',
 	'type'	=> 'theme_mod',
-	'sanitize_callback'	=>	'sanitize_text_field'
+	'sanitize_callback'	=>	'wp_kses_post'
 ));
 $wp_customize->add_control( 'midsldr3text', array(
 	'label'	=>	__('Slider 3 Text Area', 'bootstrap-for-genesis' ),
@@ -173,7 +173,7 @@ $wp_customize->add_control( 'midslider4title', array(
 $wp_customize->add_setting( 'midsldr4text', array(
 	'default'	=>	'',
 	'type'	=> 'theme_mod',
-	'sanitize_callback'	=>	'sanitize_text_field'
+	'sanitize_callback'	=>	'wp_kses_post'
 ));
 $wp_customize->add_control( 'midsldr4text', array(
 	'label'	=>	__('Slider 4 Text Area', 'bootstrap-for-genesis' ),
@@ -217,7 +217,7 @@ $wp_customize->add_control( 'midslider5title', array(
 $wp_customize->add_setting( 'midsldr5text', array(
 	'default'	=>	'',
 	'type'	=> 'theme_mod',
-	'sanitize_callback'	=>	'sanitize_text_field'
+	'sanitize_callback'	=>	'wp_kses_post'
 ));
 $wp_customize->add_control( 'midsldr5text', array(
 	'label'	=>	__('Slider 5 Text Area', 'bootstrap-for-genesis' ),
@@ -261,7 +261,7 @@ $wp_customize->add_control( 'midslider6title', array(
 $wp_customize->add_setting( 'midsldr6text', array(
 	'default'	=>	'',
 	'type'	=> 'theme_mod',
-	'sanitize_callback'	=>	'sanitize_text_field'
+	'sanitize_callback'	=>	'wp_kses_post'
 ));
 $wp_customize->add_control( 'midsldr6text', array(
 	'label'	=>	__('Slider 6 Text Area', 'bootstrap-for-genesis' ),
