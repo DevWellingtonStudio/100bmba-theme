@@ -59,14 +59,23 @@ Use the plugin [Short Code In Menus](https://wordpress.org/plugins/shortcode-in-
 ```
 [side-bar-nav]
 ```
+### Classes for blocks and Genesis
 There are couple classes that can be used in the Geness Post & Body Class inputs found in the page editor under Genesis settings.
 To aquire a narrow 70% width for text, use th class `narrow-content` in the Post Class input.
 A blue transition from bottom up, inside the .site-inner container can be accomplished by adding `blue-transition-bottom` to the Body Class input.
 
-Group Block Fix
+### Group Block Fix
 Sometimes the media-text block is too wide and when using the `narrow-content` class, the media-text block might not render perpotionately correct. Add the following class to the media-text block to get a more centered, tighter rendering: `group-block-fix`
 
 For GiveWP Grid Block, add the class `give` to Genesis Post Class with `narrow-content` to get a more centered look.
+
+### Socialmedia short codes
+Currently, the links are already hardcoded for each icon. (For 100 Black Men Of The Bay Area).
+[social-icons] Adds Facebook, Instagram, Twitter, LinkedIn.
+[facebook-icon] Adds Facebook.
+[instagram-icon] Adds Instagram.
+[twitter-icon] Adds Twitter.
+[linkedin-icon] Adds LinkedIn.
 
 ## HTML for front page form
 
