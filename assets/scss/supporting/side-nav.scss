@@ -77,13 +77,21 @@
 	list-style-type: none;
   }
 }
-
 .sidebar-icon {
-  font-size:30px;
-  cursor:pointer;
-  color: $white;
-  margin: 0 0.5em 0 1em;
+  .hamburger-icon {
+	width: 65px;
+	height: 5px;
+	background-color: $white;
+	margin-left: .5em;
+  }
 }
+.hamburger-icon.icon-2 {
+	margin-top: 6px;
+  	margin-bottom: 6px;
+}
+
+
+
 .sidenav {
   height: 100%;
   width: 0;
