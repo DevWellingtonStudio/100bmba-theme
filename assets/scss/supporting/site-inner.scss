@@ -14,3 +14,9 @@
 .front-page .site-inner {
   padding: $spacer*3 0 0;
 }
+
+.blue-transition-bottom {
+  .site-inner {
+	  background-image: linear-gradient(#fff 85%,#015ba9);
+  }
+}
