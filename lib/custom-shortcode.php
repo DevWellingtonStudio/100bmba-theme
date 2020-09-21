@@ -1,5 +1,48 @@
 <?php
 
+add_shortcode('social-icons', 'add_social_icons');
+function add_social_icons() {
+	return '
+	<a href="https://www.facebook.com/100-Black-Men-of-the-Bay-Area-206857172769508/" title="Facebook 100 Black Men Of The Bay Area"><i class="fab fa-2x fa-facebook-square"></i></a>
+	&nbsp;&nbsp;<a href="https://www.instagram.com/100blackmenofthebayarea/" title="Instagram 100 Black Men Of The Bay Area"><i class="fab fa-2x fa-instagram-square"></i></a>
+	&nbsp;&nbsp;<a href="https://twitter.com/100BlackMenBA" title="Twitter 100 Black Men Of The Bay Area"><i class="fab fa-2x fa-twitter-square"></i></a>
+	&nbsp;&nbsp;<a href="https://www.linkedin.com/company/100-black-men-of-the-bay-area/" title="LinkedIn 100 Black Men Of The Bay Area"><i class="fab fa-2x fa-linkedin"></i></a>
+	';
+}
+
+
+add_shortcode('facebook-icon', 'add_facebook_icon');
+function add_facebook_icon() {
+	return '
+	<a href="https://www.facebook.com/100-Black-Men-of-the-Bay-Area-206857172769508/" title="Facebook 100 Black Men Of The Bay Area"><i class="fab fa-facebook-square"></i></a>
+	';
+}
+
+add_shortcode('instagram-icon', 'add_instagram_icon');
+function add_instagram_icon() {
+	return '
+	&nbsp;<a href="https://www.instagram.com/100blackmenofthebayarea/" title="Instagram 100 Black Men Of The Bay Area"><i class="fab fa-instagram-square"></i></a>
+	';
+}
+
+add_shortcode('twitter-icon', 'add_twitter_icon');
+function add_twitter_icon() {
+	return '
+	&nbsp;<a href="https://twitter.com/100BlackMenBA" title="Twitter 100 Black Men Of The Bay Area"><i class="fab fa-twitter-square"></i></a>
+	';
+}
+
+add_shortcode('linkedin-icon', 'add_linkedin_icon');
+function add_linkedin_icon() {
+	return '
+	&nbsp;<a href="https://www.linkedin.com/company/100-black-men-of-the-bay-area/" title="LinkedIn 100 Black Men Of The Bay Area"><i class="fab fa-linkedin"></i></a>
+	';
+}
+
+
+
+
+
 add_shortcode('side-bar-nav', 'bmba_sidebar_nav');
 function bmba_sidebar_nav() {
 	//return '<span class="sidebar-icon" onclick="openNav()">&#9776;</span>';
