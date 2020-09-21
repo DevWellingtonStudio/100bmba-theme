@@ -71,10 +71,10 @@ For GiveWP Grid Block, add the class `give` to Genesis Post Class with `narrow-c
 
 ### Socialmedia short codes
 Currently, the links are already hardcoded for each icon. (For 100 Black Men Of The Bay Area).
-[social-icons] Adds Facebook, Instagram, Twitter, LinkedIn.
-[facebook-icon] Adds Facebook.
-[instagram-icon] Adds Instagram.
-[twitter-icon] Adds Twitter.
+[social-icons] Adds Facebook, Instagram, Twitter, LinkedIn.\
+[facebook-icon] Adds Facebook.\
+[instagram-icon] Adds Instagram.\
+[twitter-icon] Adds Twitter.\
 [linkedin-icon] Adds LinkedIn.
 
 ## HTML for front page form
