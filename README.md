@@ -59,6 +59,9 @@ Use the plugin [Short Code In Menus](https://wordpress.org/plugins/shortcode-in-
 ```
 [side-bar-nav]
 ```
+There are couple classes that can be used in the Geness Post & Body Class inputs found in the page editor under Genesis settings.
+To aquire a narrow 70% width for text, use th class `narrow-content` in the Post Class input.
+A blue transition from bottom up, inside the .site-inner container can be accomplished by adding `blue-transition-bottom` to the Body Class input.
 
 ## HTML for front page form
 
