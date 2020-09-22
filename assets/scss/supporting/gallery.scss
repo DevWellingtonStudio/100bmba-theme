@@ -75,6 +75,9 @@
 }
 
 #gallery {
+  .container-fluid {
+	width: 90%;
+  }
   margin-top: 3.618em;
   img.gallery-image::before {
 	background-color: $black;
