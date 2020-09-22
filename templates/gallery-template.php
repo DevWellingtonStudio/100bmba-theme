@@ -11,6 +11,9 @@
  */
 
 remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
+
+
+
 add_action('genesis_entry_content', 'do_gallery_content', 5 );
 function do_gallery_content() {
 // Display Heading and Content
@@ -20,12 +23,14 @@ function do_gallery_content() {
 }
 
 add_action( 'genesis_after_entry_content', 'add_gallery', 15 );
+
 function add_gallery() {
 	global $post;
 	$gallery_name = get_post_meta($post->ID, 'gallery-name', true);
 	$gallery_title = get_post_meta($post->ID, 'gallery-title', true);
 
-	echo '<div class="container" id="gallery">
+	echo '<div id="gallery">
+				<div class="container-fluid">
   			<div class="row justify-content-center pb-5 mb-5">';
 
 	if($gallery_name !== '' || $gallery_title !== '') {
@@ -61,7 +66,7 @@ function add_gallery() {
 						$alt = get_the_title();
 
 
-	echo '<a href="' . $featured_img_url . '" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4 mb-4 thumbnail">' .
+	echo '<a href="' . $featured_img_url . '" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-3 mb-4 thumbnail">' .
 	     '<div class="bkground-gal">' .
 	     '<img src="' . $featured_img_url . '" class="w-100 height-fit gallery-image" alt="'. $alt .'">' .
 	     '</div>' .
@@ -74,9 +79,10 @@ function add_gallery() {
 	wp_reset_query();
 
 	echo '
-			</div>
-    </div>
-  </div>
+				</div>
+	    </div>
+	  </div>
+	</div>
 </div>
 	';
 

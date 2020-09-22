@@ -55,7 +55,6 @@
   z-index: 3;
   padding: .1em;
 }
-
 #menu-primary {
   align-items: center;
   li {
@@ -67,14 +66,12 @@
 .no-js .menu-item-has-children:focus .dropdown-menu {
     display: block;
 }
-
 /* Move navigation below wp-admin bar */
 .logged-in {
     .navbar-fixed-top {
         margin-top: 32px; // Move navigation below wp-admin bar
     }
 }
-
 .navbar {
     padding: {
         left: 0;
@@ -122,15 +119,45 @@
 }
 
 #menu-secondary {
+  li.current-menu-item {
+	a {
+	  color: $black;
+	}
+  }
   li {
 	display: flex;
 	align-items: center;
+	a {
+	  font-size: 1rem;
+	}
+	a:active {
+	  color: $black;
+	}
+	a:hover {
+	  color: $black;
+	}
   }
+}
+a.sub-nav-active {
+  color: $black;
 }
 #menu-secondary.nav {
   li:nth-child( n + 1 ) {
 	margin: 0 1.618em;
   }
+}
+
+.wellington-sig {
+  p a {
+	color: $black;
+  }
+  p a:hover {
+	color: $black !important;
+  }
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -143,7 +170,7 @@
 @media (min-width: 992px) {
   #menu-secondary.nav {
 	li:nth-child( n + 1 ) {
-	  margin: 0 1.618em;
+	  margin: 0 .618em;
 	}
   }
 }

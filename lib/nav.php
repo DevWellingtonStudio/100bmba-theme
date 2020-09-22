@@ -147,22 +147,31 @@ $menu_locations = get_nav_menu_locations();
 // Sub nav renders is assigned in Menu editor
 if($menu_locations && $menu_locations['footer'] !=0) :
  ?>
- <nav id="footer-nav" class="navbar navbar-expand-md navbar-light" role="navigation">
-	<div class="container">
-	 <?php
-	 wp_nav_menu( array(
-		 'theme_location'    => 'footer',
-		 'depth'             => 2,
-		 'container'         => 'div',
-		 'container_class'   => 'container',
-		 'container_id'      => 'bs-example-navbar-collapse-1',
-		 'menu_class'        => 'nav justify-content-end',
-		 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-		 'walker'            => new WP_Bootstrap_Navwalker(),
-	 ) );
-	 ?>
+<div class="container-fluid">
+  <div class="row">
+	<div class="col-md-9">
+	 <nav id="footer-nav" class="100bmba-footer-nav navbar navbar-expand-md navbar-light" role="navigation">
+
+		 <?php
+		 wp_nav_menu( array(
+			 'theme_location'    => 'footer',
+			 'depth'             => 2,
+			 'container'         => 'div',
+			 'container_class'   => 'footer-container',
+			 'container_id'      => 'bs-example-navbar-collapse-1',
+			 'menu_class'        => 'nav footer-nav',
+			 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+			 'walker'            => new WP_Bootstrap_Navwalker(),
+		 ) );
+		 ?>
+
+	 </nav>
 	</div>
- </nav>
+	<div class="col-md-3 wellington-sig">
+	  <p class="text-right">Custom Website Development&nbsp;<a href="https://wellington-studio.com" title="Web Developer">Wellington Studio</a></p>
+	</div>
+  </div>
+</div>
 <?php endif; ?>
 
 <?php }
