@@ -25,3 +25,23 @@
 ::placeholder {
   color: #ccc;
 }
+
+/*.asterisk::-webkit-input-placeholder {
+  color:    #f00;
+}
+.asterisk:-moz-placeholder {
+  color:    #f00;
+  opacity:  1;
+}
+.asterisk::-moz-placeholder {
+  color:    #f00;
+  opacity:  1;
+}
+.asterisk:-ms-input-placeholder {
+  color:    #f00;
+}*/
+
+.indicates-required {
+  font-size: 1rem;
+  color: $gray;
+}
