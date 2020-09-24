@@ -5,13 +5,13 @@ function add_side_nav() {
 	do_action('bmba_sidebar_navigation');
 }
 
-// Add this to other sections of the nav as a button, without the id=overlay to trigger close option.
-echo '<div id="overlay" onclick="closeNav()"></div>';
-
 function register_sidebar_menu() {
 	register_nav_menu( 'side-bar-menu' ,__( 'Side Bar Nav' ));
 }
 add_action( 'init', 'register_sidebar_menu' );
+
+
+
 
 // Adds Footer Navigation
 add_action( 'bmba_sidebar_navigation', 'add_bmba_sidebar_nav' );
