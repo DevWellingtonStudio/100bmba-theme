@@ -28,22 +28,10 @@
   transition: .6s;
   height: auto;
 }
-
-/*.navbar-brand
-#logo-svg-bmba {
-  position: relative;
-  z-index: -1;
-}
-#logo-svg-bmba logo {
-  position: relative;
-  z-index: -1;
-}*/
-
 #nav-brand-link {
   top: 0;
   transition: .6s;
 }
-
 .navbar-dark .navbar-nav .nav-link {
   color: $white;
 }
@@ -214,23 +202,32 @@ a.sub-nav-active {
 
 }
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {
 
-}
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
-
+  #menu-primary.sm-collapsible {
+	align-items: initial;
+	padding: 1.618em;
+	width: 30%;
+	margin: 0 auto;
+	.blue-nav-link a {
+	  text-align: center;
+	}
+  }
 }
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  #menu-secondary {
-	width: 53%;
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  #menu-primary.sm-collapsible {
+	align-items: initial;
+	padding: 1.618em;
+	width: 35%;
 	margin: 0 auto;
+	.blue-nav-link a {
+	  text-align: center;
+	}
   }
-
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -241,6 +238,34 @@ a.sub-nav-active {
 	width: 10%;
 	margin: 0 auto;
   }
+  #menu-primary.sm-collapsible {
+	align-items: initial;
+	padding: 1.618em;
+	width: 45%;
+	margin: 0 auto;
+	.blue-nav-link a {
+	  text-align: center;
+	}
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  #menu-primary.sm-collapsible {
+	align-items: initial;
+	padding: 1.618em;
+	width: 80%;
+	margin: 0 auto;
+	.blue-nav-link a {
+	  text-align: center;
+	}
+  }
+
+  #menu-secondary {
+	width: 53%;
+	margin: 0 auto;
+  }
+
 }
 
 // Medium devices (tablets, less than 992px)
