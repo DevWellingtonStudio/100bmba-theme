@@ -5,6 +5,8 @@ function add_side_nav() {
 	do_action('bmba_sidebar_navigation');
 }
 
+// Add this to other sections of the nav as a button, without the id=overlay to trigger close option.
+echo '<div id="overlay" onclick="closeNav()"></div>';
 
 function register_sidebar_menu() {
 	register_nav_menu( 'side-bar-menu' ,__( 'Side Bar Nav' ));
@@ -21,7 +23,7 @@ function add_bmba_sidebar_nav() {
 		?>
 		<div id="bmbaSidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<div class="row side-nav-row">
+		<div id="sidenavrow" class="row side-nav-row">
 		  <div class="col-6 slide-nav-left-side">
 			<?php $side_nav_logo = get_theme_mod('side-nav-logo');
 			if($side_nav_logo !== '') {
