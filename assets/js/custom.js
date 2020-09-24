@@ -1,7 +1,12 @@
 /* Custom Javascript and jQuery
 ------------------------------------------------------- */
 
-/* Animation for SideBar navigation */
+/* Animation for SideBar navigation
+*
+* Look in functions.php for the id="overlay" action that loads the id after <body>
+* id="overlay" manages the click event, detected by an overlay, that triggers closeNav()
+*
+* */
 function overlay(isShow){
   var elm = document.getElementById('overlay')
   if (isShow) {
@@ -25,6 +30,7 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
   event.preventDefault();
   $(this).ekkoLightbox();
 });
+
 
 // Shrink nav on scroll and animate logo
 window.onscroll = function() {scrollFunction()};
