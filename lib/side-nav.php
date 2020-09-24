@@ -11,8 +11,6 @@ function register_sidebar_menu() {
 add_action( 'init', 'register_sidebar_menu' );
 
 
-
-
 // Adds Footer Navigation
 add_action( 'bmba_sidebar_navigation', 'add_bmba_sidebar_nav' );
 function add_bmba_sidebar_nav() {

@@ -52,7 +52,6 @@ function bmba_sidebar_nav() {
 add_shortcode('search_field', 'custom_search');
 function custom_search() {
 
-
 		 return '
 		<div class="container member-search-container">
 		<div class="row">

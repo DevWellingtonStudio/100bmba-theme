@@ -140,7 +140,6 @@ function load_modal_js() {
 	}
 }
 
-
 add_action( 'genesis_before', 'my_genesis_script', 30 );
 function my_genesis_script() {
 	echo '<div id="overlay" onclick="closeNav()"></div>';
