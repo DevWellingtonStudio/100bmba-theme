@@ -28,22 +28,10 @@
   transition: .6s;
   height: auto;
 }
-
-/*.navbar-brand
-#logo-svg-bmba {
-  position: relative;
-  z-index: -1;
-}
-#logo-svg-bmba logo {
-  position: relative;
-  z-index: -1;
-}*/
-
 #nav-brand-link {
   top: 0;
   transition: .6s;
 }
-
 .navbar-dark .navbar-nav .nav-link {
   color: $white;
 }
@@ -160,11 +148,7 @@ a.sub-nav-active {
   align-items: center;
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
@@ -175,76 +159,133 @@ a.sub-nav-active {
   }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
-
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-
-}
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-
-    #sub-nav-fp {
-
-        .container {
-
-            .navbar-toggler.subnav-toggler {
-                margin: 0 auto;
-            }
-
-            .subnav li a {
-                font-size: 1rem;
-                font-weight: 700;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-            }
-
-            #menu-sub-nav {
-                display: flex;
-                justify-content: space-around;
-			  	align-items: center;
-                width: 100%;
-            }
-        }
-
-    }
-
-}
-
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {
-
-}
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
-
-}
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  #menu-secondary {
-	width: 53%;
-	margin: 0 auto;
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  button.navbar-toggler:focus {
+	outline: none;
   }
-
-}
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
   .navbar-toggler {
-	position: relative;
-	z-index: 999;
-	width: 10%;
-	margin: 0 auto;
+	border: none;
   }
 }
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {}
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+  }
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {}
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+  }
+
+
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) {
+	#menu-primary.sm-collapsible {
+	  align-items: initial;
+	  padding: 1.618em;
+	  width: 60%;
+	  margin: 0 auto;
+
+	  .blue-nav-link a {
+		text-align: center;
+	  }
+	}
+	  .nav-primary {
+		.wrap.container-fluid {
+		  display: flex;
+		  width: 70%;
+		}
+		a#nav-brand-link {
+		  margin: 0;
+		}
+
+	  }
+  }
+
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) {
+	#menu-primary.sm-collapsible {
+	  align-items: initial;
+	  padding: 1.618em;
+	  width: 60%;
+	  margin: 0 auto;
+
+	  .blue-nav-link a {
+		text-align: center;
+	  }
+	}
+  }
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+	#sub-nav-fp {
+
+	  .container {
+
+		.navbar-toggler.subnav-toggler {
+		  margin: 0 auto;
+		}
+
+		.subnav li a {
+		  font-size: 1rem;
+		  font-weight: 700;
+		  text-transform: uppercase;
+		  letter-spacing: 2px;
+		}
+
+		#menu-sub-nav {
+		  display: flex;
+		  justify-content: space-around;
+		  align-items: center;
+		  width: 100%;
+		}
+	  }
+
+	}
+	.navbar-toggler {
+	  position: relative;
+	}
+	#menu-primary.sm-collapsible {
+	  align-items: initial;
+	  padding: 1.618em;
+	  width: 60%;
+	  margin: 0 auto;
+
+	  .blue-nav-link a {
+		text-align: center;
+	  }
+	}
+  }
+
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+	#logo-svg-bmba {
+	  width: auto;
+	}
+	#menu-primary.sm-collapsible {
+	  align-items: initial;
+	  padding: .618em;
+	  width: 80%;
+	  margin: 0 auto;
+
+	  .blue-nav-link a {
+		text-align: center;
+	  }
+	}
+	#menu-secondary {
+	  width: 53%;
+	  margin: 0 auto;
+	}
+	.navbar-toggler {
+	  border: none;
+	}
+	button.navbar-toggler:focus {
+	  outline: none;
+	}
+
+  }
+

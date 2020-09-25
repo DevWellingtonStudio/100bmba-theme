@@ -5,11 +5,11 @@ function add_side_nav() {
 	do_action('bmba_sidebar_navigation');
 }
 
-
 function register_sidebar_menu() {
 	register_nav_menu( 'side-bar-menu' ,__( 'Side Bar Nav' ));
 }
 add_action( 'init', 'register_sidebar_menu' );
+
 
 // Adds Footer Navigation
 add_action( 'bmba_sidebar_navigation', 'add_bmba_sidebar_nav' );
@@ -21,7 +21,7 @@ function add_bmba_sidebar_nav() {
 		?>
 		<div id="bmbaSidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<div class="row side-nav-row">
+		<div id="sidenavrow" class="row side-nav-row">
 		  <div class="col-6 slide-nav-left-side">
 			<?php $side_nav_logo = get_theme_mod('side-nav-logo');
 			if($side_nav_logo !== '') {

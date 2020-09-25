@@ -39,10 +39,6 @@ function add_linkedin_icon() {
 	';
 }
 
-
-
-
-
 add_shortcode('side-bar-nav', 'bmba_sidebar_nav');
 function bmba_sidebar_nav() {
 	//return '<span class="sidebar-icon" onclick="openNav()">&#9776;</span>';
@@ -55,7 +51,6 @@ function bmba_sidebar_nav() {
 
 add_shortcode('search_field', 'custom_search');
 function custom_search() {
-
 
 		 return '
 		<div class="container member-search-container">
