@@ -103,7 +103,7 @@ $(window).resize(function() {
 	 var svgItem = svgDoc.getElementById("Layer_1");
 	 // Set the colour to something else
 	 svgItem.style.padding = "0";
-  }
+  }n
 
 });
 
