@@ -17,12 +17,15 @@ remove_action('genesis_before_content_sidebar_wrap', 'add_featured_image');
 add_action('genesis_before_content_sidebar_wrap', 'add_economic_header');
 function add_economic_header() {
 	global $post;
-	$featured_img_url = get_the_post_thumbnail_url($post->ID, 'full');
-	echo '<div id="economic-jumbotron" class="jumbotron jumbotron-fluid" style="background-image: url('. $featured_img_url .');">
+	$default = '';
+	$featured_img_url = get_the_post_thumbnail_url($post->ID, 'full', true);
+	if (has_post_thumbnail( $post->ID ) ) {
+		echo '<div id="economic-jumbotron" class="jumbotron jumbotron-fluid" style="background-image: url(' . $featured_img_url . ');">
 		  <div class="container">
-		    <h1 class="display-4">'. get_the_title() .'</h1>
+		    <h1 class="display-4">' . get_the_title() . '</h1>
 		  </div>
 		</div>';
+	}
 }
 
 add_action( 'genesis_after_content', 'add_ed_meta', 5 );
