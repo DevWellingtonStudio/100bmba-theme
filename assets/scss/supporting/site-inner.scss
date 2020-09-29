@@ -20,3 +20,11 @@
 	  background-image: linear-gradient(#fff 85%,$blue 100%);
   }
 }
+
+.member_cpt-template-default {
+  .site-container {
+	.site-inner {
+		padding: $spacer*2 0;
+	}
+  }
+}
