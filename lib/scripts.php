@@ -15,6 +15,7 @@
 add_action( 'wp_enqueue_scripts', 'bfg_theme_scripts' );
 function bfg_theme_scripts() {
 	wp_enqueue_style('custom-css', get_stylesheet_directory_uri() . '/assets/custom.css', array(), '1.0.0', 'all');
+	wp_enqueue_style( 'custom-theme-css', get_stylesheet_directory_uri() . '/assests/css/custom-theme.css', array(), '', 'all');
 
 	//wp_register_style('mailchimp-css', '//cdn-images.mailchimp.com/embedcode/classic-10_7.css', array(), '', 'all');
 	//wp_enqueue_style('mailchimp-css');

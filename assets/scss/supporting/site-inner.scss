@@ -2,7 +2,7 @@
 ----------------------------------------------------------------------------- */
 .site-inner {
   overflow: hidden;
-    padding: $spacer*1 0;
+    padding: $spacer*0 0;
     .content {
         margin-bottom: $spacer;
         @include media-breakpoint-up(sm) {
@@ -18,5 +18,13 @@
 .blue-transition-bottom {
   .site-inner {
 	  background-image: linear-gradient(#fff 85%,$blue 100%);
+  }
+}
+
+.member_cpt-template-default {
+  .site-container {
+	.site-inner {
+		padding: $spacer*2 0;
+	}
   }
 }

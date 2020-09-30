@@ -62,6 +62,10 @@
 					width: 50%
 				  }
 
+				  .wp-block-group {
+					width: 70%;
+				  }
+
 				  .wp-block-columns {
 
 					width: 70%;
@@ -103,7 +107,6 @@
 
   /* scss for .narrow-content used in many pages to accomplish a narrower rendering of article content */
   .narrow-content {
-
 
 	.entry-content {
 
@@ -177,7 +180,6 @@
 	  width: 70%;
 	  margin: 0 auto;
 	}
-
 	.wp-block-columns {
 
 	  width: 70%;
@@ -203,9 +205,6 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
-
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {}
 
@@ -216,7 +215,56 @@
 @media (max-width: 575.98px) {}
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+
+  .empowerment-content {
+	.wp-block-table {
+	  width: 88%;
+	  margin: 0 auto;
+	}
+
+	p, h2, h3 {
+	  width: 88%;
+	  margin: 0 auto;
+	}
+
+	.wp-block-embed-youtube {
+	  width: 88%;
+	  margin: 0 auto;
+	}
+
+	.wp-block-image {
+	  width: 88%;
+	  margin: 0 auto;
+	}
+	.wp-block-columns {
+
+	  width: 88%;
+	  margin: 0 auto;
+
+	  .wp-block-column {
+
+		p {
+		  width: 100%;
+		}
+
+	  }
+	}
+
+	.gform_wrapper {
+	  width: 88%;
+	  margin: 0 auto;
+	}
+
+  }
+
+
+
+
+
+
+
+}
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {}

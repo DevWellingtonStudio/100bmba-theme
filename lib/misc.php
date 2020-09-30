@@ -44,7 +44,8 @@ function bfg_do_meta() {
 	// Jumbotron
 	if ( is_front_page() && is_active_sidebar( 'home-featured' ) ) add_action( 'genesis_header', 'bfg_do_home_featured' );
 	if ( is_front_page() && is_active_sidebar( 'frontpage-one' ) ) add_action( 'genesis_before_content', 'wst_do_frontpage_one' );
-	if ( is_front_page() && is_active_sidebar( 'frontpage-two' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_two', 10 );
+	//if ( is_front_page() && is_active_sidebar( 'frontpage-two' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_two', 10 );
+	if ( is_front_page() && is_active_sidebar( 'frontpage-two' ) ) add_action( 'loop_start', 'wst_do_frontpage_two', 5 );
 	if ( is_front_page() && is_active_sidebar( 'frontpage-three' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_three', 15 );
 	if ( is_front_page() && is_active_sidebar( 'frontpage-four' ) ) add_action( 'genesis_after_content', 'wst_do_frontpage_four', 20 );
 

@@ -17,12 +17,15 @@ remove_action('genesis_before_content_sidebar_wrap', 'add_featured_image');
 add_action('genesis_before_content_sidebar_wrap', 'add_economic_header');
 function add_economic_header() {
 	global $post;
-	$featured_img_url = get_the_post_thumbnail_url($post->ID, 'full');
-	echo '<div id="economic-jumbotron" class="jumbotron jumbotron-fluid" style="background-image: url('. $featured_img_url .');">
+	$default = '';
+	$featured_img_url = get_the_post_thumbnail_url($post->ID, 'full', true);
+	if (has_post_thumbnail( $post->ID ) ) {
+		echo '<div id="economic-jumbotron" class="jumbotron jumbotron-fluid" style="background-image: url(' . $featured_img_url . ');">
 		  <div class="container">
-		    <h1 class="display-4">'. get_the_title() .'</h1>
+		    <h1 class="display-4">' . get_the_title() . '</h1>
 		  </div>
 		</div>';
+	}
 }
 
 add_action( 'genesis_after_content', 'add_ed_meta', 5 );
@@ -38,31 +41,31 @@ function add_ed_meta() {
 	$eco_bottom_content_title   = get_post_meta(get_the_ID(), 'eco-bottom-content-title', true );
 
 
-	echo '	<div id="upperlower">
-				<div class="container">
+echo    '<div id="upperlower">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 upper">
+							<div class="card">
+							  <div class="card-body">
+								'. $upper_container .'
+							  </div>
+							</div>
+							</div>
+						</div>
 					<div class="row">
-					<div class="col-md-8 upper">
-					<div class="card">
-					  <div class="card-body">
-						'. $upper_container .'
-					  </div>
+						<div class="col-md-8 lower offset-md-3">
+						<div class="card">
+						  <div class="card-body">
+							'. $lower_container .'
+						  </div>
+						</div>
+						</div>
 					</div>
-					</div>
-					</div>
-					<div class="row">
-					<div class="col-md-8 lower offset-md-3">
-					<div class="card">
-					  <div class="card-body">
-						'. $lower_container .'
-					  </div>
-					</div>
-					</div>
-					</div>
-			    </div>
+		    </div>
 			</div>';
-	echo   '<div id="bodyimage-wide">
-	            <div class="container-fluid">
-	            <img class="image-fluid" src="'. $full_body_image .'" alt="'. $fullbody_img_alt .'">
+echo '<div id="bodyimage-wide">
+	      <div class="container-fluid">
+	      <img class="image-fluid" src="'. $full_body_image .'" alt="'. $fullbody_img_alt .'">
 				</div>
 			</div>
 			<div id="economic-empowerment-bottom-content" class="container-fluid">
