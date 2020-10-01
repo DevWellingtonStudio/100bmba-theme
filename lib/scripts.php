@@ -15,7 +15,7 @@
 add_action( 'wp_enqueue_scripts', 'bfg_theme_scripts' );
 function bfg_theme_scripts() {
 	wp_enqueue_style('custom-css', get_stylesheet_directory_uri() . '/assets/custom.css', array(), '1.0.0', 'all');
-	wp_enqueue_style( 'custom-theme-css', get_stylesheet_directory_uri() . '/assests/css/custom-theme.css', array(), '', 'all');
+	wp_enqueue_style( 'custom-theme-css', get_stylesheet_directory_uri() . '/assets/css/custom-theme.css', array(), '', 'all');
 
 	//wp_register_style('mailchimp-css', '//cdn-images.mailchimp.com/embedcode/classic-10_7.css', array(), '', 'all');
 	//wp_enqueue_style('mailchimp-css');
@@ -33,11 +33,8 @@ function bfg_theme_scripts() {
 		wp_deregister_script( 'superfish' );
 		wp_deregister_script( 'superfish-args' );
 
-		wp_register_script('jquery321', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '', true );
+		wp_register_script('jquery321', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '', false );
 		wp_enqueue_script('jquery321');
-
-		wp_register_script('gallery-js', BFG_THEME_JS . 'gallery.js', array(), $version, true );
-		wp_enqueue_script('gallery-js');
 
 		// Deregister jQuery and use Bootstrap supplied version
 		wp_deregister_script( 'jquery' );
@@ -65,11 +62,17 @@ function bfg_theme_scripts() {
 		wp_enqueue_script('font-awesome');
 
 		// MailChimp JS
-		wp_register_script('mailchimp-js', '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js', array(), '', true);
-		wp_enqueue_script('mailchimp-js');
+
+		wp_register_script('mailchimp-js', 'https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js', array(), '', true);
+		if(is_front_page() || is_home()) {
+			wp_enqueue_script( 'mailchimp-js' );
+		}
 
 		wp_register_script( 'bootstrap-lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js', array(), '', true);
 		wp_enqueue_script('bootstrap-lightbox');
+
+		wp_register_script('gallery-js', BFG_THEME_JS . 'gallery.js', array(), $version, true );
+		wp_enqueue_script('gallery-js');
 	}
 }
 
