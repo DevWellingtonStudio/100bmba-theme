@@ -27,10 +27,14 @@
   width: 70px;
   transition: .6s;
   height: auto;
+  object {
+	pointer-events: none;
+  }
 }
 #nav-brand-link {
   top: 0;
   transition: .6s;
+  display: inline-block;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: $white;

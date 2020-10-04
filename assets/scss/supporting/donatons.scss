@@ -1,0 +1,40 @@
+/** SCSS for Donations
+------------------------------------------ */
+
+.narrow-donation {
+  .entry-content {
+	#give-form-23152-wrap,
+	.give-form-content-wrap,
+	.give-form-content-wrap p,
+	.give-form {
+	  width: 70%;
+	  margin: 0 auto;
+	  h2 {
+		width: 100%;
+		margin-bottom: 1em;
+	  }
+	}
+	.give-wrap {
+	  width: 50%;
+	  margin: 0 auto;
+	}
+  }
+  .give-form-content-wrap p {
+	width: 100% !important;
+  }
+}
+
+.give-wrap {
+  .give-card__body {
+	padding: 1.5rem .5rem;
+
+	h3 {
+	  width: 100%;
+	}
+
+	p {
+	  width: 100%;
+	}
+  }
+}
+
