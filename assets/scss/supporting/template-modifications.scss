@@ -219,7 +219,6 @@
 
   .empowerment-content {
 	.wp-block-table {
-	  width: 88%;
 	  margin: 0 auto;
 	}
 
@@ -255,19 +254,18 @@
 	  width: 88%;
 	  margin: 0 auto;
 	}
-
   }
-
-
-
-
-
-
-
 }
 
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+  .empowerment-content {
+	.wp-block-table {
+	  width: 98%;
+	  margin: 0 auto;
+	}
+  }
+}
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {}
