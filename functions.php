@@ -153,5 +153,3 @@ function my_genesis_script() {
 	$file_contents	= file_get_contents($path_to_file);
 	$file_contents	=	str_replace('/<p class="give-card__text">%s</p>/', '<p class="give-card__text">%s</p><br><button class="btn btn-dark">Donate</button>', $file_contents, $count);
 	file_put_contents($path_to_file,$file_contents);*/
-
-

@@ -5,7 +5,6 @@ body.archive,
 body.blog,
 body.search {
     .entry {
-        border-bottom: 1px solid $hr-border-color;
         padding-bottom: $spacer*2;
         margin-bottom: $spacer*2;
     }
@@ -14,4 +13,25 @@ body.search {
 .entry-image-link {
     display: inline-block;
     margin-bottom: $spacer;
+}
+
+body.archive {
+  .site-container {
+	.site-inner {
+	  margin-top: 5em;
+	}
+  }
+}
+
+#archive-basic {
+  .feature:nth-child(n+2) {
+	margin-top: 4em;
+  }
+}
+
+.archive-description {
+  max-width: 1140px;
+  margin: 3em auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
