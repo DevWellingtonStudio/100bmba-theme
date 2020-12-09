@@ -67,6 +67,9 @@ A blue transition from bottom up, inside the .site-inner container can be accomp
 ### Group Block Fix
 Sometimes the media-text block is too wide and when using the `narrow-content` class, the media-text block might not render perpotionately correct. Add the following class to the media-text block to get a more centered, tighter rendering: `group-block-fix`
 
+### Cover Block Wide
+Sometimes, the Cover Block is used as a header or hero image. Add the class 'cover-wide' in the advanced CSS input for the block setting and that should force the image to extend full-width of the browser window.
+
 For GiveWP Grid Block, add the class `give` to Genesis Post Class with `narrow-content` to get a more centered look.
 
 ### Socialmedia short codes
