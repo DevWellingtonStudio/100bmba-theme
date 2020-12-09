@@ -110,6 +110,7 @@
 				.card-body {
 				  padding: 4.618em;
 				  max-height: 900px;
+				  width: 100%;
 				  .card-text {
 					font-size: 1.2rem;
 				  }
@@ -128,6 +129,7 @@
 				.card-body {
 				  padding: 4.618em;
 				  max-height: 900px;
+				  width: 100%;
 				  .card-text {
 					font-size: 1.2rem;
 				  }
@@ -146,6 +148,7 @@
 				.card-body {
 				  padding: 4.618em;
 				  max-height: 900px;
+				  width: 100%;
 				  .card-text {
 					font-size: 1.2rem;
 				  }
@@ -307,22 +310,7 @@
 	.joinus.offset-lg-3 {
 	  margin-left: unset;
 	}
-  }
 
-  // Large devices (desktops, less than 1200px)
-  @media (max-width: 1199.98px) {
-
-  }
-
-  // Small devices (landscape phones, 576px and up)
-  @media (min-width: 576px) {
-	.join-us h3 {
-	  width: 76%;
-	}
-  }
-
-  // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) {
 	#mid-slider-fp-1,
 	#mid-slider-fp-2,
 	#mid-slider-fp-3,
@@ -331,9 +319,8 @@
 	  -moz-transform-style: preserve-3d;
 	  transform-style: preserve-3d;
 	  .carousel-caption {
-		top: 3%;
-		/*transform: translateY(-50%);*/
-		transform: translateX(-41%);
+		top: 9%;
+		transform: translateX(-20%);
 		bottom: initial;
 		h3 {
 		  font-size: 2.5rem;
@@ -349,6 +336,21 @@
 	}
   }
 
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) {
+
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+	.join-us h3 {
+	  width: 76%;
+	}
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {}
 
@@ -356,7 +358,31 @@
 @media (min-width: 768px) {}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  #mid-slider-fp-1,
+  #mid-slider-fp-2,
+  #mid-slider-fp-3,
+  #mid-slider-fp-4 {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	.carousel-caption {
+	  top: 3%;
+	  transform: translateX(-41%);
+	  bottom: initial;
+	  h3 {
+		font-size: 2.5rem;
+		background-color: $blue;
+		padding: .2em 0;
+	  }
+	  p {
+		font-size: 1.2rem;
+		background-color: rgba(5,5,5,0.5);
+		padding: 0.618em;
+	  }
+	}
+  }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
@@ -393,6 +419,31 @@
   #fp-news {
 	.news-excerpt:nth-child(n+5) {
 	  padding-top: $em4;
+	}
+  }
+
+  #portrait-section {
+	#wstPortraitSlider {
+	  .carousel-inner {
+		#portrait-item-one,
+		#portrait-item-two,
+		#portrait-item-three,
+		#portrait-item-four,
+		#portrait-item-five,
+		#portrait-item-six {
+		  #portrait-hero {
+			.row {
+			  .card-body-wrapper{
+				.card-body {
+				  display: flex;
+				  flex-direction: column;
+				  padding: 1em;
+				}
+			  }
+			}
+		  }
+		}
+	  }
 	}
   }
 }
