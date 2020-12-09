@@ -233,9 +233,8 @@
   /** Join Us
   =============================== */
   #subscribe-form {
-	padding-left: 2.618em ;
-	padding-right: 2.618em;
 	padding-bottom: 1.618em;
+	width: 76%;
 	.form-control {
 	  border: 1px solid $white;
 	  border-radius: 0;
@@ -379,6 +378,9 @@ Max Width Media Queries
 
   // Small devices (landscape phones, less than 768px)
   @media (max-width: 767.98px) {
+	.btn.btn-gray.sign-me-up {
+	  width: 100%;
+	}
 	.carousel-caption {
 	  position: absolute;
 	  right: 0%;
@@ -419,6 +421,7 @@ Max Width Media Queries
 
 	.join-us h3 {
 	  width: 76%;
+	  height: auto;
 	}
 
 	#join-us-section {
@@ -480,6 +483,10 @@ Min Width Media Queries
   @media (min-width: 576px) {
 	.join-us h3 {
 	  width: 76%;
+	  height: auto;
+	}
+	.btn.btn-gray.sign-me-up {
+	  width: 100%;
 	}
   }
   // Medium devices (tablets, 768px and up)
