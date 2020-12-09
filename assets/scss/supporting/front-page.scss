@@ -110,6 +110,7 @@
 				.card-body {
 				  padding: 4.618em;
 				  max-height: 900px;
+				  width: 100%;
 				  .card-text {
 					font-size: 1.2rem;
 				  }
@@ -128,6 +129,7 @@
 				.card-body {
 				  padding: 4.618em;
 				  max-height: 900px;
+				  width: 100%;
 				  .card-text {
 					font-size: 1.2rem;
 				  }
@@ -146,6 +148,7 @@
 				.card-body {
 				  padding: 4.618em;
 				  max-height: 900px;
+				  width: 100%;
 				  .card-text {
 					font-size: 1.2rem;
 				  }
@@ -393,6 +396,31 @@
   #fp-news {
 	.news-excerpt:nth-child(n+5) {
 	  padding-top: $em4;
+	}
+  }
+
+  #portrait-section {
+	#wstPortraitSlider {
+	  .carousel-inner {
+		#portrait-item-one,
+		#portrait-item-two,
+		#portrait-item-three,
+		#portrait-item-four,
+		#portrait-item-five,
+		#portrait-item-six {
+		  #portrait-hero {
+			.row {
+			  .card-body-wrapper{
+				.card-body {
+				  display: flex;
+				  flex-direction: column;
+				  padding: 1em;
+				}
+			  }
+			}
+		  }
+		}
+	  }
 	}
   }
 }
