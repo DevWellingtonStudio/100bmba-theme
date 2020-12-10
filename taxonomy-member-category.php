@@ -27,20 +27,24 @@ function add_description_content() {
 		'posts_per_page'    => '9',  // overrides posts per page in theme settings
 		'paged'             => get_query_var( 'paged' )
 	);
-	$members_img_url = get_the_post_thumbnail_url( $post->ID, 'full' );
-	$members_thumbnail_id = get_post_thumbnail_id( $post->ID );
-	$members_alt = get_post_meta($members_thumbnail_id, '_wp_attachment_image_alt', true);
 
 	$loop = new WP_Query( $args );
 	if( $loop->have_posts() ):
-	 echo '<div id="member-archive" class="container-fluid"><div class="row">
+	 echo '<div id="member-archive" class="container-fluid member-container">
 					<div class="container mb-5">
 
 					'. do_shortcode('[search_field]') .'
 
-					</div>';
+					</div>
+					<div class="container member-listing">
+					<div class="row">';
+
 
 	 while( $loop->have_posts() ): $loop->the_post(); global $post;
+
+		 $members_img_url = get_the_post_thumbnail_url( $post->ID, 'full' );
+		 $members_thumbnail_id = get_post_thumbnail_id( $post->ID );
+		 $members_alt = get_post_meta($members_thumbnail_id, '_wp_attachment_image_alt', true);
 
 
 		echo '<div class="member-column col-md-4">' .
@@ -53,7 +57,7 @@ function add_description_content() {
 				 '</div>';
 
 	 endwhile;
-	 echo '</div></div>';
+	 echo '</div></div></div>';
 	 do_action('genesis_after_endwhile');
 	endif;
 	wp_reset_query();

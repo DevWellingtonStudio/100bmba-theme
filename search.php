@@ -80,10 +80,10 @@ function sk_do_search_loop() {
 	echo '<div class="container">
 					<div class="row justify-content-center members-search-results">
 					<div class="col-md-3 d-flex justify-content-center">
-					<button type="button" class="btn btn-dark"><a href="/members/" title="Back to memebers page">Members Page</a></button>
+					<button type="button" class="btn btn-dark"><a href="/members/" title="Back to memebers page">Go To Featured Members Page</a></button>
 					</div>
 					<div class="col-md-3 d-flex justify-content-center">
-						<button type="button" class="btn btn-dark"><a href="/members-100blackmen/members/" title="Back to memebers page">Members Archive</a></button>
+						<button type="button" class="btn btn-dark"><a href="/members-100blackmen/members/" title="Back to memebers page">Go To Entire Members Listing</a></button>
 					</div>
 			 		</div>
 			 </div>';
