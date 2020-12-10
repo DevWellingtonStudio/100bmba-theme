@@ -18,7 +18,7 @@ function add_modal_front_page() {
 						     <span aria-hidden="true">&times;</span>
 						   </button>
 						  <div class="modal-img-wrapper d-flex justify-content-center">
-						  		<div id="modal-logo" class="col-4">
+						  		<div id="modal-logo" class="col-6">
 						  		<img class="image-fluid" src="'. $modal_image .'" title="'. $image1_alt .'" alt="'. $image1_alt .'">
 						  		</div>
 						  	</div>
