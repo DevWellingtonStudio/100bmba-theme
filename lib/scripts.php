@@ -68,13 +68,6 @@ function bfg_theme_scripts() {
 		wp_register_script('font-awesome', 'https://kit.fontawesome.com/76342ff491.js', array(), '', true );
 		wp_enqueue_script('font-awesome');
 
-		// MailChimp JS
-
-	/*	wp_register_script('mailchimp-js', 'https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js', array(), '', true);
-		if(is_front_page() || is_home()) {
-			wp_enqueue_script( 'mailchimp-js' );
-		} */
-
 		wp_register_script( 'bootstrap-lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js', array(), '', true);
 		wp_enqueue_script('bootstrap-lightbox');
 
