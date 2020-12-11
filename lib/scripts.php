@@ -27,9 +27,18 @@ function bfg_theme_scripts() {
  /*wp_register_style('gallery-style', '//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css', array(), '', 'all');
  wp_enqueue_style('gallery-style');*/
 
+	wp_register_script('jquery321', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '', true );
+	wp_enqueue_script('jquery321');
+
 	$version = wp_get_theme()->Version;
 	if ( !is_admin() ) {
 
+		// Deregister jQuery and use Bootstrap supplied version
+		if(is_front_page() || is_home()) {
+		wp_deregister_script( 'jquery' );
+		wp_register_script( 'jquery', BFG_THEME_JS . 'jquery.slim.min.js', array(), $version, true );
+			wp_enqueue_script('jquery');
+		}
 		// MailChimp JS
 			wp_register_script('mailchimp-js', 'https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js', array(), '', true);
 			if(is_front_page() || is_home()) {
@@ -39,14 +48,6 @@ function bfg_theme_scripts() {
 		// Disable the superfish script
 		wp_deregister_script( 'superfish' );
 		wp_deregister_script( 'superfish-args' );
-
-		wp_register_script('jquery321', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '', true );
-		wp_enqueue_script('jquery321');
-
-		// Deregister jQuery and use Bootstrap supplied version
-		wp_deregister_script( 'jquery' );
-		wp_register_script( 'jquery', BFG_THEME_JS . 'jquery.slim.min.js', array(), $version, true );
-		wp_enqueue_script( 'jquery' );
 
 		// Register Custom JS
 		wp_register_script( 'custom-js', BFG_THEME_JS . 'custom.js', array(), $version, true );
