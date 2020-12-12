@@ -1,5 +1,14 @@
 /* Buttons
 ----------------------------------------------------------------------------- */
+.center-btn {
+  margin: 0 auto;
+  display: block;
+}
+
+.events-btn {
+  padding: 1em 2em;
+  font-weight: 700;
+}
 
 .btn {
   h5 {
@@ -12,11 +21,29 @@
   background-color: $brown;
   border-color: $brown;
 }
+.btn-yellow {
+  color: $blue;
+  background-color: $yellow;
+  border-color: $yellow;
+}
 
 .btn-brown:hover {
   color: #fff;
   background-color: $black;
   border-color: $black;
+}
+
+.archive-pagination.pagination {
+  .pagination-next a {
+	color: #fff;
+	background-color: $black;
+	border-color: $black;
+  }
+  .pagination-previous a {
+	color: #fff;
+	background-color: $black;
+	border-color: $black;
+  }
 }
 
 .btn-brown:focus, .btn-brown.focus {

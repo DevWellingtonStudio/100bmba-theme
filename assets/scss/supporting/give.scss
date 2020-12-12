@@ -1,5 +1,47 @@
 /* Give SCSS
 ----------------------------------------------------- */
+
+/* Give Form Styles */
+.give_forms {
+  margin-top: $marginTopx3;
+}
+#give-form-23148-wrap {
+  margin-top: $marginTopx3;
+  padding: 1.618em;
+  border: 10px solid #9B32FF;
+}
+#give-form-23148-content {
+  .summary {
+	background-color: $white;
+  }
+}
+.give-wrap .give-card__body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  order: 2;
+  padding: 1.5rem;
+  justify-content: space-between;
+  height: 300px;
+}
+.bottom-btn button {
+  margin: 0 auto;
+  display: block;
+  width: 60%;
+}
+.give_forms-template-default.postid-23148 {
+  background-image: url("https://100blackmenba.org/wp-content/uploads/2020/01/100-Gala-2019-1429-scaled.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+  background-size: cover;
+}
+/*==================*/
+
+
+
+
 #give-recurring-form .form-row-two-thirds, form.give-form .form-row-two-thirds, form[id*=give-form] .form-row-two-thirds {
   div {
 	width: 100%;

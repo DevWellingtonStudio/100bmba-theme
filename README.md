@@ -67,6 +67,9 @@ A blue transition from bottom up, inside the .site-inner container can be accomp
 ### Group Block Fix
 Sometimes the media-text block is too wide and when using the `narrow-content` class, the media-text block might not render perpotionately correct. Add the following class to the media-text block to get a more centered, tighter rendering: `group-block-fix`
 
+### Cover Block Wide
+Sometimes, the Cover Block is used as a header or hero image. Add the class 'cover-wide' in the advanced CSS input for the block setting and that should force the image to extend full-width of the browser window.
+
 For GiveWP Grid Block, add the class `give` to Genesis Post Class with `narrow-content` to get a more centered look.
 
 ### Socialmedia short codes
@@ -77,6 +80,18 @@ Currently, the links are already hardcoded for each icon. (For 100 Black Men Of 
 [twitter-icon] Adds Twitter.\
 [linkedin-icon] Adds LinkedIn.
 
+## HTML for Members Page
+The excerpt below is only an example of what can be used in the Members CPT page for referencing a members name, status, profession and LinkedIn profile. It's important to note the WP editor will strip out un-used elements. Notice in the LinkedIn link, there's an added '&nbsp;' and a <br> after the name. Wordpress will ignore HTML elements wrapping a '&nbsp;' and leave them in the editor. WP will strip out the <br> and in return place the next line on the next row.
+
+Always test/review to ensure code is accurate and complete. Keep a copy of editor code as a backup and either include it in this README.md or refrence here where in the website directory the saved copy can be found.
+```
+<p style="text-align: center;"><img class="aligncenter wp-image-1774" src="https://100blackmenba.org/wp-content/uploads/2019/05/100Blackmen_image.png" alt="" width="300" height="300" /></p>
+
+<h4 class="no-display-archive" style="text-align: center;">Christopher Chatmon</h4>
+<p style="text-align: center;"><em>Chief Executive Officer</em><br>
+Kingmakers of Oakland</p>
+<p style="text-align: center;"><a href="https://www.linkedin.com/in/chris-chatmon-2429b511" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in">&nbsp;</i></a></p>
+```
 ## HTML for front page form
 
 ```

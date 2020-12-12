@@ -1,0 +1,141 @@
+#gform_submit_button_3{
+  background-color: #343638;
+  height: 70px;
+  width: 100px;
+  border: none;
+  color: white;
+}
+
+.paragraph-headings {
+  color: #2F56A6;
+  font-size: 18pt;
+  margin-top: 25px;
+}
+
+/*  partner logo hover scale*/
+.grow {
+  transition: all .4s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.4);
+}
+
+
+/*  private page */
+
+.admin-access  {
+  padding-top: 100px;
+}
+
+/* 2020 gala event top padding */
+
+#tribe-events-content {
+  margin-top: 100px;
+}
+
+/* Economic Empowerment Title */
+.h2-line {
+  text-align:left !important;
+  width: 100%;
+}
+
+.wide-on-desktop  .wp-block-cover__inner-container .h2-line {
+  width: 100%;
+}
+
+/* Chiarman's msg Photo on mobile */
+
+@media (max-width: 991.98px) {
+  .alignright.size-medium.is-resized {
+	float: none !important;
+	margin: 0 auto;
+  }
+  article .entry-content h2 {
+	text-align:left;
+  }
+}
+
+/* Footer menu mobile styling */
+
+@media (max-width: 576px) {
+  #menu-secondary.nav li:nth-child(n+1) {
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	justify-content: left;
+  }
+  #menu-secondary.nav li:nth-child(n+1) a     {
+	padding-left: 0;
+  }
+  .wellington-sig a{
+	display: block;
+	font-size: 1.2em;
+	width: 100%;
+  }
+
+  #genesis-footer-widgets {
+	padding: 10px 10px 10px 2.2em;
+  }
+  .widget-title.widgettitle {
+	margin-top: 50px;
+	margin-bottom: 10px;
+  }
+}
+
+/*  Post feed mobile styling*/
+
+@media (max-width: 750px) {
+  #fp-news.news-fp .news-excerpt {
+	margin: 0px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: black;
+
+  }
+
+  .news-excerpt .featured-image {
+	height: 350px;
+	width: 100%;
+	margin: 0 auto;
+  }
+
+  .news-excerpt a{
+	color: white !important;
+	text-align: center !important;
+  }
+}
+
+/*  uniform form buttons*/
+#gform_submit_button_6, #gform_submit_button_8, #gform_submit_button_2 {
+  background-color: black;
+  color: white;
+  height: 70px;
+  width: 100px;
+}
+
+/* testimonial slider styling */
+
+.testimonial-img img{
+  padding: 5%;
+}
+
+.testimonial-description-theme1  {
+  padding-top: 30px;
+  padding-left: 7%;
+  padding-right: 7%;
+  line-height: 33px !important;
+}
+
+.testimonial-description-profiles-theme1 {
+  padding-left: 7%;
+  padding-right: 7%;
+  line-height: 30px;
+}
+
+.owl-item {
+  display: flex;
+  min-height: 400px;
+  justify-content: center;
+  align-items: center;
+}
