@@ -16,6 +16,8 @@ function wst_childtheme_setup() {
  // Start the engine
  include_once( get_template_directory() . '/lib/init.php' );
 
+ include'inc/gala-button.php';
+
  // Child theme (do not remove)
  define( 'BFG_THEME_NAME', 'Wellington Studio Theme' );
  define( 'BFG_THEME_URL', 'https://github.com/DevWellingtonStudio/wellington-studio-theme/' );

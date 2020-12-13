@@ -1,0 +1,119 @@
+/**
+SCSS Gala Button
+================================= */
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+.ordinal {
+  vertical-align:super;
+}
+
+#gala-button {
+  width: 100%;
+  .gala-button-wrap {
+	a {
+	  text-decoration: none;
+	  h2 {
+		font-size: 2rem;
+		/*font-family: 'Tangerine', cursive;*/
+	  }
+	  margin: 0 auto;
+	  .btn-gala {
+		width: 60%;
+		margin: 2.618em auto 1.618em auto;
+		display: block;
+		border: none;
+		padding: 1.618em;
+		color: #FAC049;
+		background: rgb(2,0,36);
+		background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,60,255,1) 44%, rgba(0,28,148,1) 100%);
+	  }
+	}
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  #gala-button {
+	width: 100%;
+	.gala-button-wrap {
+	  a {
+		text-decoration: none;
+		h2 {
+		  font-size: 5vw;
+		  padding: 0;
+		  margin-bottom: 0;
+		}
+		margin: 0 auto;
+		.btn-gala {
+		  width: 90%;
+		  margin: 2.618em auto 1.618em auto;
+		  display: block;
+		  border: none;
+		  padding: 1.618em;
+		  color: #FAC049;
+		  background: rgb(2,0,36);
+		  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,60,255,1) 44%, rgba(0,28,148,1) 100%);
+		}
+	  }
+	}
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  #gala-button {
+	width: 100%;
+	.gala-button-wrap {
+	  a {
+		text-decoration: none;
+		h2 {
+		  font-size: 5vw;
+		  padding: 0;
+		  margin-bottom: 0;
+		}
+		margin: 0 auto;
+		.btn-gala {
+		  width: 90%;
+		  margin: 2.618em auto 1.618em auto;
+		  display: block;
+		  border: none;
+		  padding: 1.618em;
+		  color: #FAC049;
+		  background: rgb(2,0,36);
+		  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,60,255,1) 44%, rgba(0,28,148,1) 100%);
+		}
+	  }
+	}
+  }
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  #gala-button {
+	width: 100%;
+	.gala-button-wrap {
+	  a {
+		text-decoration: none;
+		h2 {
+		  font-size: 4vw;
+		  padding: 0;
+		  margin-bottom: 0;
+		}
+		margin: 0 auto;
+		.btn-gala {
+		  width: 90%;
+		  margin: 2.618em auto 1.618em auto;
+		  display: block;
+		  border: none;
+		  padding: 1.618em;
+		  color: #FAC049;
+		  background: rgb(2,0,36);
+		  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,60,255,1) 44%, rgba(0,28,148,1) 100%);
+		}
+	  }
+	}
+  }
+}
+
+
+
