@@ -148,12 +148,12 @@ function my_genesis_script() {
 }
 
 // Adds a button to the donation grid
-	$time = 1;
+/*	$time = 1;
 	$path_to_file  	= ABSPATH . 'wp-content/plugins/give/templates/shortcode-form-grid.php';
 	$file_content	= file_get_contents($path_to_file);
 	$file_contents	=	str_replace('<p class="give-card__text">%s</p>', '<p class="give-card__text no-class">%s</p><div class="bottom-btn"><button class="btn btn-dark">Donate</button></div>', $file_content, $time );
 
-		file_put_contents($path_to_file, $file_contents);
+		file_put_contents($path_to_file, $file_contents); */
 
 
 
