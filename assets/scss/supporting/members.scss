@@ -1,5 +1,24 @@
 /* Members page and members archive
 ----------------------------------------------- */
+.members-officers-board {
+  .site-container {
+	.site-inner {
+	  .wrap {
+		.row {
+		  #genesis-content {
+			article {
+			  .entry-content {
+				h2 {
+				  text-align: center !important;
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
 .members-search-results {
   div button {
 	a {
@@ -188,4 +207,20 @@ p.member-desc{
 }
 .member_cpt.type-member_cpt .row .columns .post-content img {
   padding-bottom: 1.618em;
+}
+
+@media (max-width: 781px) and (min-width: 600px) {
+  .members-officers-board {
+	.wp-block-column:not(:only-child) {
+	  flex-basis: calc(100% - 1em) !important;
+	  flex-grow: 0;
+	}
+	.wp-block-column:nth-child(2n) {
+	  margin-left: 0;
+	  margin-right: 0;
+	}
+	.wp-block-columns {
+	  display: initial;
+	}
+  }
 }
