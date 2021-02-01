@@ -139,3 +139,170 @@
   justify-content: center;
   align-items: center;
 }
+
+/** Added Feb 1, 2021 CJP **/
+.display-none {
+  display: none;
+}
+label[for="give-funds-select"] {
+  font-size: 25px;
+}
+@media (min-width: 1200px) {
+  #give-form-25044-1 {
+	width: 70%;
+	margin: 0 auto;
+  }
+}
+
+#give-form-24044-wrap {
+  margin: 0 auto;
+  width: 70%;
+  padding: 100px;
+
+  border-radius: 1px;
+  line-height: 40px;
+
+}
+
+#give-form-24044-wrap label {
+  font-size: 25px !important;
+}
+
+#give-form-24044-wrap legend{
+  font-size: 25px !important;
+  color: black;
+}
+
+#give-donation-level-button-wrap li button {
+  min-width: 150px;
+  border: 2px solid lightgrey !important;
+  background-color: white !important;
+  color: #2653af  !important;
+  font-size: 24px !important;
+}
+
+.give-currency-position-before {
+  text-align: center;
+  font-size: 25px !important;
+  padding-top: 5px !important;
+  min-height: 45px;
+  min-width: 50px !important;
+  border-radius: 2px !important;
+  margin: 1px !important;
+
+}
+#give-amount {
+  min-height: 44.5px;
+  color: #2653af  !important;
+  font-size: 24px !important;
+  border: 2px solid #2653af  !important;
+  text-align: center;
+  background-color: #2653af !important;
+  color: white !important;
+  border-radius: 2px !important;
+  margin: 1px !important;
+}
+
+.give-btn-reveal {
+  text-align: center;
+  font-size: 20px !important;
+  padding-top: 5px !important;
+  min-height: 45px;
+  min-width: 50px !important;
+  border-radius: 2px !important;
+  margin: 1px !important;
+}
+.give-select, .give-recurring-donors-choice-period, #give-purchase-button  {
+  color: white  !important;
+  background-color: #2653af !important;
+  border-radius: 2px;
+}
+
+textarea {
+  min-height: 50px;
+  border: 2px solid lightgrey !important;
+  color: #2653af  !important;
+}
+
+/*  Members page general members alignment */
+
+.general-members-container {
+  margin: 0 auto;
+  width: 800px;
+}
+.general-members em {
+  padding-left: 65px;
+  min-width: 500px;
+}
+
+.general-members li {
+  padding-left: 40px;
+  font-size: 18px;
+}
+
+#menu-item-24771 {
+  border: 10px solid #2653af  !important;
+  background-color: #2653af
+}
+
+
+/*  History page founding members alignment*/
+
+
+.our-history-founding-members {
+  min-width: 350px;
+}
+.our-history-founding-members h4{
+  min-width: 400px;
+  margin-left: -20px;
+}
+
+/*Chamaine's CSS for Members Page*/
+
+@media ( min-width: 992px ) {
+  .w-70 {
+	width: 70%;
+	max-width: 1500px;
+	margin: 0 auto;
+  }
+}
+
+/*  New donations page media */
+@media ( max-width: 992px ) {
+  #give-form-24044-wrap {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 20px;
+	border-radius: 1px;
+	font-size: 14px !important;
+	line-height: 30px;
+  }
+
+  #give-form-24044-wrap label{
+	border-radius: 1px;
+	font-size: 18px !important;
+	line-height: 30px;
+  }
+  .give-btn-reveal,  #give-purchase-button, #give-amount, textarea {
+	font-size: 20px !important;
+  }
+  #give-donation-level-button-wrap li button {
+	font-size: 20px !important;
+  }
+  #give-form-24044-wrap label {
+	font-size: 20px !important;
+  }
+  .give-select, .give-recurring-donors-choice-period {
+	font-size: 14px !important;
+  }
+  /* 	#give-amount {
+		  margin: 0px !important;
+		  font-size: 25px !important;
+	  }
+	  .give-currency-position-before {
+  margin: 0px !important;
+  } */
+}
+
