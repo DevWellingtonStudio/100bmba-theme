@@ -7,14 +7,14 @@
 * id="overlay" manages the click event, detected by an overlay, that triggers closeNav()
 *
 * */
-function overlay(isShow){
-  var elm = document.getElementById('overlay')
-  if (isShow) {
-	 elm.style.display = 'block';
-  } else {
-	 elm.style.display = 'none';
-  }
-}
+	function overlay(isShow){
+	  var elm = document.getElementById('overlay')
+	  if (isShow) {
+		 elm.style.display = 'block';
+	  } else {
+		 elm.style.display = 'none';
+	  }
+	}
   function openNav() {
 	 overlay(true);
 	 document.getElementById("bmbaSidenav").style.width = "550px";
@@ -26,12 +26,12 @@ function overlay(isShow){
 
   }
 
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-  event.preventDefault();
-  $(this).ekkoLightbox();
-});
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+	  event.preventDefault();
+	  $(this).ekkoLightbox();
+	});
 
-// Shrink nav on scroll and animate logo
+		// Shrink nav on scroll and animate logo
 		window.onscroll = function () {
 		  scrollFunction()
 		};
@@ -82,29 +82,39 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 		  }
 		}
 
-$(window).resize(function() {
+	$(window).resize(function() {
 
-  if ($(window).width() < 1200 ) {
+	  if ($(window).width() < 1200 ) {
 
-	 document.getElementById("genesis-nav-primary").style.padding = ".5rem 1rem";
-	 document.getElementById("nav-brand-link").style.top = "0px"
-	 document.getElementById("nav-brand-link").style.position = "relative";
-	 document.getElementById("logo").style.width = "70px";
-	 document.getElementById("logo").style.height = "auto";
-	 document.getElementById("logo-svg-bmba").style.width = "70px";
-	 document.getElementById("logo-svg-bmba").style.height = "auto";
-	 document.getElementById("nav-brand-link").style.borderRadius = "0";
+		 document.getElementById("genesis-nav-primary").style.padding = ".5rem 1rem";
+		 document.getElementById("nav-brand-link").style.top = "0px"
+		 document.getElementById("nav-brand-link").style.position = "relative";
+		 document.getElementById("logo").style.width = "70px";
+		 document.getElementById("logo").style.height = "auto";
+		 document.getElementById("logo-svg-bmba").style.width = "70px";
+		 document.getElementById("logo-svg-bmba").style.height = "auto";
+		 document.getElementById("nav-brand-link").style.borderRadius = "0";
 
-	 // Get the Object by ID
-	 var a = document.getElementById("logo");
-	 // Get the SVG document inside the Object tag
-	 var svgDoc = a.contentDocument;
-	 // Get one of the SVG items by ID;
-	 var svgItem = svgDoc.getElementById("Layer_1");
-	 // Set the colour to something else
-	 svgItem.style.padding = "0";
-  }
+		 // Get the Object by ID
+		 var a = document.getElementById("logo");
+		 // Get the SVG document inside the Object tag
+		 var svgDoc = a.contentDocument;
+		 // Get one of the SVG items by ID;
+		 var svgItem = svgDoc.getElementById("Layer_1");
+		 // Set the colour to something else
+		 svgItem.style.padding = "0";
+	  }
 
-});
+	});
+
+	$(document).ready(function() {
+	  if ($(".give-btn-reveal").is(":visible")) {
+		 $(".give-select-fund-row").addClass("display-none");
+	  }
+
+	  $("button.give-btn-reveal").click(function(){
+		 $(".give-select-fund-row").removeClass("display-none");
+	  });
+	});
 
 
