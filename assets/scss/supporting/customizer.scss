@@ -140,7 +140,16 @@
   align-items: center;
 }
 
-/** Added Feb 1, 2021 CJP **/
+/** Added Feb 1, 2021 CJP
+=================================== **/
+
+@media(min-width:1200px) {
+  main.content {
+	width:80%;
+	margin: 0 auto;
+	max-width: 2000px;
+  }
+}
 .display-none {
   display: none;
 }
@@ -172,6 +181,7 @@ label[for="give-funds-select"] {
   font-size: 25px !important;
   color: black;
 }
+
 
 #give-donation-level-button-wrap li button {
   min-width: 150px;
@@ -305,4 +315,3 @@ textarea {
   margin: 0px !important;
   } */
 }
-
