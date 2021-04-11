@@ -23,6 +23,14 @@ var plugins = [
     })
 ]
 
+var editorPlugins = [
+		autoprefixer,
+		cssnano,
+		comments({
+			removeAllButFirst: true
+		})
+]
+
 sass.compiler = require('sass');
 
 var paths = {
@@ -30,6 +38,10 @@ var paths = {
         src: 'assets/scss/style.scss',
         dest: './'
     },
+		editorstyles: {
+    	src: 'assets/scss/template-styles/template-style.scss',
+			dest: 'assets/css/'
+		},
     scripts: {
         src: [
             'assets/js/source/app.js',
@@ -72,6 +84,17 @@ function style() {
         .pipe(notify({ message: 'Styles task complete' }))
 }
 
+function editorstyle() {
+			return gulp.src(paths.editorstyles.src)
+				.pipe(changed(paths.editorstyles.dest))
+				.pipe(sass({fiber: Fiber}).on('error', sass.logError))
+				.pipe(postcss(editorPlugins))
+				.pipe(rename('editorstyle.css'))
+				.pipe(gulp.dest(paths.editorstyles.dest))
+				.pipe(browserSync.stream())
+				.pipe(notify({ message: 'Styles task complete' }))
+}
+
 function js() {
     return gulp.src(paths.scripts.src)
         .pipe(changed(paths.scripts.dest))
@@ -112,4 +135,4 @@ function watch() {
 
 gulp.task('translation', translation);
 
-gulp.task('default', gulp.parallel(style, js, browserSyncServe, watch));
+gulp.task('default', gulp.parallel(editorstyle, style, js, browserSyncServe, watch));
