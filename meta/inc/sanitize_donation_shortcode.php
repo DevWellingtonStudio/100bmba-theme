@@ -83,4 +83,18 @@
 		if ( isset( $_POST['donation-10-label'] ) ) {
 			update_post_meta( $post_id, 'donation-10-label', $_POST['donation-10-label'] );
 		}
+
+		if ( isset( $_POST['donation-11'] ) ) {
+			update_post_meta( $post_id, 'donation-11', $_POST['donation-11'] );
+		}
+		if ( isset( $_POST['donation-11-label'] ) ) {
+			update_post_meta( $post_id, 'donation-11-label', $_POST['donation-11-label'] );
+		}
+
+		if ( isset( $_POST['donation-12'] ) ) {
+			update_post_meta( $post_id, 'donation-12', $_POST['donation-12'] );
+		}
+		if ( isset( $_POST['donation-12-label'] ) ) {
+			update_post_meta( $post_id, 'donation-12-label', $_POST['donation-12-label'] );
+		}
 	}

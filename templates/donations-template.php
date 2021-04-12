@@ -44,6 +44,10 @@
 		$donation_9 				= get_post_meta(get_the_ID(), 'donation-9', true);
 		$donation_10_label 	= get_post_meta(get_the_ID(), 'donation-10-label', true);
 		$donation_10 				= get_post_meta(get_the_ID(), 'donation-10', true);
+		$donation_11_label 	= get_post_meta(get_the_ID(), 'donation-11-label', true);
+		$donation_11 				= get_post_meta(get_the_ID(), 'donation-11', true);
+		$donation_12_label 	= get_post_meta(get_the_ID(), 'donation-12-label', true);
+		$donation_12 				= get_post_meta(get_the_ID(), 'donation-12', true);
 
 
 		if ($donation_1_label !== $default) {
@@ -114,7 +118,7 @@
 							</div>';
 			}
 
-			if ($donation_8_label !== $default) {
+			if ($donation_9_label !== $default) {
 				echo '<div class="col-md-3">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong9">
 									' . $donation_9_label . '
@@ -122,13 +126,30 @@
 							</div>';
 			}
 
-			if ($donation_9_label !== $default) {
+			if ($donation_10_label !== $default) {
 				echo '<div class="col-md-3">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong10">
 									' . $donation_10_label . '
 								</button>
 							</div>';
 			}
+
+			if ($donation_11_label !== $default) {
+				echo '<div class="col-md-3">
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong11">
+									' . $donation_11_label . '
+								</button>
+							</div>';
+			}
+
+			if ($donation_12_label !== $default) {
+				echo '<div class="col-md-3">
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong12">
+									' . $donation_12_label . '
+								</button>
+							</div>';
+			}
+
 			echo '
 			</div>
 		</div>';
@@ -139,7 +160,6 @@
 								<div class="modal-dialog" role="document">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLong1Title"></h5>
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
@@ -161,7 +181,6 @@
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLong2Title"></h5>
 										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>
@@ -183,7 +202,6 @@
 						<div class="modal-dialog" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h5 class="modal-title" id="exampleModalLong3Title"></h5>
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 									</button>
@@ -205,7 +223,6 @@
 						<div class="modal-dialog" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h5 class="modal-title" id="exampleModalLongTitle4"></h5>
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 									</button>
@@ -227,7 +244,6 @@
 								<div class="modal-dialog" role="document">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLongTitle5"></h5>
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
@@ -249,7 +265,6 @@
 								<div class="modal-dialog" role="document">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLongTitle6"></h5>
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
@@ -271,7 +286,6 @@
 								<div class="modal-dialog" role="document">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLongTitle7"></h5>
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
@@ -293,7 +307,6 @@
 								<div class="modal-dialog" role="document">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLongTitle8"></h5>
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
@@ -315,7 +328,6 @@
 								<div class="modal-dialog" role="document">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLongTitle9"></h5>
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
@@ -337,7 +349,6 @@
 								<div class="modal-dialog" role="document">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLongTitle10"></h5>
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
@@ -352,8 +363,49 @@
 								</div>
 							</div>';
 			}
+
+			// Modal 11
+			if($donation_11 !== $default) {
+				echo '<div class="modal fade" id="exampleModalLong11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong11Title" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											' . do_shortcode("[give_form id='$donation_11']") . '
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>';
+			}
+
+			// Modal 12
+			if($donation_12 !== $default) {
+				echo '<div class="modal fade" id="exampleModalLong12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong12Title" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											' . do_shortcode("[give_form id='$donation_12']") . '
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>';
+			}
 		}
 	}
-
 
 	genesis();
