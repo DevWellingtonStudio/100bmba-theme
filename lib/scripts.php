@@ -80,9 +80,6 @@ function bfg_theme_scripts() {
 add_action( 'admin_enqueue_scripts', 'load_metafield_js' );
 function load_metafield_js() {
 
-	wp_register_style('donations-bootstrap', get_stylesheet_directory_uri() . '/assets/css/editorstyle.css', false, '4.4.5' );
-	wp_enqueue_style('donations-bootstrap');
-
 	//$version = wp_get_theme()->Version;
 	//wp_enqueue_script( 'meta-field-js', BFG_THEME_JS . 'meta-field.js', array('jquery'), $version, true );
 
@@ -95,16 +92,29 @@ function load_metafield_js() {
 		)
 	);
 	wp_enqueue_script( 'meta-box-image' );
-
-	// Register Popper JS and enqueue it
-	wp_register_script( 'app-popper-js', BFG_THEME_JS . 'popper.min.js', array( 'jquery' ), $version, true );
-	wp_enqueue_script( 'app-popper-js' );
-
-	// Register Bootstrap JS and enqueue it
-	wp_register_script( 'app-bootstrap-js', BFG_THEME_JS . 'bootstrap.min.js', array( 'jquery' ), $version, true );
-	wp_enqueue_script( 'app-bootstrap-js' );
-
 }
+
+	/*function wpdocs_enqueue_custom_admin_style($hook) {
+
+		if( 'post.php' != $hook) { return;}
+
+		wp_register_style('donations-bootstrap', get_stylesheet_directory_uri() . '/assets/css/editorstyle.css', false, '4.4.5' );
+		wp_enqueue_style('donations-bootstrap');
+
+		// Register Popper JS and enqueue it
+		wp_register_script( 'app-popper-js', BFG_THEME_JS . 'popper.min.js', array( 'jquery' ), $version, true );
+		wp_enqueue_script( 'app-popper-js' );
+
+		// Register Bootstrap JS and enqueue it
+		wp_register_script( 'app-bootstrap-js', BFG_THEME_JS . 'bootstrap.min.js', array( 'jquery' ), $version, true );
+		wp_enqueue_script( 'app-bootstrap-js' );
+
+
+	}
+	add_action( 'admin_enqueue_scripts', 'wpdocs_enqueue_custom_admin_style' );*/
+
+
+
 
 // Editor Styles
 add_action( 'init', 'bfg_custom_editor_css' );
