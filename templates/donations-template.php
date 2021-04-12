@@ -158,17 +158,17 @@
 			if ($donation_1 !== $default) {
 				echo '<div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong1Title" aria-hidden="true">
 								<div class="modal-dialog" role="document">
-									<div class="modal-content">
+									<div class="modal-content donations-modal">
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modal-body">
+										<div class="modaal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_1']") . '
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary btn-donations" data-dismiss="modal">Close</button>
 										</div>
 									</div>
 								</div>
@@ -179,17 +179,17 @@
 			if ($donation_2 !== $default) {
 				echo '<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong2Title" aria-hidden="true">
 							<div class="modal-dialog" role="document">
-								<div class="modal-content">
+								<div class="modal-content donations-modal">
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>
 									</div>
-									<div class="modal-body">
+									<div class="modaal-body donations-modal-body">
 									 ' . do_shortcode("[give_form id='$donation_2']") . '
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary btn-donations" data-dismiss="modal">Close</button>
 									</div>
 								</div>
 							</div>
@@ -200,17 +200,17 @@
 			if ($donation_3 !== $default) {
 				echo '<div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong3Title" aria-hidden="true">
 						<div class="modal-dialog" role="document">
-							<div class="modal-content">
+							<div class="modal-content donations-modal">
 								<div class="modal-header">
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 									</button>
 								</div>
-								<div class="modal-body">
+								<div class="modaal-body donations-modal-body">
 									' . do_shortcode("[give_form id='$donation_3']") . '
 								</div>
 								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary btn-donations" data-dismiss="modal">Close</button>
 								</div>
 							</div>
 						</div>
@@ -221,17 +221,17 @@
 			if ($donation_4 !== $default) {
 				echo '<div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong4Title" aria-hidden="true">
 						<div class="modal-dialog" role="document">
-							<div class="modal-content">
+							<div class="modal-content donations-modal">
 								<div class="modal-header">
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 									</button>
 								</div>
-								<div class="modal-body">
+								<div class="modaal-body donations-modal-body">
 									' . do_shortcode("[give_form id='$donation_4']") . '
 								</div>
 								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary btn-donations" data-dismiss="modal">Close</button>
 								</div>
 							</div>
 						</div>
@@ -242,17 +242,17 @@
 			if ($donation_5 !== $default) {
 				echo '<div class="modal fade" id="exampleModalLong5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong5Title" aria-hidden="true">
 								<div class="modal-dialog" role="document">
-									<div class="modal-content">
+									<div class="modal-content donations-modal">
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modal-body">
+										<div class="modaal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_5']") . '
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary btn-donations" data-dismiss="modal">Close</button>
 										</div>
 									</div>
 								</div>
@@ -263,17 +263,17 @@
 			if ($donation_6 !== $default) {
 				echo '<div class="modal fade" id="exampleModalLong6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong6Title" aria-hidden="true">
 								<div class="modal-dialog" role="document">
-									<div class="modal-content">
+									<div class="modal-content donations-modal">
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modal-body">
+										<div class="modaal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_6']") . '
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary btn-donations" data-dismiss="modal">Close</button>
 										</div>
 									</div>
 								</div>
@@ -284,17 +284,17 @@
 			if ($donation_7 !== $default) {
 				echo '<div class="modal fade" id="exampleModalLong7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong7Title" aria-hidden="true">
 								<div class="modal-dialog" role="document">
-									<div class="modal-content">
+									<div class="modal-content donations-modal">
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modal-body">
+										<div class="modaal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_7']") . '
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary btn-donations" data-dismiss="modal">Close</button>
 										</div>
 									</div>
 								</div>
@@ -305,17 +305,17 @@
 			if ($donation_8 !== $default) {
 				echo '<div class="modal fade" id="exampleModalLong8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong8Title" aria-hidden="true">
 								<div class="modal-dialog" role="document">
-									<div class="modal-content">
+									<div class="modal-content donations-modal">
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modal-body">
+										<div class="modaal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_8']") . '
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary btn-donations" data-dismiss="modal">Close</button>
 										</div>
 									</div>
 								</div>
@@ -326,17 +326,17 @@
 			if ($donation_9 !== $default) {
 				echo '<div class="modal fade" id="exampleModalLong9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong9Title" aria-hidden="true">
 								<div class="modal-dialog" role="document">
-									<div class="modal-content">
+									<div class="modal-content donations-modal">
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modal-body">
+										<div class="modaal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_9']") . '
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary btn-donations" data-dismiss="modal">Close</button>
 										</div>
 									</div>
 								</div>
@@ -347,17 +347,17 @@
 			if($donation_10 !== $default) {
 				echo '<div class="modal fade" id="exampleModalLong10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong10Title" aria-hidden="true">
 								<div class="modal-dialog" role="document">
-									<div class="modal-content">
+									<div class="modal-content donations-modal">
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modal-body">
+										<div class="modaal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_10']") . '
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary btn-donations" data-dismiss="modal">Close</button>
 										</div>
 									</div>
 								</div>
@@ -368,17 +368,17 @@
 			if($donation_11 !== $default) {
 				echo '<div class="modal fade" id="exampleModalLong11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong11Title" aria-hidden="true">
 								<div class="modal-dialog" role="document">
-									<div class="modal-content">
+									<div class="modal-content donations-modal">
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modal-body">
+										<div class="modaal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_11']") . '
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary btn-donations" data-dismiss="modal">Close</button>
 										</div>
 									</div>
 								</div>
@@ -389,17 +389,17 @@
 			if($donation_12 !== $default) {
 				echo '<div class="modal fade" id="exampleModalLong12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLong12Title" aria-hidden="true">
 								<div class="modal-dialog" role="document">
-									<div class="modal-content">
+									<div class="modal-content donations-modal">
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modal-body">
+										<div class="modaal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_12']") . '
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary btn-donations" data-dismiss="modal">Close</button>
 										</div>
 									</div>
 								</div>

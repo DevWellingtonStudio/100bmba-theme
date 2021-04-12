@@ -1,5 +1,15 @@
 /** SCSS Donations Template
 ================================= */
+.modal-content.donations-modal {
+  background-color: $white;
+}
+.modaal-body.donations-modal-body {
+  color: $black;
+}
+.btn-primary.btn-donations {
+  background-color: $blue;
+  border-radius: 0;
+}
 #donate-btns {
   button {
 	width: 100%;
