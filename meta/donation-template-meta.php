@@ -50,6 +50,23 @@
 	  //$screen = get_current_screen();
 	  //print_r($screen);
 ?>
+		<p>
+		  <strong><label for="donation-general-desc" class="donation-general-desc"><?php _e('General Donation Text Description','100-black-men-ba')?></label></strong>
+		  <textarea style="width: 100%;" rows="4" name="donation-general-desc" id="donation-general-desc"><?php if ( isset ( $donations_meta['donation-general-desc'] ) ) echo $donations_meta['donation-general-desc'][0]; ?></textarea>
+		</p>
+		<p>
+		  <strong><label for="donation-general-label" class="donation-general-label"><?php _e('General Donation Button Label','100-black-men-ba')?></label></strong>
+		  <input style="width: 100%;" type="text" name="donation-general-label" id="donation-general-label" value="<?php if (isset($donations_meta['donation-general-label'])) echo $donations_meta['donation-general-label'][0]; ?>" />
+		</p>
+		<p>
+		  <strong><label for="donation-general" class="donation-general"><?php _e('General Donation Short Code ID','100-black-men-ba')?></label></strong>
+		  <input style="width: 100%;" type="text" name="donation-general" id="donation-general" value="<?php if (isset($donations_meta['donation-general'])) echo $donations_meta['donation-general'][0]; ?>" />
+		</p>
+
+	  <p>
+		<strong><label for="donation-fund-desc" class="donation-fund-desc"><?php _e('Donation Fund Text Description','100-black-men-ba')?></label></strong>
+		<textarea style="width: 100%;" rows="4" name="donation-fund-desc" id="donation-fund-desc"><?php if ( isset ( $donations_meta['donation-fund-desc'] ) ) echo $donations_meta['donation-fund-desc'][0]; ?></textarea>
+	  </p>
 
 		<nav>
 		  <div class="nav nav-tabs" id="nav-tab" role="tablist">

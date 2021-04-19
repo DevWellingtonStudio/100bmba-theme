@@ -24,6 +24,13 @@
 	function add_donations_options()
 	{
 		$default = '';
+
+		$donation_general_desc	= get_post_meta(get_the_ID(), 'donation-general-desc', true );
+		$donation_general_label	= get_post_meta(get_the_ID(), 'donation-general-label', true);
+		$donation_general				= get_post_meta(get_the_ID(), 'donation-general', true);
+
+		$donation_fund_desc			= get_post_meta(get_the_ID(), 'donation-fund-desc', true);
+
 		$donation_1_label 	= get_post_meta(get_the_ID(), 'donation-1-label', true);
 		$donation_1 				= get_post_meta(get_the_ID(), 'donation-1', true);
 		$donation_2_label 	= get_post_meta(get_the_ID(), 'donation-2-label', true);
@@ -49,21 +56,34 @@
 		$donation_12_label 	= get_post_meta(get_the_ID(), 'donation-12-label', true);
 		$donation_12 				= get_post_meta(get_the_ID(), 'donation-12', true);
 
+		if ($donation_1_label !== $default || $donation_general_label !== $default) {
+			echo '<div id="donation-template-cont" class="container mb-5">
+						<h2 class="give-form-title">Donate</h2>';
+			if($donation_general_label !== $default) {
+				echo ' <div id="general-section" class="card">
+								<div class="row justify-content-center">
+								<div class="col-md-6">
+									' . $donation_general_desc . '
+								</div>
+								<div class="col-md-6">
+									<button type="button" roll="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLongGeneral">' . $donation_general_label . '</button>
+								</div>
+								</div>
+							</div>';
+			}
 
-		if ($donation_1_label !== $default) {
-			echo '
-		<div id="donation-template-cont" class="container mb-5">
-		<h2 class="give-form-title">Donate</h2>
-		<p class="lead">Please select one of our campaign fund options below (default: General)</p>
-				<div id="donate-btns" class="row">
-				<div class="col-md-3">
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-						' . $donation_1_label . '
-					</button>
-				</div>';
+			echo '<div id="donation-fund-desc" class="card mt-5">
+							<p class="lead">'. $donation_fund_desc .'</p>
+						</div>
+						<div id="donate-btns" class="row">
+							<div class="col-md-3 donate-btn">
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+									' . $donation_1_label . '
+								</button>
+						</div>';
 
 			if ($donation_2_label !== $default) {
-				echo '<div class="col-md-3">
+				echo '<div class="col-md-3 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target ="#exampleModalLong2">
 								' . $donation_2_label . '
 								</button>
@@ -71,7 +91,7 @@
 			}
 
 			if ($donation_3_label !== $default) {
-				echo '<div class="col-md-3">
+				echo '<div class="col-md-3 donate-btn">
 								<button type = "button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong3">
 								' . $donation_3_label . '
 								</button>
@@ -79,7 +99,7 @@
 			}
 
 			if ($donation_4_label !== $default) {
-				echo '<div class="col-md-3">
+				echo '<div class="col-md-3 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong4">
 									' . $donation_4_label . '
 								</button>
@@ -87,7 +107,7 @@
 			}
 
 			if ($donation_5_label !== $default) {
-				echo '<div class="col-md-3">
+				echo '<div class="col-md-3 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong5">
 									' . $donation_5_label . '
 								</button>
@@ -95,7 +115,7 @@
 			}
 
 			if ($donation_6_label !== $default) {
-				echo '<div class="col-md-3">
+				echo '<div class="col-md-3 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong6">
 									' . $donation_6_label . '
 								</button>
@@ -103,7 +123,7 @@
 			}
 
 			if ($donation_7_label !== $default) {
-				echo '<div class="col-md-3">
+				echo '<div class="col-md-3 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong7">
 									' . $donation_7_label . '
 								</button>
@@ -111,7 +131,7 @@
 			}
 
 			if ($donation_8_label !== $default) {
-				echo '<div class="col-md-3">
+				echo '<div class="col-md-3 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong8">
 									' . $donation_8_label . '
 								</button>
@@ -119,7 +139,7 @@
 			}
 
 			if ($donation_9_label !== $default) {
-				echo '<div class="col-md-3">
+				echo '<div class="col-md-3 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong9">
 									' . $donation_9_label . '
 								</button>
@@ -127,7 +147,7 @@
 			}
 
 			if ($donation_10_label !== $default) {
-				echo '<div class="col-md-3">
+				echo '<div class="col-md-3 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong10">
 									' . $donation_10_label . '
 								</button>
@@ -135,7 +155,7 @@
 			}
 
 			if ($donation_11_label !== $default) {
-				echo '<div class="col-md-3">
+				echo '<div class="col-md-3 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong11">
 									' . $donation_11_label . '
 								</button>
@@ -143,7 +163,7 @@
 			}
 
 			if ($donation_12_label !== $default) {
-				echo '<div class="col-md-3">
+				echo '<div class="col-md-3 donate-btn">
 								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong12">
 									' . $donation_12_label . '
 								</button>
@@ -153,6 +173,28 @@
 			echo '
 			</div>
 		</div>';
+
+			// Modal General
+			if ($donation_general !== $default) {
+				echo '<div class="modal fade" id="exampleModalLongGeneral" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongGeneralTitle" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content donations-modal">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body donations-modal-body">
+											' . do_shortcode("[give_form id='$donation_general']") . '
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary btn-donations" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>';
+			}
+
 
 			// Modal 1
 			if ($donation_1 !== $default) {
@@ -164,7 +206,7 @@
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modaal-body donations-modal-body">
+										<div class="modal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_1']") . '
 										</div>
 										<div class="modal-footer">
@@ -185,7 +227,7 @@
 											<span aria-hidden="true">&times;</span>
 										</button>
 									</div>
-									<div class="modaal-body donations-modal-body">
+									<div class="modal-body donations-modal-body">
 									 ' . do_shortcode("[give_form id='$donation_2']") . '
 									</div>
 									<div class="modal-footer">
@@ -206,7 +248,7 @@
 										<span aria-hidden="true">&times;</span>
 									</button>
 								</div>
-								<div class="modaal-body donations-modal-body">
+								<div class="modal-body donations-modal-body">
 									' . do_shortcode("[give_form id='$donation_3']") . '
 								</div>
 								<div class="modal-footer">
@@ -227,7 +269,7 @@
 										<span aria-hidden="true">&times;</span>
 									</button>
 								</div>
-								<div class="modaal-body donations-modal-body">
+								<div class="modal-body donations-modal-body">
 									' . do_shortcode("[give_form id='$donation_4']") . '
 								</div>
 								<div class="modal-footer">
@@ -248,7 +290,7 @@
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modaal-body donations-modal-body">
+										<div class="modal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_5']") . '
 										</div>
 										<div class="modal-footer">
@@ -269,7 +311,7 @@
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modaal-body donations-modal-body">
+										<div class="modal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_6']") . '
 										</div>
 										<div class="modal-footer">
@@ -290,7 +332,7 @@
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modaal-body donations-modal-body">
+										<div class="modal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_7']") . '
 										</div>
 										<div class="modal-footer">
@@ -311,7 +353,7 @@
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modaal-body donations-modal-body">
+										<div class="modal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_8']") . '
 										</div>
 										<div class="modal-footer">
@@ -332,7 +374,7 @@
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modaal-body donations-modal-body">
+										<div class="modal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_9']") . '
 										</div>
 										<div class="modal-footer">
@@ -353,7 +395,7 @@
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modaal-body donations-modal-body">
+										<div class="modal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_10']") . '
 										</div>
 										<div class="modal-footer">
@@ -374,7 +416,7 @@
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modaal-body donations-modal-body">
+										<div class="modal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_11']") . '
 										</div>
 										<div class="modal-footer">
@@ -395,7 +437,7 @@
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modaal-body donations-modal-body">
+										<div class="modal-body donations-modal-body">
 											' . do_shortcode("[give_form id='$donation_12']") . '
 										</div>
 										<div class="modal-footer">

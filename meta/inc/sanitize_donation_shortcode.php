@@ -14,6 +14,19 @@
 		}
 
 		// Checks for input and saves if needed
+
+		if ( isset( $_POST['donation-general-desc'] ) ) {
+			update_post_meta( $post_id, 'donation-general-desc', $_POST['donation-general-desc'] );
+		}
+		if ( isset( $_POST['donation-general-label'] ) ) {
+			update_post_meta( $post_id, 'donation-general-label', $_POST['donation-general-label'] );
+		}
+		if ( isset( $_POST['donation-general'] ) ) {
+			update_post_meta( $post_id, 'donation-general', $_POST['donation-general'] );
+		}
+		if ( isset( $_POST['donation-fund-desc'] ) ) {
+			update_post_meta( $post_id, 'donation-fund-desc', $_POST['donation-fund-desc'] );
+		}
 		if ( isset( $_POST['donation-1'] ) ) {
 			update_post_meta( $post_id, 'donation-1', $_POST['donation-1'] );
 		}

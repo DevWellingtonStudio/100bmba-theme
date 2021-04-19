@@ -1,12 +1,45 @@
 /** SCSS Donations Template
 ================================= */
+.donations-modal-body {
+  .give-form-wrap {
+	.give-form-content-wrap {
+	  display: none;
+	  img {
+		display: none;
+	  }
+	}
+  }
+}
+#general-section {
+  .row {
+	align-items: center;
+  }
+  button {
+	background-color: $blue;
+	border-color: $blue;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+  }
+  &.card {
+	border: none;
+  }
+}
+#donation-fund-desc {
+  &.card {
+	border: none;
+  }
+}
 #donate-btns {
   justify-content: center;
+  .btn {
+	padding: 4.2rem 0.5rem;
+  }
 }
 .modal-content.donations-modal {
   background-color: $white;
 }
-.modaal-body.donations-modal-body {
+.modal-body.donations-modal-body {
   color: $black;
 }
 .btn-primary.btn-donations {
@@ -14,10 +47,14 @@
   border-radius: 0;
 }
 #donate-btns {
+  .donate-btn {
+	display: flex;
+  }
   button {
 	width: 100%;
 	background-color: $blue;
 	border-color: $blue;
+	flex: 1;
   }
 }
 
